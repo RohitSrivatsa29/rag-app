@@ -1,0 +1,3193 @@
+[{
+  "id": "PY001",
+  "category": "Python",
+  "title": "What are Python variables?",
+  "concept": "Variables",
+  "explanation": "Variables in Python are containers that store data values. Python is dynamically typed, meaning you don't need to declare variable types explicitly. Variables are created the moment you assign a value to them. Python uses the assignment operator (=) to assign values to variables.",
+  "usage": "Variables are used throughout Python programs to store and manipulate data. They can hold different types of data and their type can change during program execution.",
+  "keywords": [
+    "variables",
+    "assignment",
+    "dynamic typing",
+    "data storage",
+    "naming"
+  ]
+},
+{
+  "id": "PY002",
+  "category": "Python",
+  "title": "What are Python data types?",
+  "concept": "Data Types",
+  "explanation": "Python has several built-in data types including integers (int), floating-point numbers (float), strings (str), booleans (bool), lists, tuples, sets, and dictionaries. Each data type has specific characteristics and methods. Python automatically determines the data type based on the value assigned.",
+  "usage": "Understanding data types is crucial for proper data manipulation and avoiding type-related errors. Different operations are available for different data types.",
+  "keywords": [
+    "int",
+    "float",
+    "str",
+    "bool",
+    "list",
+    "tuple",
+    "dict",
+    "set"
+  ]
+},
+{
+  "id": "PY003",
+  "category": "Python",
+  "title": "What are Python strings?",
+  "concept": "Strings",
+  "explanation": "Strings in Python are sequences of characters enclosed in single, double, or triple quotes. Strings are immutable, meaning they cannot be changed after creation. Python provides numerous string methods for manipulation, searching, and formatting.",
+  "usage": "Strings are used to represent text data. Common operations include concatenation, slicing, formatting, and pattern matching.",
+  "keywords": [
+    "string",
+    "immutable",
+    "concatenation",
+    "slicing",
+    "methods",
+    "formatting"
+  ]
+},
+{
+  "id": "PY004",
+  "category": "Python",
+  "title": "What are Python lists?",
+  "concept": "Lists",
+  "explanation": "Lists are ordered, mutable collections that can contain items of different types. Lists are defined using square brackets and support indexing, slicing, and various methods like append, remove, and sort. Lists are one of the most versatile data structures in Python.",
+  "usage": "Lists are used when you need an ordered collection that can be modified. They're ideal for storing sequences of related items.",
+  "keywords": [
+    "list",
+    "mutable",
+    "ordered",
+    "indexing",
+    "append",
+    "methods",
+    "collection"
+  ]
+},
+{
+  "id": "PY005",
+  "category": "Python",
+  "title": "What are Python tuples?",
+  "concept": "Tuples",
+  "explanation": "Tuples are ordered, immutable collections defined using parentheses. Once created, tuples cannot be modified. Tuples are faster than lists and can be used as dictionary keys. They're ideal for data that shouldn't change during program execution.",
+  "usage": "Tuples are used for fixed collections of items, function return values with multiple items, and as dictionary keys.",
+  "keywords": [
+    "tuple",
+    "immutable",
+    "ordered",
+    "parentheses",
+    "hashable",
+    "fixed"
+  ]
+},
+{
+  "id": "PY006",
+  "category": "Python",
+  "title": "What are Python dictionaries?",
+  "concept": "Dictionaries",
+  "explanation": "Dictionaries are unordered collections of key-value pairs defined using curly braces. Keys must be unique and immutable, while values can be any type. Dictionaries provide fast lookup by key and support various methods for accessing and modifying data.",
+  "usage": "Dictionaries are used when you need to associate values with unique keys, like storing configurations, caching, or representing structured data.",
+  "keywords": [
+    "dictionary",
+    "key-value",
+    "hash table",
+    "mapping",
+    "mutable",
+    "lookup"
+  ]
+},
+{
+  "id": "PY007",
+  "category": "Python",
+  "title": "What are Python sets?",
+  "concept": "Sets",
+  "explanation": "Sets are unordered collections of unique elements defined using curly braces or the set() function. Sets automatically eliminate duplicates and support mathematical set operations like union, intersection, and difference. Sets are mutable but can only contain immutable elements.",
+  "usage": "Sets are used for membership testing, removing duplicates, and performing mathematical set operations.",
+  "keywords": [
+    "set",
+    "unique",
+    "unordered",
+    "union",
+    "intersection",
+    "difference",
+    "membership"
+  ]
+},
+{
+  "id": "PY008",
+  "category": "Python",
+  "title": "What are Python operators?",
+  "concept": "Operators",
+  "explanation": "Python operators are symbols that perform operations on variables and values. Types include arithmetic (+, -, *, /), comparison (==, !=, <, >), logical (and, or, not), assignment (=, +=, -=), and bitwise operators. Each operator type serves specific purposes in computations and logic.",
+  "usage": "Operators are fundamental for performing calculations, comparisons, and logical operations in Python programs.",
+  "keywords": [
+    "arithmetic",
+    "comparison",
+    "logical",
+    "assignment",
+    "bitwise",
+    "operators"
+  ]
+},
+{
+  "id": "PY009",
+  "category": "Python",
+  "title": "What are Python conditional statements?",
+  "concept": "Conditionals",
+  "explanation": "Conditional statements in Python allow code execution based on conditions using if, elif, and else keywords. Conditions evaluate to boolean values. Python uses indentation to define code blocks. Conditional statements enable decision-making in programs.",
+  "usage": "Conditionals are used to execute different code paths based on conditions, enabling program logic and flow control.",
+  "keywords": [
+    "if",
+    "elif",
+    "else",
+    "conditions",
+    "boolean",
+    "control flow",
+    "indentation"
+  ]
+},
+{
+  "id": "PY010",
+  "category": "Python",
+  "title": "What are Python for loops?",
+  "concept": "Loops",
+  "explanation": "For loops in Python iterate over sequences like lists, tuples, strings, or ranges. The loop variable takes each value from the sequence in order. For loops are cleaner than while loops when the number of iterations is known or determined by a sequence.",
+  "usage": "For loops are used to repeat actions for each item in a sequence or a specific number of times using range().",
+  "keywords": [
+    "for",
+    "iteration",
+    "sequence",
+    "range",
+    "loop",
+    "enumerate"
+  ]
+},
+{
+  "id": "PY011",
+  "category": "Python",
+  "title": "What are Python while loops?",
+  "concept": "Loops",
+  "explanation": "While loops execute code repeatedly as long as a condition remains true. The condition is checked before each iteration. While loops are useful when the number of iterations isn't known beforehand. Care must be taken to avoid infinite loops.",
+  "usage": "While loops are used when you need to repeat code until a specific condition is met or changes.",
+  "keywords": [
+    "while",
+    "condition",
+    "iteration",
+    "infinite loop",
+    "break",
+    "continue"
+  ]
+},
+{
+  "id": "PY012",
+  "category": "Python",
+  "title": "What are Python functions?",
+  "concept": "Functions",
+  "explanation": "Functions are reusable blocks of code defined using the def keyword. Functions can accept parameters, perform operations, and return values. They promote code reusability, organization, and modularity. Functions can have default parameters and accept variable numbers of arguments.",
+  "usage": "Functions encapsulate logic that can be called multiple times with different inputs, reducing code duplication.",
+  "keywords": [
+    "function",
+    "def",
+    "parameters",
+    "return",
+    "arguments",
+    "scope",
+    "reusable"
+  ]
+},
+{
+  "id": "PY013",
+  "category": "Python",
+  "title": "What are Python lambda functions?",
+  "concept": "Lambda Functions",
+  "explanation": "Lambda functions are small anonymous functions defined using the lambda keyword. They can have any number of parameters but only one expression. Lambda functions are often used with functions like map, filter, and sorted. They're ideal for simple, one-time-use functions.",
+  "usage": "Lambda functions are used for simple operations that don't require a full function definition, especially in functional programming.",
+  "keywords": [
+    "lambda",
+    "anonymous",
+    "functional",
+    "map",
+    "filter",
+    "inline"
+  ]
+},
+{
+  "id": "PY014",
+  "category": "Python",
+  "title": "What is Python list comprehension?",
+  "concept": "List Comprehension",
+  "explanation": "List comprehension provides a concise way to create lists based on existing sequences. It combines for loops and conditional logic in a single line. List comprehensions are generally faster and more readable than traditional loops for creating lists. They can include nested loops and multiple conditions.",
+  "usage": "List comprehensions create new lists by transforming and filtering existing sequences in a compact syntax.",
+  "keywords": [
+    "comprehension",
+    "list",
+    "filter",
+    "transform",
+    "concise",
+    "iteration"
+  ]
+},
+{
+  "id": "PY015",
+  "category": "Python",
+  "title": "What are Python classes?",
+  "concept": "Object-Oriented Programming",
+  "explanation": "Classes are blueprints for creating objects that bundle data and functionality together. Classes are defined using the class keyword and can have attributes (data) and methods (functions). The __init__ method is the constructor that initializes object attributes. Classes enable object-oriented programming in Python.",
+  "usage": "Classes are used to create custom data types that model real-world entities with properties and behaviors.",
+  "keywords": [
+    "class",
+    "object",
+    "OOP",
+    "__init__",
+    "methods",
+    "attributes",
+    "instance"
+  ]
+},
+{
+  "id": "PY016",
+  "category": "Python",
+  "title": "What is Python inheritance?",
+  "concept": "Inheritance",
+  "explanation": "Inheritance allows a class to inherit attributes and methods from another class. The child class inherits from the parent class and can override or extend functionality. Python supports single and multiple inheritance. Inheritance promotes code reuse and establishes relationships between classes.",
+  "usage": "Inheritance creates hierarchies of classes where child classes specialize or extend parent class functionality.",
+  "keywords": [
+    "inheritance",
+    "parent",
+    "child",
+    "override",
+    "super",
+    "extends",
+    "hierarchy"
+  ]
+},
+{
+  "id": "PY017",
+  "category": "Python",
+  "title": "What is Python polymorphism?",
+  "concept": "Polymorphism",
+  "explanation": "Polymorphism allows objects of different classes to be treated through a common interface. The same method name can behave differently for different object types. Python achieves polymorphism through method overriding and duck typing. This enables flexible and extensible code design.",
+  "usage": "Polymorphism allows writing code that works with objects of different types through a unified interface.",
+  "keywords": [
+    "polymorphism",
+    "override",
+    "duck typing",
+    "interface",
+    "flexibility",
+    "abstraction"
+  ]
+},
+{
+  "id": "PY018",
+  "category": "Python",
+  "title": "What is Python encapsulation?",
+  "concept": "Encapsulation",
+  "explanation": "Encapsulation bundles data and methods within a class and controls access to them. Python uses naming conventions (single underscore for protected, double underscore for private) to indicate access levels. Encapsulation helps maintain data integrity and hides implementation details from users.",
+  "usage": "Encapsulation protects object data and provides controlled access through public methods.",
+  "keywords": [
+    "encapsulation",
+    "private",
+    "protected",
+    "public",
+    "data hiding",
+    "access control"
+  ]
+},
+{
+  "id": "PY019",
+  "category": "Python",
+  "title": "What is Python abstraction?",
+  "concept": "Abstraction",
+  "explanation": "Abstraction hides complex implementation details and shows only necessary features. Python provides abstract base classes using the abc module. Abstract classes define methods that must be implemented by child classes. Abstraction simplifies complex systems by focusing on essential characteristics.",
+  "usage": "Abstraction creates interfaces and base classes that define what methods child classes must implement.",
+  "keywords": [
+    "abstraction",
+    "abc",
+    "abstract class",
+    "interface",
+    "hiding",
+    "complexity"
+  ]
+},
+{
+  "id": "PY020",
+  "category": "Python",
+  "title": "What is Python exception handling?",
+  "concept": "Exception Handling",
+  "explanation": "Exception handling manages errors that occur during program execution using try, except, else, and finally blocks. Exceptions are Python objects representing errors. Proper exception handling prevents program crashes and provides meaningful error messages. Custom exceptions can be created by inheriting from the Exception class.",
+  "usage": "Exception handling catches and manages errors gracefully, allowing programs to handle unexpected situations.",
+  "keywords": [
+    "try",
+    "except",
+    "finally",
+    "raise",
+    "exception",
+    "error handling"
+  ]
+},
+{
+  "id": "PY021",
+  "category": "Python",
+  "title": "What are Python modules?",
+  "concept": "Modules",
+  "explanation": "Modules are Python files containing code that can be imported and used in other programs. Modules organize related functions, classes, and variables. Python's standard library includes many built-in modules. Custom modules promote code organization and reusability across projects.",
+  "usage": "Modules encapsulate related functionality that can be imported and reused in different programs.",
+  "keywords": [
+    "module",
+    "import",
+    "package",
+    "namespace",
+    "library",
+    "reusability"
+  ]
+},
+{
+  "id": "PY022",
+  "category": "Python",
+  "title": "What are Python packages?",
+  "concept": "Packages",
+  "explanation": "Packages are directories containing multiple modules and a special __init__.py file. Packages organize related modules into a hierarchical structure. They can contain sub-packages for complex projects. The __init__.py file can be empty or contain package initialization code.",
+  "usage": "Packages organize large projects by grouping related modules into a structured directory hierarchy.",
+  "keywords": [
+    "package",
+    "__init__",
+    "directory",
+    "namespace",
+    "hierarchy",
+    "organization"
+  ]
+},
+{
+  "id": "PY023",
+  "category": "Python",
+  "title": "What is Python file handling?",
+  "concept": "File Handling",
+  "explanation": "File handling in Python allows reading from and writing to files using the open() function. Files can be opened in different modes (read, write, append). The with statement ensures files are properly closed. Python supports text and binary file operations.",
+  "usage": "File handling enables programs to store data persistently and read external data sources.",
+  "keywords": [
+    "file",
+    "open",
+    "read",
+    "write",
+    "close",
+    "with",
+    "modes"
+  ]
+},
+{
+  "id": "PY024",
+  "category": "Python",
+  "title": "What are Python decorators?",
+  "concept": "Decorators",
+  "explanation": "Decorators are functions that modify the behavior of other functions or methods. They use the @decorator syntax and are placed above function definitions. Decorators enable adding functionality without modifying the original function code. Common uses include logging, timing, and access control.",
+  "usage": "Decorators wrap functions to add additional behavior like logging, validation, or caching without changing the function itself.",
+  "keywords": [
+    "decorator",
+    "@syntax",
+    "wrapper",
+    "function modification",
+    "metaprogramming"
+  ]
+},
+{
+  "id": "PY025",
+  "category": "Python",
+  "title": "What are Python generators?",
+  "concept": "Generators",
+  "explanation": "Generators are functions that use yield instead of return to produce a sequence of values lazily. They maintain state between calls and generate values on-demand. Generators are memory-efficient for large datasets because they don't store all values in memory. They implement the iterator protocol.",
+  "usage": "Generators create iterators that produce values one at a time, saving memory for large sequences.",
+  "keywords": [
+    "generator",
+    "yield",
+    "lazy evaluation",
+    "iterator",
+    "memory efficient"
+  ]
+},
+{
+  "id": "PY026",
+  "category": "Python",
+  "title": "What are Python iterators?",
+  "concept": "Iterators",
+  "explanation": "Iterators are objects that implement the __iter__() and __next__() methods. They allow sequential access to elements without exposing underlying structure. All Python sequences are iterable. Custom iterators can be created by implementing the iterator protocol.",
+  "usage": "Iterators provide a standard way to loop through elements of a collection or sequence.",
+  "keywords": [
+    "iterator",
+    "__iter__",
+    "__next__",
+    "iterable",
+    "protocol",
+    "StopIteration"
+  ]
+},
+{
+  "id": "PY027",
+  "category": "Python",
+  "title": "What is Python multithreading?",
+  "concept": "Multithreading",
+  "explanation": "Multithreading allows concurrent execution of multiple threads within a program. Python's threading module provides thread creation and management. Due to the Global Interpreter Lock (GIL), Python threads are better for I/O-bound tasks than CPU-bound tasks. Thread synchronization prevents race conditions.",
+  "usage": "Multithreading enables concurrent execution, especially useful for I/O operations like network requests or file operations.",
+  "keywords": [
+    "threading",
+    "concurrent",
+    "GIL",
+    "thread",
+    "synchronization",
+    "parallel"
+  ]
+},
+{
+  "id": "PY028",
+  "category": "Python",
+  "title": "What is Python multiprocessing?",
+  "concept": "Multiprocessing",
+  "explanation": "Multiprocessing creates separate processes that run independently with their own Python interpreter and memory. Unlike threading, multiprocessing bypasses the GIL enabling true parallel execution. The multiprocessing module provides process creation and inter-process communication. It's ideal for CPU-bound tasks.",
+  "usage": "Multiprocessing achieves true parallelism for CPU-intensive tasks by using separate processes.",
+  "keywords": [
+    "multiprocessing",
+    "process",
+    "parallel",
+    "CPU-bound",
+    "GIL bypass",
+    "concurrent"
+  ]
+},
+{
+  "id": "PY029",
+  "category": "Python",
+  "title": "What are Python regular expressions?",
+  "concept": "Regular Expressions",
+  "explanation": "Regular expressions (regex) are patterns used to match and manipulate text. Python's re module provides regex functionality including search, match, and substitution operations. Regex uses special characters and patterns to define search criteria. They're powerful for text processing and validation.",
+  "usage": "Regular expressions search, match, and manipulate text based on patterns for tasks like validation and extraction.",
+  "keywords": [
+    "regex",
+    "re module",
+    "pattern",
+    "search",
+    "match",
+    "text processing"
+  ]
+},
+{
+  "id": "PY030",
+  "category": "Python",
+  "title": "What is the Python range function?",
+  "concept": "Built-in Functions",
+  "explanation": "The range() function generates a sequence of numbers used commonly in for loops. Range takes start, stop, and step parameters and returns an immutable sequence. Range is memory-efficient as it generates numbers on-demand rather than storing them. Range objects are iterables.",
+  "usage": "Range generates number sequences for iteration, typically in for loops or creating numeric lists.",
+  "keywords": [
+    "range",
+    "sequence",
+    "iteration",
+    "numbers",
+    "immutable",
+    "generator"
+  ]
+},
+{
+  "id": "PY031",
+  "category": "Python",
+  "title": "What is the Python map function?",
+  "concept": "Built-in Functions",
+  "explanation": "The map() function applies a given function to all items in an iterable and returns a map object (iterator). Map is used with lambda functions or regular functions to transform data. It's a functional programming concept that avoids explicit loops. Map objects are lazy and generate values on-demand.",
+  "usage": "Map applies a transformation function to every element in a sequence without explicit loops.",
+  "keywords": [
+    "map",
+    "functional",
+    "transform",
+    "iterator",
+    "lambda",
+    "apply"
+  ]
+},
+{
+  "id": "PY032",
+  "category": "Python",
+  "title": "What is the Python filter function?",
+  "concept": "Built-in Functions",
+  "explanation": "The filter() function filters elements from an iterable based on a function that returns True or False. It returns a filter object (iterator) containing only elements for which the function returned True. Filter is commonly used with lambda functions for concise filtering logic.",
+  "usage": "Filter selects elements from a sequence that satisfy a given condition or predicate function.",
+  "keywords": [
+    "filter",
+    "predicate",
+    "conditional",
+    "iterator",
+    "lambda",
+    "selection"
+  ]
+},
+{
+  "id": "PY033",
+  "category": "Python",
+  "title": "What is the Python reduce function?",
+  "concept": "Built-in Functions",
+  "explanation": "The reduce() function from functools applies a binary function cumulatively to items in an iterable, reducing it to a single value. It takes pairs of elements and applies the function repeatedly. Reduce is useful for operations like summing all elements or finding products.",
+  "usage": "Reduce applies a function cumulatively to sequence elements, reducing them to a single accumulated value.",
+  "keywords": [
+    "reduce",
+    "functools",
+    "cumulative",
+    "accumulate",
+    "fold",
+    "aggregate"
+  ]
+},
+{
+  "id": "PY034",
+  "category": "Python",
+  "title": "What are Python *args and **kwargs?",
+  "concept": "Function Arguments",
+  "explanation": "*args allows functions to accept variable numbers of positional arguments as a tuple. **kwargs allows functions to accept variable numbers of keyword arguments as a dictionary. They provide flexibility in function definitions. The names args and kwargs are conventions but can be different.",
+  "usage": "*args and **kwargs enable functions to accept flexible numbers of arguments, both positional and keyword.",
+  "keywords": [
+    "args",
+    "kwargs",
+    "variable arguments",
+    "flexibility",
+    "unpacking",
+    "parameters"
+  ]
+},
+{
+  "id": "PY035",
+  "category": "Python",
+  "title": "What is Python JSON handling?",
+  "concept": "JSON",
+  "explanation": "Python's json module provides methods for encoding and decoding JSON data. json.dumps() converts Python objects to JSON strings, while json.loads() parses JSON strings to Python objects. JSON is commonly used for data exchange between applications and APIs. Python dictionaries map naturally to JSON objects.",
+  "usage": "JSON handling enables serialization of Python data for storage or transmission and parsing of JSON data.",
+  "keywords": [
+    "JSON",
+    "serialize",
+    "deserialize",
+    "dumps",
+    "loads",
+    "API"
+  ]
+},
+{
+  "id": "PY036",
+  "category": "Python",
+  "title": "What are Python context managers?",
+  "concept": "Context Managers",
+  "explanation": "Context managers handle resource setup and cleanup automatically using the with statement. They implement __enter__() and __exit__() methods. Common uses include file handling and database connections. Context managers ensure resources are properly released even if errors occur.",
+  "usage": "Context managers automate resource management, ensuring proper cleanup of resources like files and connections.",
+  "keywords": [
+    "context manager",
+    "with",
+    "__enter__",
+    "__exit__",
+    "resource management"
+  ]
+},
+{
+  "id": "PY037",
+  "category": "Python",
+  "title": "What are Python property decorators?",
+  "concept": "Properties",
+  "explanation": "The @property decorator creates getter methods that can be accessed like attributes. @property_name.setter creates setter methods for controlled attribute assignment. Properties enable encapsulation while maintaining simple attribute-like access. They allow adding validation or computation to attribute access.",
+  "usage": "Properties provide controlled access to attributes through getter and setter methods with simple syntax.",
+  "keywords": [
+    "property",
+    "getter",
+    "setter",
+    "decorator",
+    "encapsulation",
+    "validation"
+  ]
+},
+{
+  "id": "PY038",
+  "category": "Python",
+  "title": "What are Python static methods?",
+  "concept": "Methods",
+  "explanation": "Static methods are defined using @staticmethod decorator and don't receive self or cls as first argument. They belong to the class but don't access instance or class data. Static methods are utility functions related to the class but independent of instance state.",
+  "usage": "Static methods group utility functions within a class that don't need access to instance or class data.",
+  "keywords": [
+    "static method",
+    "@staticmethod",
+    "utility",
+    "class method",
+    "no self"
+  ]
+},
+{
+  "id": "PY039",
+  "category": "Python",
+  "title": "What are Python class methods?",
+  "concept": "Methods",
+  "explanation": "Class methods are defined using @classmethod decorator and receive the class as first argument (cls). They can access and modify class state applicable to all instances. Class methods are often used as alternative constructors or for operations affecting the entire class.",
+  "usage": "Class methods work with class-level data and can create alternative ways to instantiate classes.",
+  "keywords": [
+    "class method",
+    "@classmethod",
+    "cls",
+    "constructor",
+    "class state"
+  ]
+},
+{
+  "id": "PY040",
+  "category": "Python",
+  "title": "What is Python string formatting?",
+  "concept": "String Formatting",
+  "explanation": "Python offers multiple string formatting methods: % formatting (old style), str.format() method, and f-strings (formatted string literals). F-strings are the modern approach allowing embedded expressions inside braces. They support various format specifications for numbers, alignment, and padding.",
+  "usage": "String formatting creates formatted strings by inserting variables and expressions into templates.",
+  "keywords": [
+    "f-string",
+    "format",
+    "formatting",
+    "interpolation",
+    "template",
+    "literal"
+  ]
+},
+{
+  "id": "PY041",
+  "category": "Python",
+  "title": "What is Python slicing?",
+  "concept": "Slicing",
+  "explanation": "Slicing extracts portions of sequences using [start:stop:step] syntax. Start is inclusive, stop is exclusive. Negative indices count from the end. Omitted values use defaults (start=0, stop=len, step=1). Slicing creates shallow copies of the sliced portion.",
+  "usage": "Slicing extracts subsequences from lists, strings, tuples, and other sequences using index ranges.",
+  "keywords": [
+    "slicing",
+    "indexing",
+    "sequence",
+    "substring",
+    "sublist",
+    "range"
+  ]
+},
+{
+  "id": "PY042",
+  "category": "Python",
+  "title": "What is Python zip function?",
+  "concept": "Built-in Functions",
+  "explanation": "The zip() function combines multiple iterables element-wise into tuples. It returns a zip object (iterator) that stops when the shortest iterable is exhausted. Zip is commonly used to iterate over multiple sequences simultaneously or create dictionaries from separate key and value lists.",
+  "usage": "Zip combines multiple sequences into paired tuples for parallel iteration or dictionary creation.",
+  "keywords": [
+    "zip",
+    "combine",
+    "parallel",
+    "tuple",
+    "iterator",
+    "pairing"
+  ]
+},
+{
+  "id": "PY043",
+  "category": "Python",
+  "title": "What is Python enumerate function?",
+  "concept": "Built-in Functions",
+  "explanation": "The enumerate() function adds counters to iterables, returning tuples of (index, value). It starts from 0 by default but accepts a custom start value. Enumerate avoids manual counter management in loops. It's useful when you need both the index and value during iteration.",
+  "usage": "Enumerate provides automatic indexing when iterating over sequences, eliminating manual counter variables.",
+  "keywords": [
+    "enumerate",
+    "index",
+    "counter",
+    "iteration",
+    "tuple",
+    "loop"
+  ]
+},
+{
+  "id": "PY044",
+  "category": "Python",
+  "title": "What are Python comprehensions?",
+  "concept": "Comprehensions",
+  "explanation": "Python supports list, dictionary, and set comprehensions for creating collections concisely. Comprehensions combine loops and conditionals in single expressions. They're generally faster and more readable than traditional loops. Dictionary comprehensions create key-value pairs, while set comprehensions ensure uniqueness.",
+  "usage": "Comprehensions provide compact syntax for creating lists, dictionaries, and sets from existing sequences.",
+  "keywords": [
+    "comprehension",
+    "list",
+    "dict",
+    "set",
+    "concise",
+    "transformation"
+  ]
+},
+{
+  "id": "PY045",
+  "category": "Python",
+  "title": "What is Python None?",
+  "concept": "None",
+  "explanation": "None is Python's null value representing the absence of value or a null reference. It's the only instance of NoneType class. Functions without return statements return None by default. None is falsy in boolean contexts but distinct from False, 0, or empty collections.",
+  "usage": "None represents missing or null values, often used as default parameter values or to indicate no return value.",
+  "keywords": [
+    "None",
+    "null",
+    "NoneType",
+    "absence",
+    "default",
+    "singleton"
+  ]
+},
+{
+  "id": "PY046",
+  "category": "Python",
+  "title": "What is Python truthiness?",
+  "concept": "Boolean Logic",
+  "explanation": "In Python, all values have a truth value. Falsy values include False, None, 0, empty sequences, and empty collections. All other values are truthy. This allows using any value in boolean contexts. Understanding truthiness is crucial for conditional statements and logical operations.",
+  "usage": "Truthiness enables using any value in boolean contexts, simplifying conditional logic.",
+  "keywords": [
+    "truthy",
+    "falsy",
+    "boolean",
+    "conditional",
+    "logic",
+    "evaluation"
+  ]
+},
+{
+  "id": "PY047",
+  "category": "Python",
+  "title": "What is Python mutable vs immutable?",
+  "concept": "Mutability",
+  "explanation": "Mutable objects can be changed after creation (lists, dicts, sets). Immutable objects cannot be modified (strings, tuples, numbers). Immutability affects how objects are passed and stored. Mutable default arguments can cause bugs. Understanding mutability is crucial for avoiding unexpected behavior.",
+  "usage": "Mutability determines whether objects can be modified in place or require creating new objects.",
+  "keywords": [
+    "mutable",
+    "immutable",
+    "modification",
+    "reference",
+    "copy",
+    "behavior"
+  ]
+},
+{
+  "id": "PY048",
+  "category": "Python",
+  "title": "What is Python shallow vs deep copy?",
+  "concept": "Copying",
+  "explanation": "Shallow copy creates a new object but references the same nested objects. Deep copy creates completely independent objects including nested items. The copy module provides copy() for shallow and deepcopy() for deep copying. Understanding copying is important for avoiding unintended modifications.",
+  "usage": "Copying creates duplicates of objects, with shallow copy sharing nested references and deep copy creating full duplicates.",
+  "keywords": [
+    "shallow copy",
+    "deep copy",
+    "reference",
+    "duplicate",
+    "independent",
+    "copy module"
+  ]
+},
+{
+  "id": "PY049",
+  "category": "Python",
+  "title": "What are Python dunder methods?",
+  "concept": "Magic Methods",
+  "explanation": "Dunder (double underscore) methods are special methods like __init__, __str__, __repr__, __add__ that define how objects behave with built-in operations. They enable operator overloading and custom behavior. Classes can implement these to customize printing, comparison, arithmetic, and other operations.",
+  "usage": "Dunder methods customize how objects interact with Python's built-in operations and syntax.",
+  "keywords": [
+    "dunder",
+    "magic methods",
+    "__init__",
+    "__str__",
+    "operator overloading",
+    "special methods"
+  ]
+},
+{
+  "id": "PY050",
+  "category": "Python",
+  "title": "What is Python garbage collection?",
+  "concept": "Memory Management",
+  "explanation": "Python automatically manages memory through garbage collection. It uses reference counting as the primary method and a cyclic garbage collector for circular references. Objects are deleted when their reference count reaches zero. The gc module allows manual control of garbage collection.",
+  "usage": "Garbage collection automatically frees memory by removing objects that are no longer referenced.",
+  "keywords": [
+    "garbage collection",
+    "memory",
+    "reference counting",
+    "gc module",
+    "cleanup"
+  ]
+},
+{
+  "id": "PY051",
+  "category": "Python",
+  "title": "What is Python pip?",
+  "concept": "Package Management",
+  "explanation": "Pip is Python's package installer used to install and manage third-party libraries from PyPI (Python Package Index). Commands include pip install, pip uninstall, pip list, and pip freeze. Pip manages dependencies and versions. Requirements files specify project dependencies.",
+  "usage": "Pip installs and manages external Python packages and libraries for projects.",
+  "keywords": [
+    "pip",
+    "package",
+    "install",
+    "PyPI",
+    "dependencies",
+    "requirements"
+  ]
+},
+{
+  "id": "PY052",
+  "category": "Python",
+  "title": "What are Python virtual environments?",
+  "concept": "Virtual Environments",
+  "explanation": "Virtual environments create isolated Python environments for projects with independent dependencies. Tools include venv (built-in) and virtualenv. Each environment has its own Python interpreter and packages. Virtual environments prevent dependency conflicts between projects.",
+  "usage": "Virtual environments isolate project dependencies, allowing different projects to use different package versions.",
+  "keywords": [
+    "venv",
+    "virtualenv",
+    "isolation",
+    "dependencies",
+    "environment",
+    "project"
+  ]
+},
+{
+  "id": "PY053",
+  "category": "Python",
+  "title": "What is Python Flask?",
+  "concept": "Web Framework",
+  "explanation": "Flask is a lightweight web framework for building web applications and APIs. It follows the WSGI standard and provides routing, templating, and request handling. Flask is minimalist and extensible through extensions. It's ideal for small to medium applications and RESTful APIs.",
+  "usage": "Flask enables building web applications and APIs with minimal boilerplate code.",
+  "keywords": [
+    "Flask",
+    "web framework",
+    "API",
+    "routing",
+    "templates",
+    "WSGI"
+  ]
+},
+{
+  "id": "PY054",
+  "category": "Python",
+  "title": "What is Python Django?",
+  "concept": "Web Framework",
+  "explanation": "Django is a high-level web framework following the MTV (Model-Template-View) pattern. It includes ORM, authentication, admin interface, and many built-in features. Django emphasizes rapid development and clean design. It's batteries-included, providing everything needed for web development.",
+  "usage": "Django provides a complete framework for building full-featured web applications quickly.",
+  "keywords": [
+    "Django",
+    "MTV",
+    "ORM",
+    "web framework",
+    "full-stack",
+    "batteries-included"
+  ]
+},
+{
+  "id": "PY055",
+  "category": "Python",
+  "title": "What is Python SQLAlchemy?",
+  "concept": "Database",
+  "explanation": "SQLAlchemy is a SQL toolkit and ORM for Python. It provides both low-level database API and high-level ORM for mapping Python classes to database tables. SQLAlchemy supports multiple databases and offers powerful querying capabilities. It handles database connections, transactions, and migrations.",
+  "usage": "SQLAlchemy enables database operations through Python objects and provides database abstraction.",
+  "keywords": [
+    "SQLAlchemy",
+    "ORM",
+    "database",
+    "SQL",
+    "mapping",
+    "query"
+  ]
+},
+{
+  "id": "PY056",
+  "category": "Python",
+  "title": "What is Python requests library?",
+  "concept": "HTTP Library",
+  "explanation": "Requests is a popular HTTP library for making web requests. It simplifies sending GET, POST, PUT, DELETE requests. Requests handles sessions, cookies, authentication, and response parsing. It provides a more user-friendly API than urllib. The library is widely used for API consumption.",
+  "usage": "Requests library simplifies making HTTP requests to web APIs and downloading web content.",
+  "keywords": [
+    "requests",
+    "HTTP",
+    "API",
+    "GET",
+    "POST",
+    "web client"
+  ]
+},
+{
+  "id": "PY057",
+  "category": "Python",
+  "title": "What is Python BeautifulSoup?",
+  "concept": "Web Scraping",
+  "explanation": "BeautifulSoup is a library for parsing HTML and XML documents. It creates parse trees for extracting data from web pages. BeautifulSoup provides methods for searching and navigating the parse tree. It handles poorly formatted markup gracefully. Common use is web scraping.",
+  "usage": "BeautifulSoup parses HTML/XML to extract data from web pages for scraping and data mining.",
+  "keywords": [
+    "BeautifulSoup",
+    "parsing",
+    "HTML",
+    "XML",
+    "web scraping",
+    "extraction"
+  ]
+},
+{
+  "id": "PY058",
+  "category": "Python",
+  "title": "What is Python pandas?",
+  "concept": "Data Analysis",
+  "explanation": "Pandas is a data manipulation library providing DataFrame and Series structures. It offers powerful tools for data cleaning, transformation, and analysis. Pandas excels at handling tabular data with labeled rows and columns. It integrates well with other data science libraries.",
+  "usage": "Pandas enables efficient manipulation and analysis of structured data through DataFrames.",
+  "keywords": [
+    "pandas",
+    "DataFrame",
+    "data analysis",
+    "manipulation",
+    "Series",
+    "tabular"
+  ]
+},
+{
+  "id": "PY059",
+  "category": "Python",
+  "title": "What is Python NumPy?",
+  "concept": "Numerical Computing",
+  "explanation": "NumPy provides support for large multi-dimensional arrays and matrices. It offers mathematical functions for array operations. NumPy is the foundation for scientific computing in Python. Arrays are more efficient than Python lists for numerical operations. It enables vectorized operations avoiding explicit loops.",
+  "usage": "NumPy enables efficient numerical computations on large arrays and matrices.",
+  "keywords": [
+    "NumPy",
+    "arrays",
+    "numerical",
+    "matrices",
+    "scientific",
+    "vectorization"
+  ]
+},
+{
+  "id": "PY060",
+  "category": "Python",
+  "title": "What is Python matplotlib?",
+  "concept": "Data Visualization",
+  "explanation": "Matplotlib is a plotting library for creating static, animated, and interactive visualizations. It provides MATLAB-like interface and supports various plot types including line, bar, scatter, and histogram. Matplotlib offers fine control over plot appearance. It integrates with NumPy and pandas.",
+  "usage": "Matplotlib creates various types of charts and graphs for data visualization.",
+  "keywords": [
+    "matplotlib",
+    "plotting",
+    "visualization",
+    "charts",
+    "graphs",
+    "figures"
+  ]
+},
+{
+  "id": "PY061",
+  "category": "Python",
+  "title": "What is Python async/await?",
+  "concept": "Asynchronous Programming",
+  "explanation": "Async/await enables asynchronous programming using coroutines. The async keyword defines coroutine functions, await pauses execution until awaited operation completes. Asyncio is the standard library for async programming. Async code is efficient for I/O-bound operations without threading overhead.",
+  "usage": "Async/await enables concurrent execution of I/O operations without blocking the main thread.",
+  "keywords": [
+    "async",
+    "await",
+    "asyncio",
+    "coroutine",
+    "concurrent",
+    "non-blocking"
+  ]
+},
+{
+  "id": "PY062",
+  "category": "Python",
+  "title": "What are Python type hints?",
+  "concept": "Type Hints",
+  "explanation": "Type hints provide optional static typing for Python code. They specify expected types for function parameters and return values. Type hints improve code readability and enable better IDE support. Tools like mypy perform static type checking. Type hints don't affect runtime behavior.",
+  "usage": "Type hints document expected types and enable static type checking for better code quality.",
+  "keywords": [
+    "type hints",
+    "typing",
+    "annotations",
+    "static typing",
+    "mypy"
+  ]
+},
+{
+  "id": "PY063",
+  "category": "Python",
+  "title": "What is Python unittest?",
+  "concept": "Testing",
+  "explanation": "Unittest is Python's built-in testing framework based on xUnit. It provides test case classes, assertions, and test runners. Tests are organized in classes inheriting from unittest.TestCase. Unittest supports test fixtures, setUp, and tearDown methods. It enables automated testing and test discovery.",
+  "usage": "Unittest framework enables writing and running automated tests for Python code.",
+  "keywords": [
+    "unittest",
+    "testing",
+    "test case",
+    "assertions",
+    "fixtures",
+    "TDD"
+  ]
+},
+{
+  "id": "PY064",
+  "category": "Python",
+  "title": "What is Python pytest?",
+  "concept": "Testing",
+  "explanation": "Pytest is a popular testing framework offering simpler syntax than unittest. It uses plain assert statements and automatic test discovery. Pytest provides powerful fixtures, parametrization, and plugins. It generates detailed test reports and supports various testing scenarios. Pytest is widely used in the Python community.",
+  "usage": "Pytest simplifies writing and running tests with clean syntax and powerful features.",
+  "keywords": [
+    "pytest",
+    "testing",
+    "fixtures",
+    "parametrize",
+    "assertions",
+    "test discovery"
+  ]
+},
+{
+  "id": "PY065",
+  "category": "Python",
+  "title": "What is Python logging?",
+  "concept": "Logging",
+  "explanation": "The logging module provides flexible event logging for applications. It offers different severity levels (DEBUG, INFO, WARNING, ERROR, CRITICAL). Logging supports multiple handlers, formatters, and outputs. Configuration can be code-based or file-based. Proper logging is essential for debugging and monitoring.",
+  "usage": "Logging records application events and errors for debugging and monitoring purposes.",
+  "keywords": [
+    "logging",
+    "logger",
+    "handlers",
+    "levels",
+    "debug",
+    "monitoring"
+  ]
+},
+{
+  "id": "PY066",
+  "category": "Python",
+  "title": "What is Python datetime?",
+  "concept": "Date and Time",
+  "explanation": "The datetime module handles dates and times in Python. It provides date, time, datetime, and timedelta classes. Datetime supports date arithmetic, formatting, and parsing. It handles time zones through the timezone class. The module is essential for time-based operations.",
+  "usage": "Datetime module enables working with dates, times, and durations in Python applications.",
+  "keywords": [
+    "datetime",
+    "date",
+    "time",
+    "timedelta",
+    "formatting",
+    "timezone"
+  ]
+},
+{
+  "id": "PY067",
+  "category": "Python",
+  "title": "What is Python collections module?",
+  "concept": "Collections",
+  "explanation": "The collections module provides specialized container types beyond built-in ones. It includes Counter for counting, defaultdict for default values, OrderedDict for ordered dictionaries, and deque for efficient queue operations. These containers solve common programming patterns efficiently.",
+  "usage": "Collections module offers specialized data structures for specific use cases beyond basic types.",
+  "keywords": [
+    "collections",
+    "Counter",
+    "defaultdict",
+    "deque",
+    "OrderedDict",
+    "namedtuple"
+  ]
+},
+{
+  "id": "PY068",
+  "category": "Python",
+  "title": "What is Python os module?",
+  "concept": "Operating System",
+  "explanation": "The os module provides functions for interacting with the operating system. It handles file operations, directory navigation, environment variables, and process management. OS module works across different platforms with consistent interface. It's essential for file system operations and system-level tasks.",
+  "usage": "OS module enables interaction with the operating system for file and process operations.",
+  "keywords": [
+    "os",
+    "file system",
+    "directory",
+    "path",
+    "environment",
+    "platform"
+  ]
+},
+{
+  "id": "PY069",
+  "category": "Python",
+  "title": "What is Python pathlib?",
+  "concept": "Path Operations",
+  "explanation": "Pathlib provides object-oriented filesystem paths. It offers cleaner syntax than os.path for path operations. Path objects support operators for joining paths and methods for common operations. Pathlib handles platform differences automatically. It's the modern way to work with file paths.",
+  "usage": "Pathlib provides intuitive object-oriented interface for working with filesystem paths.",
+  "keywords": [
+    "pathlib",
+    "Path",
+    "filesystem",
+    "object-oriented",
+    "paths",
+    "files"
+  ]
+},
+{
+  "id": "PY070",
+  "category": "Python",
+  "title": "What is Python subprocess?",
+  "concept": "Process Management",
+  "explanation": "The subprocess module allows spawning new processes, connecting to their pipes, and obtaining return codes. It replaces older modules like os.system. Subprocess can capture output, send input, and handle errors. It's used for running external commands and programs from Python.",
+  "usage": "Subprocess module enables running and controlling external processes from Python code.",
+  "keywords": [
+    "subprocess",
+    "process",
+    "run",
+    "Popen",
+    "shell",
+    "external"
+  ]
+},
+{
+  "id": "PY071",
+  "category": "Python",
+  "title": "What is Python argparse?",
+  "concept": "Command Line",
+  "explanation": "Argparse creates command-line interfaces for Python scripts. It parses command-line arguments and generates help messages automatically. Argparse supports positional arguments, optional arguments, and subcommands. It validates input and provides clear error messages. Essential for creating CLI applications.",
+  "usage": "Argparse simplifies creating command-line interfaces with argument parsing and help generation.",
+  "keywords": [
+    "argparse",
+    "CLI",
+    "command line",
+    "arguments",
+    "parser",
+    "interface"
+  ]
+},
+{
+  "id": "PY072",
+  "category": "Python",
+  "title": "What is Python pickle?",
+  "concept": "Serialization",
+  "explanation": "Pickle serializes Python objects to binary format for storage or transmission. It can pickle most Python objects including custom classes. Pickle preserves object structure and relationships. However, pickled data is Python-specific and can be insecure. Use JSON for cross-language compatibility.",
+  "usage": "Pickle serializes and deserializes Python objects for persistent storage or transfer.",
+  "keywords": [
+    "pickle",
+    "serialization",
+    "binary",
+    "dump",
+    "load",
+    "persistence"
+  ]
+},
+{
+  "id": "PY073",
+  "category": "Python",
+  "title": "What is Python socket programming?",
+  "concept": "Networking",
+  "explanation": "The socket module provides low-level networking interfaces. It enables creating TCP/IP and UDP connections for network communication. Sockets support client-server architecture and data transmission. Socket programming is fundamental for network applications and protocols.",
+  "usage": "Socket module enables network communication through TCP/IP and UDP protocols.",
+  "keywords": [
+    "socket",
+    "networking",
+    "TCP",
+    "UDP",
+    "client",
+    "server"
+  ]
+},
+{
+  "id": "PY074",
+  "category": "Python",
+  "title": "What is Python threading lock?",
+  "concept": "Thread Synchronization",
+  "explanation": "Locks prevent race conditions in multithreaded programs by ensuring only one thread accesses shared resources at a time. The threading module provides Lock, RLock (reentrant), and Semaphore. Locks are acquired before accessing shared data and released afterward. Proper locking prevents data corruption.",
+  "usage": "Locks synchronize thread access to shared resources preventing race conditions and data corruption.",
+  "keywords": [
+    "lock",
+    "threading",
+    "synchronization",
+    "race condition",
+    "mutex",
+    "RLock"
+  ]
+},
+{
+  "id": "PY075",
+  "category": "Python",
+  "title": "What is Python Queue?",
+  "concept": "Thread-safe Data Structures",
+  "explanation": "The Queue class provides thread-safe FIFO data structure from the queue module. It handles synchronization automatically for multi-threaded scenarios. Queue blocks when empty (get) or full (put if maxsize set). Useful for producer-consumer patterns and task distribution.",
+  "usage": "Queue provides thread-safe communication and task distribution between threads.",
+  "keywords": [
+    "Queue",
+    "FIFO",
+    "thread-safe",
+    "producer-consumer",
+    "blocking",
+    "synchronization"
+  ]
+},
+{
+  "id": "PY076",
+  "category": "Python",
+  "title": "What is Python CSV handling?",
+  "concept": "CSV",
+  "explanation": "The csv module reads and writes CSV (Comma-Separated Values) files. It provides reader and writer objects with DictReader and DictWriter for working with dictionaries. CSV module handles quoting, delimiters, and formatting automatically. Essential for data import/export.",
+  "usage": "CSV module enables reading from and writing to CSV files for data interchange.",
+  "keywords": [
+    "csv",
+    "reader",
+    "writer",
+    "DictReader",
+    "data",
+    "tabular"
+  ]
+},
+{
+  "id": "PY077",
+  "category": "Python",
+  "title": "What is Python XML parsing?",
+  "concept": "XML",
+  "explanation": "Python provides xml.etree.ElementTree for parsing and creating XML. It offers tree-based API for XML manipulation. ElementTree supports finding elements, accessing attributes, and modifying XML structure. Alternative parsers include lxml for performance and additional features.",
+  "usage": "XML parsing enables reading, modifying, and creating XML documents in Python.",
+  "keywords": [
+    "XML",
+    "ElementTree",
+    "parsing",
+    "tree",
+    "elements",
+    "attributes"
+  ]
+},
+{
+  "id": "PY078",
+  "category": "Python",
+  "title": "What is Python namedtuple?",
+  "concept": "Collections",
+  "explanation": "Namedtuple creates tuple subclasses with named fields from collections module. Fields are accessible by name and position. Namedtuples are immutable like tuples but more readable. They're memory-efficient alternatives to classes for simple data structures. Useful for returning multiple values from functions.",
+  "usage": "Namedtuple provides readable tuple-like objects with named fields instead of numeric indices.",
+  "keywords": [
+    "namedtuple",
+    "collections",
+    "immutable",
+    "fields",
+    "readable",
+    "tuple"
+  ]
+},
+{
+  "id": "PY079",
+  "category": "Python",
+  "title": "What is Python dataclass?",
+  "concept": "Data Classes",
+  "explanation": "Dataclasses (from Python 3.7+) automatically generate special methods for classes that store data. The @dataclass decorator adds __init__, __repr__, and __eq__ methods. Dataclasses reduce boilerplate code for simple classes. They support default values, type hints, and immutability (frozen=True).",
+  "usage": "Dataclasses simplify creating classes that primarily store data with less boilerplate.",
+  "keywords": [
+    "dataclass",
+    "decorator",
+    "data",
+    "boilerplate",
+    "fields",
+    "frozen"
+  ]
+},
+{
+  "id": "PY080",
+  "category": "Python",
+  "title": "What is Python functools?",
+  "concept": "Functional Programming",
+  "explanation": "Functools module provides higher-order functions including partial, reduce, lru_cache, and wraps. It supports functional programming patterns. Partial creates new functions with preset arguments. Lru_cache memoizes function results. Wraps preserves metadata when creating decorators.",
+  "usage": "Functools offers utilities for functional programming and function manipulation.",
+  "keywords": [
+    "functools",
+    "partial",
+    "reduce",
+    "lru_cache",
+    "wraps",
+    "functional"
+  ]
+},
+{
+  "id": "PY081",
+  "category": "Python",
+  "title": "What is Python itertools?",
+  "concept": "Iterators",
+  "explanation": "Itertools provides functions creating iterators for efficient looping. It includes count, cycle, repeat, chain, combinations, and permutations. These functions are memory-efficient using lazy evaluation. Itertools enables functional programming patterns and complex iterations concisely.",
+  "usage": "Itertools offers iterator-building blocks for efficient and elegant iterations.",
+  "keywords": [
+    "itertools",
+    "iterators",
+    "combinations",
+    "permutations",
+    "chain",
+    "cycle"
+  ]
+},
+{
+  "id": "PY082",
+  "category": "Python",
+  "title": "What is Python defaultdict?",
+  "concept": "Collections",
+  "explanation": "Defaultdict from collections module provides default values for missing keys. It accepts a factory function that generates default values when accessing non-existent keys. This eliminates need for key existence checks. Common uses include counting and grouping operations.",
+  "usage": "Defaultdict automatically creates default values for missing dictionary keys.",
+  "keywords": [
+    "defaultdict",
+    "collections",
+    "default",
+    "factory",
+    "dictionary",
+    "automatic"
+  ]
+},
+{
+  "id": "PY083",
+  "category": "Python",
+  "title": "What is Python Counter?",
+  "concept": "Collections",
+  "explanation": "Counter from collections is a dict subclass for counting hashable objects. It provides convenient counting operations and methods like most_common. Counter supports arithmetic operations between counters. Useful for tallying occurrences and frequency analysis.",
+  "usage": "Counter efficiently counts occurrences of elements and provides counting utilities.",
+  "keywords": [
+    "Counter",
+    "collections",
+    "counting",
+    "frequency",
+    "most_common",
+    "tally"
+  ]
+},
+{
+  "id": "PY084",
+  "category": "Python",
+  "title": "What is Python deque?",
+  "concept": "Collections",
+  "explanation": "Deque (double-ended queue) from collections supports adding and removing elements from both ends efficiently. It's implemented as a doubly-linked list. Deque is preferred over list for queue operations due to O(1) append/pop at both ends. Supports maxlen for bounded queues.",
+  "usage": "Deque provides efficient queue and stack operations with fast operations at both ends.",
+  "keywords": [
+    "deque",
+    "collections",
+    "queue",
+    "double-ended",
+    "efficient",
+    "append"
+  ]
+},
+{
+  "id": "PY085",
+  "category": "Python",
+  "title": "What is Python yield from?",
+  "concept": "Generators",
+  "explanation": "Yield from delegates part of a generator's operations to another generator. It simplifies code when a generator needs to yield values from a sub-generator. Yield from handles sending values and exceptions to the sub-generator. Introduced in Python 3.3 for cleaner generator composition.",
+  "usage": "Yield from delegates to sub-generators, simplifying generator composition and iteration.",
+  "keywords": [
+    "yield from",
+    "generator",
+    "delegation",
+    "sub-generator",
+    "composition"
+  ]
+},
+{
+  "id": "PY086",
+  "category": "Python",
+  "title": "What is Python walrus operator?",
+  "concept": "Assignment Expression",
+  "explanation": "The walrus operator (:=) is an assignment expression introduced in Python 3.8. It assigns values within expressions, reducing code repetition. Common uses include while loops and list comprehensions. The operator helps when you need both the value and want to use it immediately.",
+  "usage": "Walrus operator assigns and returns values in single expressions for concise code.",
+  "keywords": [
+    "walrus",
+    ":=",
+    "assignment expression",
+    "inline",
+    "Python 3.8"
+  ]
+},
+{
+  "id": "PY087",
+  "category": "Python",
+  "title": "What is Python match statement?",
+  "concept": "Pattern Matching",
+  "explanation": "Match statement (Python 3.10+) provides structural pattern matching similar to switch statements. It matches values against patterns and executes corresponding code. Match supports complex patterns including sequences, mappings, and classes. More powerful than traditional if-elif chains for certain scenarios.",
+  "usage": "Match statement enables pattern matching for cleaner conditional logic based on structure.",
+  "keywords": [
+    "match",
+    "case",
+    "pattern matching",
+    "structural",
+    "Python 3.10",
+    "switch"
+  ]
+},
+{
+  "id": "PY088",
+  "category": "Python",
+  "title": "What is Python weakref?",
+  "concept": "Weak References",
+  "explanation": "Weakref module creates weak references to objects without preventing garbage collection. Weak references don't increase reference count. Useful for caches, observers, and breaking circular references. Weakref.ref creates weak references, weakref.proxy creates proxy objects.",
+  "usage": "Weak references allow referencing objects without preventing their garbage collection.",
+  "keywords": [
+    "weakref",
+    "weak reference",
+    "garbage collection",
+    "cache",
+    "circular"
+  ]
+},
+{
+  "id": "PY089",
+  "category": "Python",
+  "title": "What is Python metaclass?",
+  "concept": "Metaclasses",
+  "explanation": "Metaclasses are classes of classes that define how classes behave. They control class creation and can modify class attributes and methods. Type is the default metaclass. Metaclasses enable advanced metaprogramming but should be used sparingly. They're defined by setting __metaclass__ or inheriting.",
+  "usage": "Metaclasses customize class creation and behavior for advanced metaprogramming scenarios.",
+  "keywords": [
+    "metaclass",
+    "type",
+    "metaprogramming",
+    "class creation",
+    "advanced"
+  ]
+},
+{
+  "id": "PY090",
+  "category": "Python",
+  "title": "What is Python descriptor?",
+  "concept": "Descriptors",
+  "explanation": "Descriptors are objects defining attribute access behavior through __get__, __set__, and __delete__ methods. Properties, methods, and classmethod use descriptors. Descriptors enable fine-grained control over attribute access. They're fundamental to Python's object model but rarely needed explicitly.",
+  "usage": "Descriptors customize attribute access and assignment behavior in classes.",
+  "keywords": [
+    "descriptor",
+    "__get__",
+    "__set__",
+    "attribute",
+    "protocol",
+    "property"
+  ]
+},
+{
+  "id": "PY091",
+  "category": "Python",
+  "title": "What is Python slots?",
+  "concept": "Memory Optimization",
+  "explanation": "__slots__ restricts instance attributes to a fixed set, saving memory by avoiding __dict__ creation. Slots improve memory efficiency for classes with many instances. However, slots prevent adding new attributes dynamically. Trade-off between flexibility and memory usage.",
+  "usage": "__slots__ reduces memory usage by limiting instance attributes to predefined set.",
+  "keywords": [
+    "__slots__",
+    "memory",
+    "optimization",
+    "attributes",
+    "efficiency",
+    "__dict__"
+  ]
+},
+{
+  "id": "PY092",
+  "category": "Python",
+  "title": "What is Python GIL?",
+  "concept": "Global Interpreter Lock",
+  "explanation": "The Global Interpreter Lock (GIL) is a mutex preventing multiple threads from executing Python bytecode simultaneously. GIL ensures thread safety but limits CPU parallelism. Multiprocessing bypasses GIL for CPU-bound tasks. Understanding GIL is crucial for performance optimization.",
+  "usage": "GIL affects Python threading performance, making multiprocessing better for CPU-intensive tasks.",
+  "keywords": [
+    "GIL",
+    "threading",
+    "parallelism",
+    "mutex",
+    "performance",
+    "lock"
+  ]
+},
+{
+  "id": "PY093",
+  "category": "Python",
+  "title": "What is Python __name__ == '__main__'?",
+  "concept": "Module Execution",
+  "explanation": "The __name__ variable indicates whether a module is run directly or imported. When run directly, __name__ equals '__main__'. This pattern allows modules to be both importable and executable. Code under this condition runs only when the file is executed directly.",
+  "usage": "This pattern distinguishes between module import and direct execution.",
+  "keywords": [
+    "__name__",
+    "__main__",
+    "module",
+    "execution",
+    "import",
+    "entry point"
+  ]
+},
+{
+  "id": "PY094",
+  "category": "Python",
+  "title": "What is Python __init__.py?",
+  "concept": "Packages",
+  "explanation": "__init__.py marks directories as Python packages. It can be empty or contain package initialization code. It controls what's imported with 'from package import *' using __all__. Since Python 3.3, namespace packages don't require __init__.py but it's still commonly used.",
+  "usage": "__init__.py designates package directories and can initialize package-level code.",
+  "keywords": [
+    "__init__.py",
+    "package",
+    "initialization",
+    "__all__",
+    "import",
+    "namespace"
+  ]
+},
+{
+  "id": "PY095",
+  "category": "Python",
+  "title": "What is Python __str__ vs __repr__?",
+  "concept": "String Representation",
+  "explanation": "__str__ provides readable string representation for end users. __repr__ provides unambiguous representation for developers, ideally recreating the object. Print uses __str__, repr() uses __repr__. If __str__ isn't defined, Python falls back to __repr__. Both are dunder methods.",
+  "usage": "__str__ and __repr__ define how objects are converted to strings for different audiences.",
+  "keywords": [
+    "__str__",
+    "__repr__",
+    "string",
+    "representation",
+    "print",
+    "dunder"
+  ]
+},
+{
+  "id": "PY096",
+  "category": "Python",
+  "title": "What is Python super()?",
+  "concept": "Inheritance",
+  "explanation": "Super() returns a proxy object allowing access to parent class methods. It's used to call parent constructors and methods from child classes. Super enables cooperative multiple inheritance. Modern Python uses super() without arguments in instance methods.",
+  "usage": "Super() accesses parent class methods, especially for calling parent constructors.",
+  "keywords": [
+    "super",
+    "inheritance",
+    "parent",
+    "MRO",
+    "cooperative",
+    "override"
+  ]
+},
+{
+  "id": "PY097",
+  "category": "Python",
+  "title": "What is Python MRO?",
+  "concept": "Method Resolution Order",
+  "explanation": "MRO determines the order in which base classes are searched when executing methods. Python uses C3 linearization algorithm. MRO prevents ambiguity in multiple inheritance. It's accessible via __mro__ attribute or mro() method. Understanding MRO is crucial for complex inheritance hierarchies.",
+  "usage": "MRO defines the order classes are searched for methods in inheritance hierarchies.",
+  "keywords": [
+    "MRO",
+    "method resolution",
+    "inheritance",
+    "C3",
+    "linearization",
+    "__mro__"
+  ]
+},
+{
+  "id": "PY098",
+  "category": "Python",
+  "title": "What is Python with statement?",
+  "concept": "Context Managers",
+  "explanation": "The with statement simplifies resource management by ensuring cleanup code executes. It works with context managers implementing __enter__ and __exit__. Common uses include file handling, locks, and database connections. With statements make code cleaner and prevent resource leaks.",
+  "usage": "With statement ensures proper resource acquisition and release using context managers.",
+  "keywords": [
+    "with",
+    "context manager",
+    "resource",
+    "cleanup",
+    "__enter__",
+    "__exit__"
+  ]
+},
+{
+  "id": "PY099",
+  "category": "Python",
+  "title": "What is Python is vs ==?",
+  "concept": "Identity vs Equality",
+  "explanation": "'Is' checks identity (same object in memory), '==' checks equality (same value). 'Is' compares object ids. Use 'is' for None, True, False. Use '==' for value comparison. Understanding the difference prevents subtle bugs with object comparison.",
+  "usage": "'Is' checks object identity while '==' checks value equality.",
+  "keywords": [
+    "is",
+    "==",
+    "identity",
+    "equality",
+    "comparison",
+    "None"
+  ]
+},
+{
+  "id": "PY100",
+  "category": "Python",
+  "title": "What is Python all() and any()?",
+  "concept": "Built-in Functions",
+  "explanation": "All() returns True if all elements in iterable are truthy. Any() returns True if at least one element is truthy. Both short-circuit and return early when result is determined. They're commonly used for validation and conditional logic with iterables.",
+  "usage": "All() and any() test if all or any elements in an iterable satisfy conditions.",
+  "keywords": [
+    "all",
+    "any",
+    "boolean",
+    "iterable",
+    "validation",
+    "short-circuit"
+  ]
+},
+{
+  "id": "PY101",
+  "category": "Python",
+  "title": "What is Python input() and print()?",
+  "concept": "Input/Output",
+  "explanation": "Input() reads a line from user input and returns it as a string. Print() outputs values to console with automatic newline. Print accepts multiple arguments, sep and end parameters. These are fundamental for console-based interaction with users.",
+  "usage": "Input() reads user input while print() displays output to the console.",
+  "keywords": [
+    "input",
+    "print",
+    "console",
+    "output",
+    "I/O",
+    "user input"
+  ]
+},
+{
+  "id": "PY102",
+  "category": "Python",
+  "title": "What is Python try-except-else-finally?",
+  "concept": "Exception Handling",
+  "explanation": "Try block contains code that might raise exceptions. Except catches specific exceptions. Else executes if no exception occurs. Finally always executes for cleanup. Multiple except blocks handle different exception types. This structure enables robust error handling.",
+  "usage": "Try-except-else-finally provides comprehensive exception handling with cleanup guarantees.",
+  "keywords": [
+    "try",
+    "except",
+    "else",
+    "finally",
+    "exception",
+    "error handling"
+  ]
+},
+{
+  "id": "PY103",
+  "category": "Python",
+  "title": "What is Python raise statement?",
+  "concept": "Exceptions",
+  "explanation": "Raise statement triggers exceptions manually. It can raise built-in or custom exceptions. Raise can re-raise caught exceptions or raise new ones with context. Proper use of raise helps enforce contracts and signal errors. Exception messages should be descriptive.",
+  "usage": "Raise manually triggers exceptions to signal errors or exceptional conditions.",
+  "keywords": [
+    "raise",
+    "exception",
+    "throw",
+    "error",
+    "custom exception",
+    "signal"
+  ]
+},
+{
+  "id": "PY104",
+  "category": "Python",
+  "title": "What is Python assert statement?",
+  "concept": "Assertions",
+  "explanation": "Assert tests conditions during development and raises AssertionError if false. Assertions can include error messages. They're removed when Python runs with -O flag. Use assertions for debugging and testing invariants, not production error handling.",
+  "usage": "Assert validates conditions during development, raising errors when assumptions fail.",
+  "keywords": [
+    "assert",
+    "AssertionError",
+    "debugging",
+    "testing",
+    "invariant",
+    "condition"
+  ]
+},
+{
+  "id": "PY105",
+  "category": "Python",
+  "title": "What is Python breakpoint()?",
+  "concept": "Debugging",
+  "explanation": "Breakpoint() drops into the debugger at the point it's called (Python 3.7+). It respects PYTHONBREAKPOINT environment variable. Default debugger is pdb. Breakpoint simplifies debugging compared to import pdb; pdb.set_trace(). Useful for interactive debugging sessions.",
+  "usage": "Breakpoint() pauses execution and starts interactive debugger for code inspection.",
+  "keywords": [
+    "breakpoint",
+    "debugging",
+    "pdb",
+    "interactive",
+    "Python 3.7",
+    "debugger"
+  ]
+},
+{
+  "id": "PY106",
+  "category": "Python",
+  "title": "What is Python globals() and locals()?",
+  "concept": "Namespaces",
+  "explanation": "Globals() returns dictionary of global namespace. Locals() returns dictionary of local namespace. These provide introspection capabilities. Modifying globals() affects global variables. Locals() is read-only in function scope. Useful for debugging and metaprogramming.",
+  "usage": "Globals() and locals() provide access to namespace dictionaries for introspection.",
+  "keywords": [
+    "globals",
+    "locals",
+    "namespace",
+    "scope",
+    "dictionary",
+    "variables"
+  ]
+},
+{
+  "id": "PY107",
+  "category": "Python",
+  "title": "What is Python eval() and exec()?",
+  "concept": "Dynamic Execution",
+  "explanation": "Eval() evaluates Python expressions and returns the result. Exec() executes Python statements but returns None. Both accept optional globals and locals dictionaries. They're powerful but dangerous with untrusted input. Use ast.literal_eval for safer evaluation of literals.",
+  "usage": "Eval() and exec() execute Python code dynamically from strings but pose security risks.",
+  "keywords": [
+    "eval",
+    "exec",
+    "dynamic",
+    "execution",
+    "security",
+    "expression"
+  ]
+},
+{
+  "id": "PY108",
+  "category": "Python",
+  "title": "What is Python compile()?",
+  "concept": "Code Compilation",
+  "explanation": "Compile() compiles Python source code into code objects. Code objects can be executed with exec() or eval(). Compile mode can be 'exec', 'eval', or 'single'. Useful for executing code multiple times efficiently. Provides performance benefit over repeated eval/exec of strings.",
+  "usage": "Compile() converts code strings to executable code objects for efficient repeated execution.",
+  "keywords": [
+    "compile",
+    "code object",
+    "bytecode",
+    "execution",
+    "performance"
+  ]
+},
+{
+  "id": "PY109",
+  "category": "Python",
+  "title": "What is Python getattr() and setattr()?",
+  "concept": "Attribute Access",
+  "explanation": "Getattr() retrieves attribute value by name string. Setattr() sets attribute value. Hasattr() checks attribute existence. Delattr() removes attributes. These enable dynamic attribute access. Useful for metaprogramming and working with unknown attributes at runtime.",
+  "usage": "Getattr() and setattr() access and modify object attributes dynamically using strings.",
+  "keywords": [
+    "getattr",
+    "setattr",
+    "hasattr",
+    "delattr",
+    "dynamic",
+    "attributes"
+  ]
+},
+{
+  "id": "PY110",
+  "category": "Python",
+  "title": "What is Python isinstance() and type()?",
+  "concept": "Type Checking",
+  "explanation": "Isinstance() checks if object is instance of class or tuple of classes. Type() returns object's type. Isinstance respects inheritance while type() does exact matching. Isinstance is preferred for type checking. Type() is useful for getting class information.",
+  "usage": "Isinstance() checks object types respecting inheritance while type() returns exact type.",
+  "keywords": [
+    "isinstance",
+    "type",
+    "type checking",
+    "inheritance",
+    "class",
+    "validation"
+  ]
+},
+{
+  "id": "PY111",
+  "category": "Python",
+  "title": "What is Python dir()?",
+  "concept": "Introspection",
+  "explanation": "Dir() returns list of names in current scope or attributes of an object. Without arguments, it lists current scope. With object argument, it lists object attributes. Useful for exploring objects and debugging. Results include special methods starting with underscores.",
+  "usage": "Dir() lists attributes and methods of objects for exploration and debugging.",
+  "keywords": [
+    "dir",
+    "introspection",
+    "attributes",
+    "methods",
+    "exploration",
+    "debugging"
+  ]
+},
+{
+  "id": "PY112",
+  "category": "Python",
+  "title": "What is Python id()?",
+  "concept": "Object Identity",
+  "explanation": "Id() returns unique integer identifier for object's memory address. IDs remain constant during object lifetime. Two objects with same id are the same object. Used to check object identity. CPython uses memory address as id but implementation may vary.",
+  "usage": "Id() provides unique identifier for objects based on memory location.",
+  "keywords": [
+    "id",
+    "identity",
+    "memory",
+    "address",
+    "unique",
+    "object"
+  ]
+},
+{
+  "id": "PY113",
+  "category": "Python",
+  "title": "What is Python help()?",
+  "concept": "Documentation",
+  "explanation": "Help() displays documentation for modules, functions, classes, and methods. It shows docstrings and signatures. Can be called without arguments for interactive help. Essential for learning about objects and libraries. Docstrings should be written for help() output.",
+  "usage": "Help() displays interactive documentation for Python objects and modules.",
+  "keywords": [
+    "help",
+    "documentation",
+    "docstring",
+    "interactive",
+    "learning",
+    "reference"
+  ]
+},
+{
+  "id": "PY114",
+  "category": "Python",
+  "title": "What are Python docstrings?",
+  "concept": "Documentation",
+  "explanation": "Docstrings are string literals appearing as first statement in module, function, class, or method. They document code purpose and usage. Accessible via __doc__ attribute or help(). Follow PEP 257 conventions. Triple quotes allow multi-line docstrings. Essential for code documentation.",
+  "usage": "Docstrings provide inline documentation for Python code elements.",
+  "keywords": [
+    "docstring",
+    "documentation",
+    "triple quotes",
+    "__doc__",
+    "PEP 257",
+    "comments"
+  ]
+},
+{
+  "id": "PY115",
+  "category": "Python",
+  "title": "What is Python PEP 8?",
+  "concept": "Style Guide",
+  "explanation": "PEP 8 is Python's official style guide defining code formatting conventions. It covers naming, indentation, line length, imports, and more. Following PEP 8 improves code readability and consistency. Tools like pylint and flake8 check PEP 8 compliance. Consistency matters more than strict adherence.",
+  "usage": "PEP 8 provides style guidelines for writing readable and consistent Python code.",
+  "keywords": [
+    "PEP 8",
+    "style guide",
+    "formatting",
+    "conventions",
+    "readability",
+    "standards"
+  ]
+},
+{
+  "id": "PY116",
+  "category": "Python",
+  "title": "What is Python operator overloading?",
+  "concept": "Operator Overloading",
+  "explanation": "Operator overloading allows custom behavior for operators with user-defined classes. Special methods like __add__, __mul__, __eq__ define operator behavior. This makes objects work with standard operators intuitively. Common in mathematical and container classes.",
+  "usage": "Operator overloading defines custom behavior for operators in user classes.",
+  "keywords": [
+    "operator overloading",
+    "special methods",
+    "operators",
+    "custom behavior",
+    "dunder"
+  ]
+},
+{
+  "id": "PY117",
+  "category": "Python",
+  "title": "What is Python monkey patching?",
+  "concept": "Monkey Patching",
+  "explanation": "Monkey patching modifies classes or modules at runtime. It changes behavior without modifying source code. Useful for testing and temporary fixes but can cause maintenance issues. Should be used sparingly and documented clearly. Considered a code smell in production.",
+  "usage": "Monkey patching modifies code behavior at runtime, useful for testing but risky.",
+  "keywords": [
+    "monkey patching",
+    "runtime",
+    "modification",
+    "testing",
+    "dynamic",
+    "anti-pattern"
+  ]
+},
+{
+  "id": "PY118",
+  "category": "Python",
+  "title": "What is Python mocking?",
+  "concept": "Testing",
+  "explanation": "Mocking replaces real objects with mock objects for testing. The unittest.mock module provides Mock and patch. Mocks record calls and can specify return values. Essential for testing code with external dependencies. Enables isolated unit testing.",
+  "usage": "Mocking creates fake objects for testing code with dependencies in isolation.",
+  "keywords": [
+    "mock",
+    "testing",
+    "unittest.mock",
+    "patch",
+    "isolation",
+    "dependencies"
+  ]
+},
+{
+  "id": "PY119",
+  "category": "Python",
+  "title": "What is Python fixtures?",
+  "concept": "Testing",
+  "explanation": "Fixtures provide consistent test environments and data. Pytest fixtures use @pytest.fixture decorator. They handle setup and teardown automatically. Fixtures can have different scopes (function, class, module). They enable code reuse across tests and ensure clean test states.",
+  "usage": "Fixtures set up test prerequisites and handle cleanup automatically.",
+  "keywords": [
+    "fixtures",
+    "pytest",
+    "setup",
+    "teardown",
+    "testing",
+    "scope"
+  ]
+},
+{
+  "id": "PY120",
+  "category": "Python",
+  "title": "What is Python parameterized testing?",
+  "concept": "Testing",
+  "explanation": "Parameterized testing runs same test with different inputs. Pytest uses @pytest.mark.parametrize decorator. It generates multiple test cases from parameter combinations. Reduces code duplication in tests. Makes it easy to add new test cases.",
+  "usage": "Parameterized testing runs tests with multiple input combinations to reduce duplication.",
+  "keywords": [
+    "parametrize",
+    "testing",
+    "pytest",
+    "parameters",
+    "test cases",
+    "inputs"
+  ]
+},
+{
+  "id": "PY121",
+  "category": "Python",
+  "title": "What is Python code coverage?",
+  "concept": "Testing",
+  "explanation": "Code coverage measures how much code is executed during tests. Coverage.py is the standard tool. It generates reports showing tested and untested lines. High coverage doesn't guarantee quality but identifies untested code. Aim for meaningful tests, not just high percentages.",
+  "usage": "Code coverage measures what percentage of code is executed by tests.",
+  "keywords": [
+    "coverage",
+    "testing",
+    "coverage.py",
+    "metrics",
+    "quality",
+    "report"
+  ]
+},
+{
+  "id": "PY122",
+  "category": "Python",
+  "title": "What is Python profiling?",
+  "concept": "Performance",
+  "explanation": "Profiling measures where programs spend time and resources. Python provides cProfile module for profiling. Line_profiler profiles line-by-line execution. Memory_profiler tracks memory usage. Profiling identifies bottlenecks before optimization. Essential for performance tuning.",
+  "usage": "Profiling identifies performance bottlenecks by measuring execution time and resource usage.",
+  "keywords": [
+    "profiling",
+    "performance",
+    "cProfile",
+    "optimization",
+    "bottleneck",
+    "timing"
+  ]
+},
+{
+  "id": "PY123",
+  "category": "Python",
+  "title": "What is Python timeit?",
+  "concept": "Performance",
+  "explanation": "Timeit module measures execution time of small code snippets. It runs code multiple times for accurate measurement. Timeit disables garbage collection by default. Available as module, command-line tool, and IPython magic. Useful for comparing implementation performance.",
+  "usage": "Timeit accurately measures execution time of code snippets for performance comparison.",
+  "keywords": [
+    "timeit",
+    "performance",
+    "timing",
+    "measurement",
+    "benchmark",
+    "execution"
+  ]
+},
+{
+  "id": "PY124",
+  "category": "Python",
+  "title": "What is Python memory management?",
+  "concept": "Memory",
+  "explanation": "Python manages memory automatically using reference counting and garbage collection. Memory is allocated from private heap. Reference counting tracks object references. Cyclic garbage collector handles circular references. Understanding helps optimize memory usage and avoid leaks.",
+  "usage": "Python's memory management automatically allocates and frees memory using reference counting.",
+  "keywords": [
+    "memory",
+    "heap",
+    "reference counting",
+    "garbage collection",
+    "allocation"
+  ]
+},
+{
+  "id": "PY125",
+  "category": "Python",
+  "title": "What is Python dis module?",
+  "concept": "Bytecode",
+  "explanation": "Dis module disassembles Python bytecode for inspection. It shows instructions Python interpreter executes. Useful for understanding performance and behavior. Helps optimize code by revealing underlying operations. Educational tool for learning Python internals.",
+  "usage": "Dis module shows Python bytecode for understanding how code executes.",
+  "keywords": [
+    "dis",
+    "bytecode",
+    "disassembly",
+    "internals",
+    "optimization",
+    "inspection"
+  ]
+},
+{
+  "id": "PY126",
+  "category": "Python",
+  "title": "What is Python sys module?",
+  "concept": "System",
+  "explanation": "Sys module provides access to interpreter variables and functions. Includes sys.argv for command arguments, sys.path for module search, sys.exit() for termination. Offers platform information and stdin/stdout/stderr streams. Essential for system-level operations.",
+  "usage": "Sys module accesses system-specific parameters and interpreter functions.",
+  "keywords": [
+    "sys",
+    "system",
+    "argv",
+    "path",
+    "platform",
+    "interpreter"
+  ]
+},
+{
+  "id": "PY127",
+  "category": "Python",
+  "title": "What is Python warnings module?",
+  "concept": "Warnings",
+  "explanation": "Warnings module issues warning messages about deprecated features or potential problems. Warnings can be filtered, suppressed, or turned into exceptions. Different warning categories exist for various situations. Helps communicate non-fatal issues without raising exceptions.",
+  "usage": "Warnings module alerts about potential issues without stopping program execution.",
+  "keywords": [
+    "warnings",
+    "deprecation",
+    "filter",
+    "warn",
+    "category",
+    "suppress"
+  ]
+},
+{
+  "id": "PY128",
+  "category": "Python",
+  "title": "What is Python configparser?",
+  "concept": "Configuration",
+  "explanation": "Configparser reads and writes INI-style configuration files. It provides hierarchical structure with sections and key-value pairs. Supports interpolation and type conversion. Useful for application configuration. Alternative to JSON or YAML for simpler configs.",
+  "usage": "Configparser handles INI-format configuration files for application settings.",
+  "keywords": [
+    "configparser",
+    "configuration",
+    "INI",
+    "settings",
+    "sections",
+    "parsing"
+  ]
+},
+{
+  "id": "PY129",
+  "category": "Python",
+  "title": "What is Python shutil module?",
+  "concept": "File Operations",
+  "explanation": "Shutil provides high-level file operations like copying, moving, and removing. It handles directory trees efficiently. Functions include copy, move, rmtree. More convenient than os module for common operations. Respects permissions and metadata.",
+  "usage": "Shutil offers high-level file and directory operations like copy and move.",
+  "keywords": [
+    "shutil",
+    "file operations",
+    "copy",
+    "move",
+    "directory",
+    "remove"
+  ]
+},
+{
+  "id": "PY130",
+  "category": "Python",
+  "title": "What is Python tempfile module?",
+  "concept": "Temporary Files",
+  "explanation": "Tempfile creates temporary files and directories that are automatically cleaned up. NamedTemporaryFile and TemporaryDirectory are common choices. Useful for testing and intermediate data. Files are created in system temp directory. Automatic cleanup prevents disk space issues.",
+  "usage": "Tempfile creates temporary files and directories with automatic cleanup.",
+  "keywords": [
+    "tempfile",
+    "temporary",
+    "cleanup",
+    "testing",
+    "intermediate",
+    "directory"
+  ]
+},
+{
+  "id": "PY131",
+  "category": "Python",
+  "title": "What is Python glob module?",
+  "concept": "File Matching",
+  "explanation": "Glob finds files matching patterns using wildcards. Supports *, ?, and character ranges. Returns list of matching paths. Recursive option searches subdirectories. Common for batch file processing. Unix shell-style wildcards.",
+  "usage": "Glob finds files matching wildcard patterns for batch processing.",
+  "keywords": [
+    "glob",
+    "pattern",
+    "wildcard",
+    "files",
+    "matching",
+    "search"
+  ]
+},
+{
+  "id": "PY132",
+  "category": "Python",
+  "title": "What is Python hashlib?",
+  "concept": "Hashing",
+  "explanation": "Hashlib provides secure hash and message digest algorithms. Includes MD5, SHA1, SHA256, and others. Used for checksums, password hashing, and data integrity. Hashing is one-way and deterministic. Essential for cryptographic applications.",
+  "usage": "Hashlib computes secure hash values for data integrity and cryptography.",
+  "keywords": [
+    "hashlib",
+    "hashing",
+    "SHA256",
+    "MD5",
+    "checksum",
+    "digest"
+  ]
+},
+{
+  "id": "PY133",
+  "category": "Python",
+  "title": "What is Python secrets module?",
+  "concept": "Cryptography",
+  "explanation": "Secrets module generates cryptographically strong random numbers. Used for passwords, tokens, and security. More secure than random module for sensitive data. Provides functions for tokens, random bytes, and random choices. Essential for security-critical applications.",
+  "usage": "Secrets generates cryptographically strong random data for security purposes.",
+  "keywords": [
+    "secrets",
+    "cryptography",
+    "random",
+    "security",
+    "token",
+    "password"
+  ]
+},
+{
+  "id": "PY134",
+  "category": "Python",
+  "title": "What is Python uuid module?",
+  "concept": "UUID",
+  "explanation": "UUID module generates universally unique identifiers. Different UUID versions serve different purposes. UUID4 generates random UUIDs. UUIDs are 128-bit values represented as hex strings. Used for unique database keys and identifiers.",
+  "usage": "UUID generates unique identifiers for database records and distributed systems.",
+  "keywords": [
+    "uuid",
+    "unique",
+    "identifier",
+    "guid",
+    "database",
+    "random"
+  ]
+},
+{
+  "id": "PY135",
+  "category": "Python",
+  "title": "What is Python base64 encoding?",
+  "concept": "Encoding",
+  "explanation": "Base64 encodes binary data as ASCII text. Base64 module provides encoding and decoding. Used for embedding binary in text formats like JSON or XML. Increases size by ~33%. Common for email attachments and data URLs.",
+  "usage": "Base64 encodes binary data as text for transmission in text-only formats.",
+  "keywords": [
+    "base64",
+    "encoding",
+    "binary",
+    "ASCII",
+    "decode",
+    "encode"
+  ]
+},
+{
+  "id": "PY136",
+  "category": "Python",
+  "title": "What is Python urllib?",
+  "concept": "URL Handling",
+  "explanation": "Urllib provides modules for URL handling including urllib.request, urllib.parse, and urllib.error. It can open URLs, parse components, and handle errors. More low-level than requests library. Part of standard library requiring no installation.",
+  "usage": "Urllib handles URL operations including requests, parsing, and error handling.",
+  "keywords": [
+    "urllib",
+    "URL",
+    "request",
+    "parse",
+    "HTTP",
+    "web"
+  ]
+},
+{
+  "id": "PY137",
+  "category": "Python",
+  "title": "What is Python email module?",
+  "concept": "Email",
+  "explanation": "Email module handles email message creation and parsing. Supports MIME, attachments, and headers. Works with smtplib for sending. Can parse received emails. Handles character encoding and multipart messages.",
+  "usage": "Email module creates, parses, and manipulates email messages.",
+  "keywords": [
+    "email",
+    "MIME",
+    "message",
+    "smtp",
+    "parsing",
+    "attachments"
+  ]
+},
+{
+  "id": "PY138",
+  "category": "Python",
+  "title": "What is Python smtplib?",
+  "concept": "Email Sending",
+  "explanation": "Smtplib sends emails using SMTP protocol. Supports authentication and TLS encryption. Works with email module for message creation. Requires SMTP server configuration. Common for automated email notifications.",
+  "usage": "Smtplib sends emails through SMTP servers from Python applications.",
+  "keywords": [
+    "smtplib",
+    "SMTP",
+    "email",
+    "sending",
+    "authentication",
+    "TLS"
+  ]
+},
+{
+  "id": "PY139",
+  "category": "Python",
+  "title": "What is Python sqlite3?",
+  "concept": "Database",
+  "explanation": "Sqlite3 module provides interface to SQLite database. SQLite is serverless embedded database. Supports standard SQL operations. Connection and cursor objects manage database interaction. Excellent for local storage and prototyping.",
+  "usage": "Sqlite3 enables working with SQLite databases using SQL from Python.",
+  "keywords": [
+    "sqlite3",
+    "database",
+    "SQL",
+    "embedded",
+    "cursor",
+    "query"
+  ]
+},
+{
+  "id": "PY140",
+  "category": "Python",
+  "title": "What is Python calendar module?",
+  "concept": "Calendar",
+  "explanation": "Calendar module provides calendar-related functions. Can generate text and HTML calendars. Supports date calculations and formatting. Includes functions for weekday, month, and year operations. Useful for scheduling applications.",
+  "usage": "Calendar module generates calendars and provides date-related utilities.",
+  "keywords": [
+    "calendar",
+    "date",
+    "month",
+    "year",
+    "weekday",
+    "scheduling"
+  ]
+},
+{
+  "id": "PY141",
+  "category": "Python",
+  "title": "What is Python random module?",
+  "concept": "Random Numbers",
+  "explanation": "Random module generates pseudo-random numbers. Provides functions for random integers, floats, choices, and shuffling. Uses Mersenne Twister algorithm. Not cryptographically secure (use secrets for security). Seed controls reproducibility.",
+  "usage": "Random module generates pseudo-random numbers for simulations and games.",
+  "keywords": [
+    "random",
+    "randint",
+    "choice",
+    "shuffle",
+    "seed",
+    "pseudo-random"
+  ]
+},
+{
+  "id": "PY142",
+  "category": "Python",
+  "title": "What is Python math module?",
+  "concept": "Mathematics",
+  "explanation": "Math module provides mathematical functions and constants. Includes trigonometry, logarithms, and special functions. Provides constants like pi and e. Operates on floats. For complex numbers, use cmath module.",
+  "usage": "Math module provides standard mathematical functions and constants.",
+  "keywords": [
+    "math",
+    "mathematics",
+    "trigonometry",
+    "logarithm",
+    "pi",
+    "constants"
+  ]
+},
+{
+  "id": "PY143",
+  "category": "Python",
+  "title": "What is Python statistics module?",
+  "concept": "Statistics",
+  "explanation": "Statistics module provides functions for statistical operations. Includes mean, median, mode, variance, and standard deviation. Works with numeric data sequences. More accessible than NumPy for basic statistics. Part of standard library.",
+  "usage": "Statistics module calculates common statistical measures from data.",
+  "keywords": [
+    "statistics",
+    "mean",
+    "median",
+    "variance",
+    "stdev",
+    "data"
+  ]
+},
+{
+  "id": "PY144",
+  "category": "Python",
+  "title": "What is Python decimal module?",
+  "concept": "Decimal Arithmetic",
+  "explanation": "Decimal provides decimal floating point arithmetic with precise control. Avoids binary floating point representation issues. Essential for financial calculations. Configurable precision and rounding. More accurate than float for decimal calculations.",
+  "usage": "Decimal provides precise decimal arithmetic for financial and exact calculations.",
+  "keywords": [
+    "decimal",
+    "precision",
+    "financial",
+    "rounding",
+    "accurate",
+    "arithmetic"
+  ]
+},
+{
+  "id": "PY145",
+  "category": "Python",
+  "title": "What is Python fractions module?",
+  "concept": "Rational Numbers",
+  "explanation": "Fractions module provides rational number arithmetic. Represents numbers as numerator/denominator pairs. Avoids floating point precision issues. Automatically reduces fractions. Useful for exact arithmetic and educational purposes.",
+  "usage": "Fractions module performs exact rational number arithmetic without precision loss.",
+  "keywords": [
+    "fractions",
+    "rational",
+    "numerator",
+    "denominator",
+    "exact",
+    "arithmetic"
+  ]
+},
+{
+  "id": "PY146",
+  "category": "Python",
+  "title": "What is Python zlib module?",
+  "concept": "Compression",
+  "explanation": "Zlib provides data compression and decompression using zlib library. Compress and decompress functions handle data. Useful for reducing data size. Compatible with gzip format. Common for network transmission and file storage.",
+  "usage": "Zlib compresses and decompresses data to reduce size for storage or transmission.",
+  "keywords": [
+    "zlib",
+    "compression",
+    "decompression",
+    "gzip",
+    "compress",
+    "data"
+  ]
+},
+{
+  "id": "PY147",
+  "category": "Python",
+  "title": "What is Python gzip module?",
+  "concept": "Compression",
+  "explanation": "Gzip module works with gzip compressed files. Can read and write gzip files. Provides file-like interface. Compatible with Unix gzip program. Useful for compressing logs and data files. Built on zlib module.",
+  "usage": "Gzip reads and writes gzip-compressed files with file-like interface.",
+  "keywords": [
+    "gzip",
+    "compression",
+    "files",
+    "compress",
+    "decompress",
+    "zlib"
+  ]
+},
+{
+  "id": "PY148",
+  "category": "Python",
+  "title": "What is Python tarfile module?",
+  "concept": "Archives",
+  "explanation": "Tarfile reads and writes tar archive files. Supports compression with gzip, bz2, and lzma. Can extract and create archives. Handles file metadata like permissions. Common for software distribution and backups.",
+  "usage": "Tarfile creates and extracts tar archives with optional compression.",
+  "keywords": [
+    "tarfile",
+    "tar",
+    "archive",
+    "compression",
+    "extract",
+    "create"
+  ]
+},
+{
+  "id": "PY149",
+  "category": "Python",
+  "title": "What is Python zipfile module?",
+  "concept": "Archives",
+  "explanation": "Zipfile reads and writes ZIP archive files. Can extract files, create archives, and list contents. Supports password protection and compression levels. Common for file distribution. Compatible with WinZip and other ZIP tools.",
+  "usage": "Zipfile creates and extracts ZIP archives for file compression and distribution.",
+  "keywords": [
+    "zipfile",
+    "zip",
+    "archive",
+    "compression",
+    "extract",
+    "create"
+  ]
+},
+{
+  "id": "PY150",
+  "category": "Python",
+  "title": "What is Python array module?",
+  "concept": "Arrays",
+  "explanation": "Array module provides space-efficient arrays of basic types. More memory-efficient than lists for homogeneous numeric data. Similar interface to lists but type-restricted. Useful for large numeric datasets. Less flexible than NumPy arrays.",
+  "usage": "Array module provides memory-efficient arrays for homogeneous numeric data.",
+  "keywords": [
+    "array",
+    "efficient",
+    "homogeneous",
+    "numeric",
+    "memory",
+    "typed"
+  ]
+},
+{
+  "id": "PY151",
+  "category": "Python",
+  "title": "What is Python heapq module?",
+  "concept": "Heap Queue",
+  "explanation": "Heapq implements heap queue algorithm (priority queue). Provides functions to maintain list as heap. Supports efficient min-heap operations. Useful for priority queues and finding k largest/smallest elements. Operations maintain heap invariant.",
+  "usage": "Heapq provides heap-based priority queue operations on lists.",
+  "keywords": [
+    "heapq",
+    "heap",
+    "priority queue",
+    "min-heap",
+    "efficient",
+    "algorithm"
+  ]
+},
+{
+  "id": "PY152",
+  "category": "Python",
+  "title": "What is Python bisect module?",
+  "concept": "Binary Search",
+  "explanation": "Bisect module maintains sorted lists efficiently. Provides functions for binary search and insertion. Bisect_left and bisect_right find insertion points. Insort maintains sorted order. Faster than sorting after each insertion for incremental updates.",
+  "usage": "Bisect maintains sorted lists and performs efficient binary search operations.",
+  "keywords": [
+    "bisect",
+    "binary search",
+    "sorted",
+    "insertion",
+    "search",
+    "efficient"
+  ]
+},
+{
+  "id": "PY153",
+  "category": "Python",
+  "title": "What is Python enum module?",
+  "concept": "Enumerations",
+  "explanation": "Enum module creates enumeration types with symbolic names. Enums provide type safety and readability. Members are unique and can be iterated. Supports comparison and hashing. Auto assigns automatic values. Useful for representing fixed sets of constants.",
+  "usage": "Enum creates enumeration types for representing fixed sets of related constants.",
+  "keywords": [
+    "enum",
+    "enumeration",
+    "constants",
+    "symbolic",
+    "type safety",
+    "members"
+  ]
+},
+{
+  "id": "PY154",
+  "category": "Python",
+  "title": "What is Python abc module?",
+  "concept": "Abstract Base Classes",
+  "explanation": "ABC module defines abstract base classes. Abstract classes define interfaces that subclasses must implement. Use @abstractmethod decorator for abstract methods. Prevents instantiation of incomplete classes. Enforces interface contracts in inheritance hierarchies.",
+  "usage": "ABC module creates abstract base classes that enforce interface implementation.",
+  "keywords": [
+    "abc",
+    "abstract",
+    "base class",
+    "interface",
+    "abstractmethod",
+    "inheritance"
+  ]
+},
+{
+  "id": "PY155",
+  "category": "Python",
+  "title": "What is Python typing module?",
+  "concept": "Type Hints",
+  "explanation": "Typing module provides type hint support. Includes generic types like List, Dict, Optional, Union. Enables static type checking with mypy. Protocol defines structural subtyping. Improves code documentation and IDE support. Type hints are optional and not enforced at runtime.",
+  "usage": "Typing module provides types for type hints and static type checking.",
+  "keywords": [
+    "typing",
+    "type hints",
+    "static typing",
+    "mypy",
+    "generics",
+    "annotations"
+  ]
+},
+{
+  "id": "PY156",
+  "category": "Python",
+  "title": "What is Python __future__ module?",
+  "concept": "Future Features",
+  "explanation": "__future__ enables features from future Python versions. Import statements activate new behavior. Common uses include print_function, division, annotations. Helps with forward compatibility and gradual migration. Must be first import in module.",
+  "usage": "__future__ imports enable future Python features in current version.",
+  "keywords": [
+    "__future__",
+    "features",
+    "compatibility",
+    "migration",
+    "import",
+    "division"
+  ]
+},
+{
+  "id": "PY157",
+  "category": "Python",
+  "title": "What is Python contextlib module?",
+  "concept": "Context Managers",
+  "explanation": "Contextlib provides utilities for context managers. @contextmanager decorator creates context managers from generators. Includes suppress for ignoring exceptions and closing for auto-closing. Simplifies context manager creation compared to class-based approach.",
+  "usage": "Contextlib simplifies creating and working with context managers.",
+  "keywords": [
+    "contextlib",
+    "context manager",
+    "contextmanager",
+    "suppress",
+    "with",
+    "decorator"
+  ]
+},
+{
+  "id": "PY158",
+  "category": "Python",
+  "title": "What is Python importlib module?",
+  "concept": "Import System",
+  "explanation": "Importlib provides programmatic interface to import system. Enables dynamic imports and module reloading. Import_module imports modules by string name. Reload refreshes already imported modules. Useful for plugin systems and dynamic loading.",
+  "usage": "Importlib enables dynamic module importing and import system manipulation.",
+  "keywords": [
+    "importlib",
+    "import",
+    "dynamic",
+    "reload",
+    "modules",
+    "plugin"
+  ]
+},
+{
+  "id": "PY159",
+  "category": "Python",
+  "title": "What is Python platform module?",
+  "concept": "Platform Information",
+  "explanation": "Platform module retrieves system and platform information. Provides OS name, version, architecture, and Python implementation details. Useful for platform-specific code paths. Includes functions for processor and machine information. Essential for cross-platform applications.",
+  "usage": "Platform module provides information about the underlying system and platform.",
+  "keywords": [
+    "platform",
+    "system",
+    "OS",
+    "architecture",
+    "version",
+    "cross-platform"
+  ]
+},
+{
+  "id": "PY160",
+  "category": "Python",
+  "title": "What is Python inspect module?",
+  "concept": "Introspection",
+  "explanation": "Inspect module provides introspection capabilities for live objects. Can examine source code, stack frames, and call signatures. Useful for debugging, documentation tools, and frameworks. Provides information about functions, classes, and modules. Enables deep runtime inspection.",
+  "usage": "Inspect module enables detailed runtime introspection of Python objects.",
+  "keywords": [
+    "inspect",
+    "introspection",
+    "source",
+    "signature",
+    "stack",
+    "runtime"
+  ]
+},
+{
+  "id": "PY161",
+  "category": "Python",
+  "title": "What is Python traceback module?",
+  "concept": "Error Handling",
+  "explanation": "Traceback module formats and extracts exception traceback information. Useful for custom error handling and logging. Can print, format, or extract traceback data. Helpful for debugging and error reporting. Works with sys.exc_info() for current exception.",
+  "usage": "Traceback module formats exception information for error handling and debugging.",
+  "keywords": [
+    "traceback",
+    "exception",
+    "error",
+    "stack trace",
+    "debugging",
+    "format"
+  ]
+},
+{
+  "id": "PY162",
+  "category": "Python",
+  "title": "What is Python copy module?",
+  "concept": "Copying",
+  "explanation": "Copy module provides shallow and deep copy operations. Copy() creates shallow copies, deepcopy() creates deep copies. Shallow copy references nested objects, deep copy duplicates everything. Important for avoiding unintended modifications. Works with most Python objects.",
+  "usage": "Copy module creates shallow and deep copies of Python objects.",
+  "keywords": [
+    "copy",
+    "deepcopy",
+    "shallow",
+    "deep",
+    "duplicate",
+    "clone"
+  ]
+},
+{
+  "id": "PY163",
+  "category": "Python",
+  "title": "What is Python pprint module?",
+  "concept": "Pretty Printing",
+  "explanation": "Pprint provides pretty-printing for Python data structures. Formats complex structures in readable way. Useful for debugging nested data. Configurable width and depth. Better than print for dictionaries and nested structures.",
+  "usage": "Pprint formats complex data structures in readable, indented format.",
+  "keywords": [
+    "pprint",
+    "pretty print",
+    "formatting",
+    "readable",
+    "debug",
+    "display"
+  ]
+},
+{
+  "id": "PY164",
+  "category": "Python",
+  "title": "What is Python reprlib module?",
+  "concept": "Representation",
+  "explanation": "Reprlib provides alternative repr() implementation for large structures. Limits length of representations to prevent overwhelming output. Useful for debugging large data structures. Configurable truncation limits. Better than repr for deeply nested or large objects.",
+  "usage": "Reprlib creates abbreviated string representations of large data structures.",
+  "keywords": [
+    "reprlib",
+    "repr",
+    "representation",
+    "truncate",
+    "large data",
+    "abbreviate"
+  ]
+},
+{
+  "id": "PY165",
+  "category": "Python",
+  "title": "What is Python graphlib module?",
+  "concept": "Graph Operations",
+  "explanation": "Graphlib provides graph-related operations including topological sorting. TopologicalSorter handles dependency resolution. Useful for build systems and task scheduling. Detects cycles in dependency graphs. Added in Python 3.9.",
+  "usage": "Graphlib performs graph operations like topological sorting for dependencies.",
+  "keywords": [
+    "graphlib",
+    "graph",
+    "topological sort",
+    "dependencies",
+    "cycle",
+    "order"
+  ]
+},
+{
+  "id": "PY166",
+  "category": "Python",
+  "title": "What is Python dataclass field?",
+  "concept": "Data Classes",
+  "explanation": "Field() function in dataclasses customizes dataclass field behavior. Controls default values, initialization, comparison, and representation. Supports default_factory for mutable defaults. Can mark fields as init-only or exclude from repr. Provides fine-grained control over field properties.",
+  "usage": "Field() customizes individual field behavior in dataclasses.",
+  "keywords": [
+    "field",
+    "dataclass",
+    "default_factory",
+    "metadata",
+    "init",
+    "repr"
+  ]
+},
+{
+  "id": "PY166",
+  "category": "Python",
+  "title": "What is Python __call__ method?",
+  "concept": "Callable Objects",
+  "explanation": "__call__ makes instances callable like functions. Implementing __call__ allows using object() syntax. Useful for stateful functions and decorators. Creates function-like objects with internal state. Common in decorators and callbacks.",
+  "usage": "__call__ makes class instances callable as if they were functions.",
+  "keywords": [
+    "__call__",
+    "callable",
+    "function",
+    "invocation",
+    "dunder",
+    "state"
+  ]
+},
+{
+  "id": "PY168",
+  "category": "Python",
+  "title": "What is Python __enter__ and __exit__?",
+  "concept": "Context Managers",
+  "explanation": "__enter__ and __exit__ define context manager protocol. __enter__ runs on entering with block, __exit__ on leaving. __exit__ receives exception information and can suppress exceptions. Enables automatic resource management. Used with with statement.",
+  "usage": "__enter__ and __exit__ implement context manager protocol for resource management.",
+  "keywords": [
+    "__enter__",
+    "__exit__",
+    "context manager",
+    "with",
+    "resource",
+    "cleanup"
+  ]
+},
+{
+  "id": "PY169",
+  "category": "Python",
+  "title": "What is Python __getitem__ and __setitem__?",
+  "concept": "Indexing",
+  "explanation": "__getitem__ defines behavior for indexing with []. __setitem__ defines assignment through indexing. __delitem__ defines deletion. Enables creating custom container classes. Supports slicing and negative indexing if implemented.",
+  "usage": "__getitem__ and __setitem__ customize indexing and assignment behavior.",
+  "keywords": [
+    "__getitem__",
+    "__setitem__",
+    "indexing",
+    "bracket",
+    "container",
+    "slice"
+  ]
+},
+{
+  "id": "PY170",
+  "category": "Python",
+  "title": "What is Python __len__ method?",
+  "concept": "Length",
+  "explanation": "__len__ defines behavior for len() function. Should return non-negative integer. Required for many container operations. Enables truthiness testing based on length. Used by various built-in functions.",
+  "usage": "__len__ defines object length for len() function.",
+  "keywords": [
+    "__len__",
+    "length",
+    "len",
+    "size",
+    "container",
+    "count"
+  ]
+},
+{
+  "id": "PY171",
+  "category": "Python",
+  "title": "What is Python __iter__ and __next__?",
+  "concept": "Iteration",
+  "explanation": "__iter__ returns iterator object. __next__ returns next item or raises StopIteration. Together they implement iterator protocol. Enables for loop support. __iter__ can return self for objects that are their own iterator.",
+  "usage": "__iter__ and __next__ implement iteration protocol for custom iterables.",
+  "keywords": [
+    "__iter__",
+    "__next__",
+    "iterator",
+    "iteration",
+    "StopIteration",
+    "loop"
+  ]
+},
+{
+  "id": "PY172",
+  "category": "Python",
+  "title": "What is Python __contains__ method?",
+  "concept": "Membership Testing",
+  "explanation": "__contains__ defines behavior for 'in' operator. Should return boolean value. If not defined, Python falls back to iteration. Enables efficient membership testing. Common in container classes.",
+  "usage": "__contains__ customizes membership testing with 'in' operator.",
+  "keywords": [
+    "__contains__",
+    "in",
+    "membership",
+    "operator",
+    "testing",
+    "boolean"
+  ]
+},
+{
+  "id": "PY173",
+  "category": "Python",
+  "title": "What is Python __hash__ method?",
+  "concept": "Hashing",
+  "explanation": "__hash__ returns integer hash value for object. Required for using objects as dictionary keys or set members. Must be consistent with __eq__. Immutable objects should have consistent hash values. Hash values can change between Python invocations.",
+  "usage": "__hash__ provides hash value for dictionary keys and set membership.",
+  "keywords": [
+    "__hash__",
+    "hash",
+    "dictionary",
+    "set",
+    "hashable",
+    "key"
+  ]
+},
+{
+  "id": "PY174",
+  "category": "Python",
+  "title": "What is Python __eq__ and comparison methods?",
+  "concept": "Comparison",
+  "explanation": "__eq__ defines equality comparison. Other comparison methods include __lt__, __le__, __gt__, __ge__, __ne__. Functools.total_ordering decorator generates missing comparisons from __eq__ and one ordering method. Important for sorting and comparisons.",
+  "usage": "__eq__ and comparison methods define object comparison behavior.",
+  "keywords": [
+    "__eq__",
+    "__lt__",
+    "__gt__",
+    "comparison",
+    "equality",
+    "ordering"
+  ]
+},
+{
+  "id": "PY175",
+  "category": "Python",
+  "title": "What is Python __bool__ method?",
+  "concept": "Boolean Conversion",
+  "explanation": "__bool__ defines truthiness of objects. Called by bool() and in boolean contexts. Should return True or False. If not defined, __len__ is used, then defaults to True. Controls if/while condition behavior.",
+  "usage": "__bool__ determines object truthiness in boolean contexts.",
+  "keywords": [
+    "__bool__",
+    "truthiness",
+    "boolean",
+    "True",
+    "False",
+    "condition"
+  ]
+},
+{
+  "id": "PY176",
+  "category": "Python",
+  "title": "What is Python __format__ method?",
+  "concept": "Formatting",
+  "explanation": "__format__ defines custom string formatting. Called by format() and f-strings. Receives format specification string. Enables custom formatting syntax for classes. Works with str.format() and formatted string literals.",
+  "usage": "__format__ customizes string formatting for objects.",
+  "keywords": [
+    "__format__",
+    "formatting",
+    "f-string",
+    "format",
+    "custom",
+    "string"
+  ]
+},
+{
+  "id": "PY177",
+  "category": "Python",
+  "title": "What is Python __del__ method?",
+  "concept": "Destructors",
+  "explanation": "__del__ is called when object is about to be destroyed. Called by garbage collector. Not reliable for cleanup as timing is unpredictable. Use context managers instead for reliable cleanup. Circular references can prevent __del__ from being called.",
+  "usage": "__del__ is destructor called during garbage collection, but unreliable for cleanup.",
+  "keywords": [
+    "__del__",
+    "destructor",
+    "cleanup",
+    "garbage collection",
+    "finalizer"
+  ]
+},
+{
+  "id": "PY178",
+  "category": "Python",
+  "title": "What is Python __new__ method?",
+  "concept": "Object Creation",
+  "explanation": "__new__ creates new instance before __init__. It's a class method receiving the class as first argument. Returns new instance which is then passed to __init__. Rarely needed except for subclassing immutable types or implementing singletons. More fundamental than __init__.",
+  "usage": "__new__ creates object instances before initialization.",
+  "keywords": [
+    "__new__",
+    "creation",
+    "constructor",
+    "instance",
+    "immutable",
+    "singleton"
+  ]
+},
+{
+  "id": "PY179",
+  "category": "Python",
+  "title": "What is Python slots optimization?",
+  "concept": "Memory Optimization",
+  "explanation": "Using __slots__ with tuple of attribute names prevents __dict__ creation. Reduces memory usage significantly for classes with many instances. Prevents dynamic attribute addition. Inheritance requires careful slot coordination. Trade-off between flexibility and memory.",
+  "usage": "__slots__ optimizes memory by restricting instance attributes.",
+  "keywords": [
+    "__slots__",
+    "memory",
+    "optimization",
+    "attributes",
+    "performance",
+    "__dict__"
+  ]
+},
+{
+  "id": "PY180",
+  "category": "Python",
+  "title": "What is Python __doc__ attribute?",
+  "concept": "Documentation",
+  "explanation": "__doc__ contains object's docstring. Set by first string literal in module, class, or function. Accessible at runtime via __doc__ attribute. Used by help() function. Should describe purpose and usage. Essential for API documentation.",
+  "usage": "__doc__ stores docstring for documentation purposes.",
+  "keywords": [
+    "__doc__",
+    "docstring",
+    "documentation",
+    "help",
+    "attribute",
+    "description"
+  ]
+},
+{
+  "id": "PY181",
+  "category": "Python",
+  "title": "What is Python __file__ attribute?",
+  "concept": "Module Attributes",
+  "explanation": "__file__ contains path to module file. Useful for finding resources relative to module. Not available in interactive mode. Can be used with pathlib or os.path for file operations. Helps locate configuration files and data.",
+  "usage": "__file__ provides path to module file for resource location.",
+  "keywords": [
+    "__file__",
+    "path",
+    "module",
+    "location",
+    "resources",
+    "attribute"
+  ]
+},
+{
+  "id": "PY182",
+  "category": "Python",
+  "title": "What is Python __all__ attribute?",
+  "concept": "Module Exports",
+  "explanation": "__all__ defines what's exported with 'from module import *'. List of string names to expose publicly. Helps control module API. Good practice to define for public modules. Doesn't prevent direct imports.",
+  "usage": "__all__ defines public API exported by 'from module import *'.",
+  "keywords": [
+    "__all__",
+    "import",
+    "export",
+    "public",
+    "API",
+    "module"
+  ]
+},
+{
+  "id": "PY183",
+  "category": "Python",
+  "title": "What is Python classmethod decorator?",
+  "concept": "Class Methods",
+  "explanation": "@classmethod creates methods that receive class as first argument instead of instance. Useful for alternative constructors. Can access class state but not instance state. Inherited by subclasses with correct class reference.",
+  "usage": "@classmethod creates methods that work with class rather than instance.",
+  "keywords": [
+    "classmethod",
+    "decorator",
+    "class",
+    "constructor",
+    "factory",
+    "cls"
+  ]
+},
+{
+  "id": "PY184",
+  "category": "Python",
+  "title": "What is Python staticmethod decorator?",
+  "concept": "Static Methods",
+  "explanation": "@staticmethod creates methods that don't receive implicit first argument. They're basically regular functions within class namespace. Don't access instance or class state. Useful for utility functions related to class.",
+  "usage": "@staticmethod creates methods without implicit instance or class argument.",
+  "keywords": [
+    "staticmethod",
+    "decorator",
+    "utility",
+    "namespace",
+    "function",
+    "class"
+  ]
+},
+{
+  "id": "PY185",
+  "category": "Python",
+  "title": "What is Python abstractmethod decorator?",
+  "concept": "Abstract Methods",
+  "explanation": "@abstractmethod marks methods that must be implemented by subclasses. Prevents instantiation of classes with unimplemented abstract methods. Used with ABC module. Can combine with classmethod or staticmethod. Enforces interface contracts.",
+  "usage": "@abstractmethod requires subclasses to implement specific methods.",
+  "keywords": [
+    "abstractmethod",
+    "abstract",
+    "ABC",
+    "interface",
+    "subclass",
+    "implementation"
+  ]
+},
+{
+  "id": "PY186",
+  "category": "Python",
+  "title": "What is Python lru_cache decorator?",
+  "concept": "Memoization",
+  "explanation": "@lru_cache from functools caches function results. Least Recently Used cache evicts old results. Configurable maxsize parameter. Useful for expensive recursive or repeated computations. Provides cache statistics via cache_info().",
+  "usage": "@lru_cache memoizes function results for performance optimization.",
+  "keywords": [
+    "lru_cache",
+    "cache",
+    "memoization",
+    "optimization",
+    "functools",
+    "performance"
+  ]
+},
+{
+  "id": "PY187",
+  "category": "Python",
+  "title": "What is Python wraps decorator?",
+  "concept": "Decorator Helpers",
+  "explanation": "@wraps from functools preserves function metadata when creating decorators. Copies __name__, __doc__, and other attributes to wrapper function. Essential for proper decorator implementation. Makes decorated functions behave more like originals.",
+  "usage": "@wraps preserves original function metadata in decorators.",
+  "keywords": [
+    "wraps",
+    "functools",
+    "decorator",
+    "metadata",
+    "preserve",
+    "__name__"
+  ]
+},
+{
+  "id": "PY188",
+  "category": "Python",
+  "title": "What is Python singledispatch decorator?",
+  "concept": "Generic Functions",
+  "explanation": "@singledispatch from functools creates generic functions with multiple implementations. Dispatches based on first argument type. Register implementations with @function.register decorator. Enables function overloading based on type.",
+  "usage": "@singledispatch creates functions with type-based dispatch.",
+  "keywords": [
+    "singledispatch",
+    "functools",
+    "generic",
+    "dispatch",
+    "overload",
+    "type"
+  ]
+},
+{
+  "id": "PY189",
+  "category": "Python",
+  "title": "What is Python cached_property decorator?",
+  "concept": "Properties",
+  "explanation": "@cached_property from functools creates properties that cache their value. Computed once then cached. Behaves like property but more efficient for expensive computations. Cache is per-instance. Added in Python 3.8.",
+  "usage": "@cached_property creates properties that cache computed values.",
+  "keywords": [
+    "cached_property",
+    "cache",
+    "property",
+    "functools",
+    "lazy",
+    "optimization"
+  ]
+},
+{
+  "id": "PY190",
+  "category": "Python",
+  "title": "What is Python Protocol?",
+  "concept": "Structural Typing",
+  "explanation": "Protocol from typing module defines structural interfaces. Classes implementing required methods satisfy protocol without explicit inheritance. Enables structural subtyping (duck typing with type hints). Static type checkers verify protocol compliance.",
+  "usage": "Protocol defines structural interfaces for duck typing with type checking.",
+  "keywords": [
+    "Protocol",
+    "typing",
+    "structural",
+    "duck typing",
+    "interface",
+    "subtyping"
+  ]
+},
+{
+  "id": "PY191",
+  "category": "Python",
+  "title": "What is Python TypeVar?",
+  "concept": "Generic Types",
+  "explanation": "TypeVar creates type variables for generic programming. Enables defining functions and classes that work with multiple types while maintaining type safety. Can be constrained to specific types. Used extensively in type hints.",
+  "usage": "TypeVar creates type variables for generic type hints.",
+  "keywords": [
+    "TypeVar",
+    "typing",
+    "generic",
+    "type variable",
+    "constraints",
+    "polymorphism"
+  ]
+},
+{
+  "id": "PY192",
+  "category": "Python",
+  "title": "What is Python Optional type?",
+  "concept": "Type Hints",
+  "explanation": "Optional[T] indicates value can be type T or None. Equivalent to Union[T, None]. Makes None-ability explicit in type hints. Helps prevent None-related bugs. Improves code documentation.",
+  "usage": "Optional indicates values that can be a specific type or None.",
+  "keywords": [
+    "Optional",
+    "typing",
+    "None",
+    "type hints",
+    "nullable",
+    "Union"
+  ]
+},
+{
+  "id": "PY193",
+  "category": "Python",
+  "title": "What is Python Union type?",
+  "concept": "Type Hints",
+  "explanation": "Union[T1, T2, ...] indicates value can be one of several types. Useful for functions accepting multiple type alternatives. Modern Python (3.10+) supports T1 | T2 syntax. Enables flexible type specifications.",
+  "usage": "Union specifies values can be one of multiple possible types.",
+  "keywords": [
+    "Union",
+    "typing",
+    "multiple types",
+    "alternatives",
+    "type hints",
+    "or"
+  ]
+},
+{
+  "id": "PY194",
+  "category": "Python",
+  "title": "What is Python Literal type?",
+  "concept": "Type Hints",
+  "explanation": "Literal from typing specifies exact values allowed. Useful for enumerating specific string or number values. Enables type checker to verify exact value usage. More precise than general types.",
+  "usage": "Literal specifies exact allowed values in type hints.",
+  "keywords": [
+    "Literal",
+    "typing",
+    "exact values",
+    "constants",
+    "type hints",
+    "specific"
+  ]
+},
+{
+  "id": "PY195",
+  "category": "Python",
+  "title": "What is Python Final type?",
+  "concept": "Type Hints",
+  "explanation": "Final from typing indicates values that shouldn't be reassigned or subclassed. Prevents variable reassignment or class inheritance. Helps prevent accidental modifications. Checked by static type checkers.",
+  "usage": "Final prevents reassignment of values or subclassing of classes.",
+  "keywords": [
+    "Final",
+    "typing",
+    "constant",
+    "immutable",
+    "no reassign",
+    "no inherit"
+  ]
+},
+{
+  "id": "PY196",
+  "category": "Python",
+  "title": "What is Python Callable type?",
+  "concept": "Type Hints",
+  "explanation": "Callable from typing specifies callable signatures. Callable[[arg1_type, arg2_type], return_type] describes function signatures. Useful for type hinting functions as parameters. Enables type checking of callbacks.",
+  "usage": "Callable specifies function signature types in type hints.",
+  "keywords": [
+    "Callable",
+    "typing",
+    "function",
+    "signature",
+    "callback",
+    "type hints"
+  ]
+},
+{
+  "id": "PY197",
+  "category": "Python",
+  "title": "What is Python Any type?",
+  "concept": "Type Hints",
+  "explanation": "Any from typing indicates values of any type are acceptable. Bypasses type checking. Useful when type is truly unknown or highly dynamic. Use sparingly as it reduces type safety benefits.",
+  "usage": "Any accepts values of any type, bypassing type checking.",
+  "keywords": [
+    "Any",
+    "typing",
+    "dynamic",
+    "no checking",
+    "flexible",
+    "type hints"
+  ]
+},
+{
+  "id": "PY198",
+  "category": "Python",
+  "title": "What is Python NoReturn type?",
+  "concept": "Type Hints",
+  "explanation": "NoReturn from typing indicates functions that never return normally. Used for functions that always raise exceptions or run forever. Helps type checkers understand control flow. Distinct from None return type.",
+  "usage": "NoReturn indicates functions that never return normally.",
+  "keywords": [
+    "NoReturn",
+    "typing",
+    "never returns",
+    "exception",
+    "infinite",
+    "type hints"
+  ]
+},
+{
+  "id": "PY199",
+  "category": "Python",
+  "title": "What is Python cast function?",
+  "concept": "Type Hints",
+  "explanation": "Cast from typing tells type checker to treat value as specific type. Doesn't perform runtime conversion. Used when type checker can't infer correct type. Should be used carefully as it bypasses checking.",
+  "usage": "Cast tells type checkers to treat values as specific types without runtime effect.",
+  "keywords": [
+    "cast",
+    "typing",
+    "type assertion",
+    "hint",
+    "static",
+    "checker"
+  ]
+},
+{
+  "id": "PY200",
+  "category": "Python",
+  "title": "What is Python reveal_type?",
+  "concept": "Type Checking",
+  "explanation": "Reveal_type is a debugging tool for type checkers. Shows inferred type of expression. Not a runtime function. Helps debug type hint issues. Available in mypy and other type checkers.",
+  "usage": "Reveal_type shows inferred types during static type checking for debugging.",
+  "keywords": [
+    "reveal_type",
+    "mypy",
+    "type checking",
+    "debugging",
+    "inference",
+    "static"
+  ]
+}]

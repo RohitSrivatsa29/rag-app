@@ -1,0 +1,686 @@
+[
+    {
+        "id": "JA001",
+        "category": "Java Fundamentals",
+        "title": "Java Virtual Machine (JVM)",
+        "description": "The JVM is the engine that drives the Java code. It converts Java bytecode into machine language. The JVM enables Java's 'Write Once, Run Anywhere' capability by providing a platform-independent execution environment.",
+        "keywords": [
+            "JVM",
+            "Bytecode",
+            "Platform Independent",
+            "Execution",
+            "Runtime",
+            "Architecture"
+        ]
+    },
+    {
+        "id": "JA002",
+        "category": "Java Fundamentals",
+        "title": "Java Object-Oriented Programming",
+        "description": "Java is a class-based, object-oriented programming language. It adheres to the four main principles of OOP: Encapsulation, Inheritance, Polymorphism, and Abstraction. Everything in Java is associated with classes and objects.",
+        "keywords": [
+            "OOP",
+            "Classes",
+            "Objects",
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Abstraction"
+        ]
+    },
+    {
+        "id": "JA003",
+        "category": "Java Fundamentals",
+        "title": "Java Primitive Data Types",
+        "description": "Java define 8 primitive data types: byte, short, int, long, float, double, boolean, and char. These are not objects and are stored directly in the stack memory for efficiency. Wrapper classes exist to treat them as objects.",
+        "keywords": [
+            "Primitives",
+            "Data Types",
+            "int",
+            "boolean",
+            "char",
+            "double",
+            "Stack",
+            "Memory"
+        ]
+    },
+    {
+        "id": "JA004",
+        "category": "Java Fundamentals",
+        "title": "Java Garbage Collection",
+        "description": "Java provides automatic garbage collection, which identifies and discards objects that are no longer needed by the program to free up memory resources. The JVM's Garbage Collector runs in the background.",
+        "keywords": [
+            "Garbage Collection",
+            "Memory Management",
+            "JVM",
+            "Heap",
+            "Automatic",
+            "Cleanup"
+        ]
+    },
+    {
+        "id": "JA005",
+        "category": "Java Advanced",
+        "title": "Java Collections Framework",
+        "description": "The Collections Framework provides a set of interfaces and classes to store and manipulate groups of data. Key interfaces include List, Set, Queue, and Map. Implementations include ArrayList, HashSet, LinkedList, and HashMap.",
+        "keywords": [
+            "Collections",
+            "List",
+            "Set",
+            "Map",
+            "ArrayList",
+            "HashMap",
+            "Data Structures"
+        ]
+    },
+    {
+        "id": "JA006",
+        "category": "Java Advanced",
+        "title": "Java Multithreading",
+        "description": "Java supports multithreading, allowing concurrent execution of two or more parts of a program. Threads can be created by extending the Thread class or implementing the Runnable interface. Synchronization is used to prevent race conditions.",
+        "keywords": [
+            "Multithreading",
+            "Concurrency",
+            "Thread",
+            "Runnable",
+            "Synchronization",
+            "Parallelism"
+        ]
+    },
+    {
+        "id": "JA007",
+        "category": "Java Advanced",
+        "title": "Java Streams API",
+        "description": "Introduced in Java 8, the Streams API is used to process sequences of elements. It supports functional-style operations on streams of elements, such as map-reduce transformations on collections.",
+        "keywords": [
+            "Streams",
+            "Java 8",
+            "Functional Programming",
+            "Map",
+            "Filter",
+            "Reduce",
+            "Lambda"
+        ]
+    },
+    {
+        "id": "JA008",
+        "category": "Java Fundamentals",
+        "title": "Java Exception Handling",
+        "description": "Java uses a robust exception handling mechanism based on try, catch, finally, throw, and throws keywords. It distinguishes between checked exceptions (compile-time) and unchecked exceptions (runtime).",
+        "keywords": [
+            "Exception Handling",
+            "Try-Catch",
+            "Checked Exception",
+            "Runtime Exception",
+            "Error Handling"
+        ]
+    },
+    {
+        "id": "JA009",
+        "category": "Java Web Development",
+        "title": "Spring Framework",
+        "description": "Spring is a powerful, lightweight framework for enterprise Java development. It provides comprehensive infrastructure support including Dependency Injection (DI) and Aspect-Oriented Programming (AOP).",
+        "keywords": [
+            "Spring",
+            "Framework",
+            "Dependency Injection",
+            "Inversion of Control",
+            "Web Development",
+            "Enterprise"
+        ]
+    },
+    {
+        "id": "JA010",
+        "category": "Java Fundamentals",
+        "title": "Java Access Modifiers",
+        "description": "Access modifiers determine the scope of classes, variables, methods, and constructors. The four levels are: public (visible to all), protected (package + subclasses), default (package only), and private (class only).",
+        "keywords": [
+            "Access Modifiers",
+            "Public",
+            "Private",
+            "Protected",
+            "Default",
+            "Scope",
+            "Encapsulation"
+        ]
+    },
+    {
+        "id": "JA011",
+        "category": "Java Advanced",
+        "title": "Java Generics",
+        "description": "Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces, and methods. They provide stronger type checks at compile time and eliminate the need for casting.",
+        "keywords": [
+            "Generics",
+            "Type Safety",
+            "Parameters",
+            "Compile-time",
+            "Templates",
+            "Reuse"
+        ]
+    },
+    {
+        "id": "JA012",
+        "category": "Java Fundamentals",
+        "title": "Java Interfaces",
+        "description": "An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, and static methods. Use abstract classes when you need to share code, interface to define a contract.",
+        "keywords": [
+            "Interface",
+            "Contract",
+            "Abstraction",
+            "Implementation",
+            "Multiple Inheritance"
+        ]
+    },
+    {
+        "id": "JA013",
+        "category": "Java Advanced",
+        "title": "Java Reflection API",
+        "description": "Reflection is a feature that allows a program to examine or modify the runtime behavior of applications running in the JVM. It allows inspection of classes, interfaces, fields and methods at runtime.",
+        "keywords": [
+            "Reflection",
+            "Runtime",
+            "Inspection",
+            "Dynamic",
+            "Meta-programming",
+            "Class Class"
+        ]
+    },
+    {
+        "id": "JA014",
+        "category": "Java Tools",
+        "title": "Maven",
+        "description": "Maven is a build automation tool used primarily for Java projects. It addresses two aspects of building software: how software is built, and its dependencies. It uses an XML file (pom.xml) for configuration.",
+        "keywords": [
+            "Maven",
+            "Build Tool",
+            "Dependency Management",
+            "POM",
+            "Automation",
+            "Project Management"
+        ]
+    },
+    {
+        "id": "JA015",
+        "category": "Java Web-Development",
+        "title": "Hibernate",
+        "description": "Hibernate is an Object-Relational Mapping (ORM) framework for Java. It simplifies the development of Java application to interact with the database. It maps Java classes to database tables and Java data types to SQL data types.",
+        "keywords": [
+            "Hibernate",
+            "ORM",
+            "Database",
+            "Persistence",
+            "Mapping",
+            "SQL",
+            "JPA"
+        ]
+    },
+    {
+        "id": "JA016",
+        "category": "Java Fundamentals",
+        "title": "Java Lambda Expressions",
+        "description": "Introduced in Java 8, Lambda expressions provide a clear and concise way to represent one method interface using an expression. They are useful in collection library and define inline implementation of a functional interface.",
+        "keywords": [
+            "Lambda",
+            "Java 8",
+            "Functional Interface",
+            "Concise",
+            "Anonymous Functions"
+        ]
+    },
+    {
+        "id": "JA017",
+        "category": "Java Fundamentals",
+        "title": "Java String Pool",
+        "description": "The String Pool is a special storage area in the Java heap. When a string is created and if the string already exists in the pool, the reference of the existing string will be returned, instead of creating a new object, saving memory.",
+        "keywords": [
+            "String Pool",
+            "Memory Optimization",
+            "Heap",
+            "Immutability",
+            "Strings"
+        ]
+    },
+    {
+        "id": "JA018",
+        "category": "Java Advanced",
+        "title": "Java Annotations",
+        "description": "Annotations provide metadata about the program that is not part of the program itself. They have no direct effect on the operation of the code they annotate. They are used for compile-time checks (e.g., @Override) or runtime processing.",
+        "keywords": [
+            "Annotations",
+            "Metadata",
+            "@Override",
+            "@Deprecated",
+            "Configuration",
+            "Processing"
+        ]
+    },
+    {
+        "id": "JA019",
+        "category": "Java Tools",
+        "title": "Gradle",
+        "description": "Gradle is an open-source build automation system that builds upon the concepts of Apache Ant and Apache Maven and introduces a Groovy-based domain-specific language (DSL) instead of the XML form used by Apache Maven.",
+        "keywords": [
+            "Gradle",
+            "Build Tool",
+            "Automation",
+            "Groovy",
+            "DSL",
+            "Android"
+        ]
+    },
+    {
+        "id": "JA020",
+        "category": "Java Fundamentals",
+        "title": "JDK vs JRE vs JVM",
+        "description": "JDK (Java Development Kit) contains tools for developers (javac). JRE (Java Runtime Environment) contains libraries and JVM to run programs. JVM (Java Virtual Machine) executes the bytecode. JDK > JRE > JVM.",
+        "keywords": [
+            "JDK",
+            "JRE",
+            "JVM",
+            "Development",
+            "Runtime",
+            "Execution",
+            "Differences"
+        ]
+    },
+    {
+        "id": "JA021",
+        "category": "Java Advanced",
+        "title": "Java Serialization",
+        "description": "Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process. It is used to persist the object state or to travel the object over a network. Classes must implement Serializable interface.",
+        "keywords": [
+            "Serialization",
+            "Deserialization",
+            "Byte Stream",
+            "Persistence",
+            "Serializable",
+            "Network"
+        ]
+    },
+    {
+        "id": "JA022",
+        "category": "Java Advanced",
+        "title": "Singleton Pattern in Java",
+        "description": "Singleton is a design pattern that prevents the instantiation of a class to more than one object. In Java, this is often implemented with a private constructor and a static method that returns the single instance.",
+        "keywords": [
+            "Singleton",
+            "Design Pattern",
+            "Static",
+            "Instance",
+            "Architecture"
+        ]
+    },
+    {
+        "id": "JA023",
+        "category": "Java Web Development",
+        "title": "Java Servlets",
+        "description": "Servlets are Java programs that run on a Web server, acting as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.",
+        "keywords": [
+            "Servlets",
+            "Web Server",
+            "HTTP",
+            "Backend",
+            "Request-Response",
+            "Container"
+        ]
+    },
+    {
+        "id": "JA024",
+        "category": "Java Fundamentals",
+        "title": "Java Enums",
+        "description": "An Enum is a special data type which enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. Enums can also have fields, methods, and constructors.",
+        "keywords": [
+            "Enum",
+            "Constants",
+            "Types",
+            "Fixed Set",
+            "Safety"
+        ]
+    },
+    {
+        "id": "JA025",
+        "category": "Java Advanced",
+        "title": "Java Volatile Keyword",
+        "description": "The volatile keyword is used to indicate that a variable's value will be modified by different threads. It ensures that the value of the volatile variable will always be read from the main memory and not from the thread's local cache.",
+        "keywords": [
+            "Volatile",
+            "Multithreading",
+            "Memory Visibility",
+            "Synchronization",
+            "Threads"
+        ]
+    },
+    {
+        "id": "JA026",
+        "category": "Java Tools",
+        "title": "JUnit",
+        "description": "JUnit is a unit testing framework for the Java programming language. It is important in the test-driven development aspect of programming. It allows developers to write and run repeatable tests.",
+        "keywords": [
+            "JUnit",
+            "Testing",
+            "Unit Test",
+            "TDD",
+            "Framework",
+            "Quality Assurance"
+        ]
+    },
+    {
+        "id": "JA027",
+        "category": "Java Fundamentals",
+        "title": "Java Static Keyword",
+        "description": "The static keyword is used for memory management mainly. It can apply to variables, methods, blocks, and nested classes. The static keyword belongs to the class than an instance of the class.",
+        "keywords": [
+            "Static",
+            "Class Level",
+            "Memory",
+            "Variables",
+            "Methods"
+        ]
+    },
+    {
+        "id": "JA028",
+        "category": "Java Fundamentals",
+        "title": "Java Final Keyword",
+        "description": "The final keyword is a non-access modifier used to restrict the user. A final variable cannot be changed (constant), a final method cannot be overridden, and a final class cannot be inherited.",
+        "keywords": [
+            "Final",
+            "Constant",
+            "Immutability",
+            "Restriction",
+            "Modifiers"
+        ]
+    },
+    {
+        "id": "JA029",
+        "category": "Java Fundamentals",
+        "title": "Java This Keyword",
+        "description": "There is a 'this' keyword in Java that is a reference variable that refers to the current object. It can be used to refer to current class instance variable, invoke current class method, or invoke current class constructor.",
+        "keywords": [
+            "This",
+            "Reference",
+            "Current Object",
+            "Instance",
+            "Context"
+        ]
+    },
+    {
+        "id": "JA030",
+        "category": "Java Fundamentals",
+        "title": "Java Super Keyword",
+        "description": "The super keyword is a reference variable which is used to refer to immediate parent class object. It is used to invoke parent class methods, constructors, and access parent class variables.",
+        "keywords": [
+            "Super",
+            "Inheritance",
+            "Parent Class",
+            "Reference",
+            "Overriding"
+        ]
+    },
+    {
+        "id": "JA031",
+        "category": "Java Advanced",
+        "title": "Java Optional Class",
+        "description": "Introduced in Java 8, Optional is a container object used to contain not-null objects. Optional object is used to represent null with absent value. It provides various utility methods to facilitate code to handle values as 'available' or 'not available' instead of checking null values.",
+        "keywords": [
+            "Optional",
+            "Null Safety",
+            "Java 8",
+            "Container",
+            "Best Practices"
+        ]
+    },
+    {
+        "id": "JA032",
+        "category": "Java Web Development",
+        "title": "JSP (JavaServer Pages)",
+        "description": "JSP is a technology used to develop software to support dynamic content based on HTML, XML, or other document types. It helps developers to insert Java code in HTML pages by making use of special JSP tags.",
+        "keywords": [
+            "JSP",
+            "Dynamic Content",
+            "HTML",
+            "Backend",
+            "Views",
+            "Legacy"
+        ]
+    },
+    {
+        "id": "JA033",
+        "category": "Java Fundamentals",
+        "title": "Java Arrays",
+        "description": "An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.",
+        "keywords": [
+            "Arrays",
+            "Data Structures",
+            "Fixed Size",
+            "Indexing",
+            "Storage"
+        ]
+    },
+    {
+        "id": "JA034",
+        "category": "Java Advanced",
+        "title": "Java Functional Interfaces",
+        "description": "A functional interface is an interface that contains only one abstract method. They can have any number of default, static methods but can contain only one abstract method. They are the basis for Lambda expressions.",
+        "keywords": [
+            "Functional Interface",
+            "Lambda",
+            "Java 8",
+            "Single Abstract Method",
+            "SAM"
+        ]
+    },
+    {
+        "id": "JA035",
+        "category": "Java Advanced",
+        "title": "Java JAR Files",
+        "description": "JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.",
+        "keywords": [
+            "JAR",
+            "Archive",
+            "Distribution",
+            "Packaging",
+            "Deployment",
+            "Libraries"
+        ]
+    },
+    {
+        "id": "JA036",
+        "category": "Java Web Development",
+        "title": "Spring Boot",
+        "description": "Spring Boot is an extension of the Spring Framework that simplifies the setup and development of new Spring applications. It takes an opinionated view of the Spring platform which keeps boilerplate code and configuration to a minimum.",
+        "keywords": [
+            "Spring Boot",
+            "Microservices",
+            "Rapid Development",
+            "Auto-configuration",
+            "Standalone"
+        ]
+    },
+    {
+        "id": "JA037",
+        "category": "Java Tools",
+        "title": "IntelliJ IDEA",
+        "description": "IntelliJ IDEA is an integrated development environment (IDE) written in Java for developing computer software. It is developed by JetBrains and is considered one of the best IDEs for Java development with smart code completion and analysis.",
+        "keywords": [
+            "IDE",
+            "IntelliJ",
+            "Development",
+            "Tools",
+            "JetBrains",
+            "Productivity"
+        ]
+    },
+    {
+        "id": "JA038",
+        "category": "Java Advanced",
+        "title": "Java Networking (Socket Programming)",
+        "description": "Java Networking is a concept of connecting two or more computing devices together so that we can share resources. Java provides java.net package to perform networking details. Socket programming provides a mechanism for communication between two computers using TCP.",
+        "keywords": [
+            "Networking",
+            "Sockets",
+            "TCP/IP",
+            "Client-Server",
+            "Communication"
+        ]
+    },
+    {
+        "id": "JA039",
+        "category": "Java Fundamentals",
+        "title": "Java Packages",
+        "description": "A java package is a group of similar types of classes, interfaces and sub-packages. Packages are used to categorize the classes and interfaces to be easily maintained and also provide access protection and namespace management.",
+        "keywords": [
+            "Packages",
+            "Organization",
+            "Namespaces",
+            "Modularity",
+            "Structure"
+        ]
+    },
+    {
+        "id": "JA040",
+        "category": "Java Advanced",
+        "title": "Java NIO (New I/O)",
+        "description": "Java NIO is a comprehensive I/O framework introduced in Java 1.4. It offers a different way of working with I/O than the standard I/O API's. NIO supports buffers, channels, and non-blocking I/O operations.",
+        "keywords": [
+            "NIO",
+            "I/O",
+            "Non-blocking",
+            "Buffers",
+            "Channels",
+            "Performance"
+        ]
+    },
+    {
+        "id": "JA041",
+        "category": "Java Fundamentals",
+        "title": "Java Constructors",
+        "description": "A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.",
+        "keywords": [
+            "Constructors",
+            "Initialization",
+            "Objects",
+            "Classes",
+            "Instantiation"
+        ]
+    },
+    {
+        "id": "JA042",
+        "category": "Java Fundamentals",
+        "title": "Java Polymorphism (Runtime vs Compile-time)",
+        "description": "Polymorphism allows objects to act differently based on their specific class. Compile-time polymorphism is achieved via method overloading, while runtime polymorphism is achieved via method overriding.",
+        "keywords": [
+            "Polymorphism",
+            "Overloading",
+            "Overriding",
+            "Dynamic Binding",
+            "Static Binding"
+        ]
+    },
+    {
+        "id": "JA043",
+        "category": "Java Advanced",
+        "title": "Java ClassLoader",
+        "description": "The Java ClassLoader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine. Usually, classes are only loaded on demand. The Java run time system does not need to know about files and file systems because of class loaders.",
+        "keywords": [
+            "ClassLoader",
+            "JVM",
+            "Dynamic Loading",
+            "Runtime",
+            "Reflection"
+        ]
+    },
+    {
+        "id": "JA044",
+        "category": "Java Fundamentals",
+        "title": "Java Abstract Classes",
+        "description": "An abstract class is a class that is declared with the abstract keyword. It may or may not have abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.",
+        "keywords": [
+            "Abstract Class",
+            "Inheritance",
+            "Template",
+            "Partial Implementation",
+            "Design"
+        ]
+    },
+    {
+        "id": "JA045",
+        "category": "Java Web Development",
+        "title": "Jakarta EE (formerly Java EE)",
+        "description": "Jakarta EE is a set of specifications, extending Java SE with specifications for enterprise features such as distributed computing and web services. It manages the standard for enterprise-grade applications.",
+        "keywords": [
+            "Jakarta EE",
+            "Java EE",
+            "Enterprise",
+            "Specifications",
+            "Web Services"
+        ]
+    },
+    {
+        "id": "JA046",
+        "category": "Java Tools",
+        "title": "Log4j",
+        "description": "Log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. It is used to log messages to various output targets.",
+        "keywords": [
+            "Log4j",
+            "Logging",
+            "Debugging",
+            "Monitoring",
+            "Framework",
+            "Apache"
+        ]
+    },
+    {
+        "id": "JA047",
+        "category": "Java Fundamentals",
+        "title": "Java Wrapper Classes",
+        "description": "Wrapper classes provide a way to use primitive data types (int, boolean, etc.) as objects. This is necessary when working with Collection frameworks, which only work with objects.",
+        "keywords": [
+            "Wrapper Classes",
+            "Boxing",
+            "Unboxing",
+            "Integer",
+            "Boolean",
+            "Primitives"
+        ]
+    },
+    {
+        "id": "JA048",
+        "category": "Java Advanced",
+        "title": "Java Record Classes",
+        "description": "Introduced in Java 14/16, Records are a special kind of class in Java that acts as a transparent carrier for immutable data. Records reduce boilerplate code by automatically generating constructor, getters, equals, hashCode, and toString.",
+        "keywords": [
+            "Records",
+            "Immutable Data",
+            "Boilerplate",
+            "Java 16",
+            "Data Carrier"
+        ]
+    },
+    {
+        "id": "JA049",
+        "category": "Java Advanced",
+        "title": "Java Module System (Jigsaw)",
+        "description": "Introduced in Java 9, the module system allows grouping related packages and resources into modules. It improves encapsulation and allows the JVM to be more modular and lightweight.",
+        "keywords": [
+            "Modules",
+            "Jigsaw",
+            "Encapsulation",
+            "Java 9",
+            "Requires",
+            "Exports"
+        ]
+    },
+    {
+        "id": "JA050",
+        "category": "Java Web Development",
+        "title": "Apache Tomcat",
+        "description": "Apache Tomcat is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. It acts as a web server and servlet container for Java web applications.",
+        "keywords": [
+            "Tomcat",
+            "Web Server",
+            "Servlet Container",
+            "Deployment",
+            "Apache"
+        ]
+    }
+]
