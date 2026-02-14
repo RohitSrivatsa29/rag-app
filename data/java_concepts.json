@@ -1,3 +1,4 @@
+[
 {
   "id": "JV001",
   "category": "Java",
@@ -1798,4 +1799,4 @@
       "usage": "ArrayDeque provides efficient double-ended queue using array.",
       "keywords": ["ArrayDeque", "Deque", "array", "efficient", "stack", "queue"]
     }
-  
+]

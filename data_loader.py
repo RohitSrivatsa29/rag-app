@@ -27,6 +27,11 @@ class DataLoader:
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     data = json.load(f)
+                    
+                    # Handle specific structure {"data": [...]}
+                    if isinstance(data, dict) and 'data' in data and isinstance(data['data'], list):
+                        data = data['data']
+                        
                     # Handle both list and single object
                     if isinstance(data, list):
                         all_data.extend(data)

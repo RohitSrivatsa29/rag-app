@@ -28,7 +28,7 @@ async def lifespan(app: FastAPI):
     
     # Initialize database
     print("\n1. Initializing database...")
-    db = Database("knowledge.db")
+    db = Database("knowledge_v2.db")
     db.connect()
     db.create_table()
     
@@ -54,7 +54,7 @@ async def lifespan(app: FastAPI):
     embedding_manager = EmbeddingManager()
     
     # Try to load existing index
-    index_exists = embedding_manager.load_index()
+    index_exists = embedding_manager.load_index("faiss_index_v2.bin", "id_mapping_v2.pkl")
     
     # Build index if doesn't exist or if new data was loaded
     if not index_exists or (record_count == 0 and db.count_records() > 0):
@@ -69,7 +69,7 @@ async def lifespan(app: FastAPI):
             embedding_manager.build_index(embeddings, ids)
             
             # Save index for future use
-            embedding_manager.save_index()
+            embedding_manager.save_index("faiss_index_v2.bin", "id_mapping_v2.pkl")
         else:
             print("   No records to index")
     else:
