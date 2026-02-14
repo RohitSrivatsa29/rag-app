@@ -6,7 +6,7 @@ import pickle
 import os
 
 class EmbeddingManager:
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, model_name: str = "paraphrase-MiniLM-L3-v2"):
         """Initialize embedding model"""
         print(f"Loading embedding model: {model_name}")
         self.model = SentenceTransformer(model_name)
