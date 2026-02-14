@@ -1,7 +1,0 @@
-Test 1: Who is Sundar Pichai
-Answer Length: 294 chars
-✅ Result seems specific (good)
-
-Test 2: Tell me everything about Sundar Pichai
-Answer Length: 844 chars
-✅ Result contains FULL PROFILE (good)
