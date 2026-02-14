@@ -1,686 +1,1801 @@
-[
-    {
-        "id": "JA001",
-        "category": "Java Fundamentals",
-        "title": "Java Virtual Machine (JVM)",
-        "description": "The JVM is the engine that drives the Java code. It converts Java bytecode into machine language. The JVM enables Java's 'Write Once, Run Anywhere' capability by providing a platform-independent execution environment.",
-        "keywords": [
-            "JVM",
-            "Bytecode",
-            "Platform Independent",
-            "Execution",
-            "Runtime",
-            "Architecture"
-        ]
+{
+  "id": "JV001",
+  "category": "Java",
+  "title": "What is JVM?",
+  "concept": "Java Virtual Machine",
+  "explanation": "JVM (Java Virtual Machine) is an abstract machine that executes Java bytecode. It provides runtime environment for Java applications and enables platform independence. JVM handles memory management, garbage collection, and security. Different JVM implementations exist for different platforms while maintaining Java's \"write once, run anywhere\" philosophy.",
+  "usage": "JVM executes compiled Java code and manages application runtime, enabling platform independence.",
+  "keywords": ["JVM", "bytecode", "platform independent", "runtime", "virtual machine", "execution"]
+},
+{
+  "id": "JV002",
+  "category": "Java",
+  "title": "What is JDK?",
+  "concept": "Java Development Kit",
+  "explanation": "JDK (Java Development Kit) is a software development kit for developing Java applications. It includes JRE, compiler (javac), debugger, and other development tools. JDK contains everything needed to develop, compile, and run Java programs. Different JDK versions support different Java language features.",
+  "usage": "JDK provides tools for developing Java applications including compiler and debugger.",
+  "keywords": ["JDK", "development", "compiler", "javac", "tools", "SDK"]
+},
+{
+  "id": "JV003",
+  "category": "Java",
+  "title": "What is JRE?",
+  "concept": "Java Runtime Environment",
+  "explanation": "JRE (Java Runtime Environment) provides libraries and JVM needed to run Java applications. It includes core Java classes and supporting files but not development tools. JRE is sufficient for running Java programs but not for developing them. Users only need JRE installed to run Java applications.",
+  "usage": "JRE provides runtime environment for executing Java applications without development tools.",
+  "keywords": ["JRE", "runtime", "libraries", "execution", "environment", "JVM"]
+},
+{
+  "id": "JV004",
+  "category": "Java",
+  "title": "What are Java data types?",
+  "concept": "Data Types",
+  "explanation": "Java has two categories of data types: primitive and reference types. Primitive types include byte, short, int, long, float, double, char, and boolean. Reference types include classes, interfaces, and arrays. Primitive types store values directly while reference types store memory addresses. Understanding data types is crucial for memory management and performance.",
+  "usage": "Data types define the kind of values variables can hold and operations that can be performed.",
+  "keywords": ["data types", "primitive", "reference", "int", "boolean", "class"]
+},
+{
+  "id": "JV005",
+  "category": "Java",
+  "title": "What is a Java class?",
+  "concept": "Object-Oriented Programming",
+  "explanation": "A class is a blueprint for creating objects in Java. It defines attributes (fields) and behaviors (methods) that objects will have. Classes support encapsulation, inheritance, and polymorphism. Java programs are built using classes and objects following object-oriented principles.",
+  "usage": "Classes define structure and behavior for objects in object-oriented programming.",
+  "keywords": ["class", "blueprint", "object", "OOP", "fields", "methods"]
+},
+{
+  "id": "JV006",
+  "category": "Java",
+  "title": "What is a Java object?",
+  "concept": "Object-Oriented Programming",
+  "explanation": "An object is an instance of a class created using the 'new' keyword. Objects have state (field values) and behavior (methods). Multiple objects can be created from the same class, each with its own state. Objects interact with each other through method calls.",
+  "usage": "Objects are instances of classes representing real-world entities with state and behavior.",
+  "keywords": ["object", "instance", "new", "state", "behavior", "instantiation"]
+},
+{
+  "id": "JV007",
+  "category": "Java",
+  "title": "What is Java inheritance?",
+  "concept": "Inheritance",
+  "explanation": "Inheritance allows a class to inherit properties and methods from another class using the 'extends' keyword. The child class inherits from parent class and can add new features or override existing ones. Java supports single inheritance for classes but multiple inheritance through interfaces. Inheritance promotes code reuse and establishes IS-A relationships.",
+  "usage": "Inheritance enables creating new classes based on existing ones, promoting code reuse.",
+  "keywords": ["inheritance", "extends", "parent", "child", "superclass", "subclass"]
+},
+{
+  "id": "JV008",
+  "category": "Java",
+  "title": "What is Java polymorphism?",
+  "concept": "Polymorphism",
+  "explanation": "Polymorphism allows objects to take multiple forms through method overriding and overloading. Runtime polymorphism occurs through method overriding where child classes provide specific implementations. Compile-time polymorphism occurs through method overloading with different parameters. Polymorphism enables flexible and extensible code design.",
+  "usage": "Polymorphism allows methods to behave differently based on the object or parameters.",
+  "keywords": ["polymorphism", "overriding", "overloading", "runtime", "compile-time", "dynamic binding"]
+},
+{
+  "id": "JV009",
+  "category": "Java",
+  "title": "What is Java encapsulation?",
+  "concept": "Encapsulation",
+  "explanation": "Encapsulation bundles data and methods within a class and controls access using access modifiers (private, protected, public). It hides internal implementation details from outside access. Encapsulation is achieved through private fields and public getter/setter methods. This protects data integrity and reduces coupling.",
+  "usage": "Encapsulation protects object data by controlling access through methods.",
+  "keywords": ["encapsulation", "private", "public", "getter", "setter", "data hiding"]
+},
+{
+  "id": "JV010",
+  "category": "Java",
+  "title": "What is Java abstraction?",
+  "concept": "Abstraction",
+  "explanation": "Abstraction hides complex implementation details and shows only essential features. Abstract classes and interfaces provide abstraction in Java. Abstract methods must be implemented by subclasses. Abstraction focuses on what an object does rather than how it does it.",
+  "usage": "Abstraction simplifies complexity by hiding implementation details and showing only functionality.",
+  "keywords": ["abstraction", "abstract class", "interface", "abstract method", "hiding", "simplification"]
+},
+{
+  "id": "JV011",
+  "category": "Java",
+  "title": "What is a Java interface?",
+  "concept": "Interfaces",
+  "explanation": "An interface is a contract specifying methods that implementing classes must provide. Interfaces contain abstract methods and constants by default. Java 8+ allows default and static methods in interfaces. Classes can implement multiple interfaces, achieving multiple inheritance. Interfaces define capabilities that classes can have.",
+  "usage": "Interfaces define contracts that classes must implement, enabling multiple inheritance.",
+  "keywords": ["interface", "contract", "implements", "abstract", "multiple inheritance", "default method"]
+},
+{
+  "id": "JV012",
+  "category": "Java",
+  "title": "What is an abstract class?",
+  "concept": "Abstract Classes",
+  "explanation": "Abstract classes cannot be instantiated and may contain abstract methods. They can have both abstract and concrete methods. Abstract classes are declared with 'abstract' keyword. Subclasses must implement all abstract methods unless they're also abstract. Abstract classes provide partial implementation for subclasses.",
+  "usage": "Abstract classes provide base implementation with some methods left for subclasses to implement.",
+  "keywords": ["abstract class", "abstract method", "cannot instantiate", "partial implementation", "extends"]
+},
+{
+  "id": "JV013",
+  "category": "Java",
+  "title": "What is method overloading?",
+  "concept": "Method Overloading",
+  "explanation": "Method overloading allows multiple methods with same name but different parameters in a class. Methods must differ in number, type, or order of parameters. Return type alone cannot distinguish overloaded methods. Overloading is resolved at compile time. It provides multiple ways to call similar operations.",
+  "usage": "Method overloading enables multiple methods with same name but different parameters.",
+  "keywords": ["overloading", "same name", "different parameters", "compile-time", "polymorphism"]
+},
+{
+  "id": "JV014",
+  "category": "Java",
+  "title": "What is method overriding?",
+  "concept": "Method Overriding",
+  "explanation": "Method overriding allows a subclass to provide specific implementation for a method inherited from parent class. Overridden method must have same signature as parent method. @Override annotation indicates overriding intent. Overriding is resolved at runtime. Access level cannot be more restrictive than parent method.",
+  "usage": "Method overriding allows subclasses to provide specific implementations of inherited methods.",
+  "keywords": ["overriding", "subclass", "runtime", "polymorphism", "@Override", "inheritance"]
+},
+{
+  "id": "JV015",
+  "category": "Java",
+  "title": "What is a constructor?",
+  "concept": "Constructors",
+  "explanation": "Constructors are special methods that initialize objects when created. They have same name as class and no return type. Java provides default constructor if none defined. Constructors can be overloaded with different parameters. Constructor chaining uses this() or super() to call other constructors.",
+  "usage": "Constructors initialize new objects with specified or default values.",
+  "keywords": ["constructor", "initialization", "new", "this", "super", "overloading"]
+},
+{
+  "id": "JV016",
+  "category": "Java",
+  "title": "What is the 'this' keyword?",
+  "concept": "Keywords",
+  "explanation": "The 'this' keyword refers to the current object instance. It's used to access instance variables when shadowed by parameters. This() calls another constructor in same class. This keyword enables method chaining by returning current object. Cannot be used in static context.",
+  "usage": "'This' refers to current object and resolves naming conflicts with parameters.",
+  "keywords": ["this", "current object", "instance", "constructor chaining", "reference"]
+},
+{
+  "id": "JV017",
+  "category": "Java",
+  "title": "What is the 'super' keyword?",
+  "concept": "Keywords",
+  "explanation": "The 'super' keyword refers to the parent class. Super() calls parent class constructor. Super.method() calls parent class method. Used to access parent class members hidden by child class. First statement in constructor can be super() or this().",
+  "usage": "'Super' accesses parent class members and constructors from child class.",
+  "keywords": ["super", "parent class", "inheritance", "constructor", "method call"]
+},
+{
+  "id": "JV018",
+  "category": "Java",
+  "title": "What is the 'static' keyword?",
+  "concept": "Static Members",
+  "explanation": "Static members belong to class rather than instances. Static variables are shared among all objects of class. Static methods can be called without creating objects. Static blocks execute when class is loaded. Static members cannot access instance variables directly.",
+  "usage": "Static members belong to class and are shared across all instances.",
+  "keywords": ["static", "class variable", "class method", "shared", "no instance"]
+},
+{
+  "id": "JV019",
+  "category": "Java",
+  "title": "What is the 'final' keyword?",
+  "concept": "Final Keyword",
+  "explanation": "The 'final' keyword prevents modification. Final variables become constants and cannot be reassigned. Final methods cannot be overridden by subclasses. Final classes cannot be extended. Final parameters cannot be modified within method. Blank final variables must be initialized in constructor.",
+  "usage": "'Final' prevents modification of variables, methods, and classes.",
+  "keywords": ["final", "constant", "immutable", "cannot override", "cannot extend"]
+},
+{
+  "id": "JV020",
+  "category": "Java",
+  "title": "What are access modifiers?",
+  "concept": "Access Modifiers",
+  "explanation": "Access modifiers control visibility of classes, methods, and variables. Public members are accessible everywhere. Private members are accessible only within the same class. Protected members are accessible within package and subclasses. Default (no modifier) is package-private. Proper use ensures encapsulation.",
+  "usage": "Access modifiers control visibility and accessibility of class members.",
+  "keywords": ["public", "private", "protected", "default", "visibility", "encapsulation"]
+},
+{
+  "id": "JV021",
+  "category": "Java",
+  "title": "What is a Java package?",
+  "concept": "Packages",
+  "explanation": "Packages organize related classes and interfaces into namespaces. They prevent naming conflicts and control access. Package declaration is first statement in Java file. Import statements allow using classes from other packages. Packages create hierarchical structure for large applications.",
+  "usage": "Packages organize classes into namespaces and control access.",
+  "keywords": ["package", "namespace", "import", "organization", "access control"]
+},
+{
+  "id": "JV022",
+  "category": "Java",
+  "title": "What is exception handling?",
+  "concept": "Exception Handling",
+  "explanation": "Exception handling manages runtime errors using try-catch-finally blocks. Exceptions are objects representing error conditions. Try block contains code that might throw exception. Catch blocks handle specific exception types. Finally block always executes for cleanup. Exceptions can be checked or unchecked.",
+  "usage": "Exception handling catches and manages errors to prevent program crashes.",
+  "keywords": ["exception", "try", "catch", "finally", "throw", "error handling"]
+},
+{
+  "id": "JV023",
+  "category": "Java",
+  "title": "What are checked exceptions?",
+  "concept": "Exceptions",
+  "explanation": "Checked exceptions must be declared in method signature or caught. Compiler enforces handling of checked exceptions. They extend Exception class but not RuntimeException. Examples include IOException and SQLException. Used for recoverable conditions that calling code should handle.",
+  "usage": "Checked exceptions must be explicitly handled or declared in method signature.",
+  "keywords": ["checked exception", "compile-time", "IOException", "must handle", "declared"]
+},
+{
+  "id": "JV024",
+  "category": "Java",
+  "title": "What are unchecked exceptions?",
+  "concept": "Exceptions",
+  "explanation": "Unchecked exceptions don't need to be declared or caught. They extend RuntimeException class. Compiler doesn't enforce handling. Examples include NullPointerException and ArrayIndexOutOfBoundsException. Typically indicate programming errors that should be fixed.",
+  "usage": "Unchecked exceptions don't require explicit handling and indicate programming errors.",
+  "keywords": ["unchecked exception", "RuntimeException", "NullPointerException", "no declaration required"]
+},
+{
+  "id": "JV025",
+  "category": "Java",
+  "title": "What is the 'throw' keyword?",
+  "concept": "Exception Handling",
+  "explanation": "The 'throw' keyword explicitly throws an exception. Can throw any Throwable object. Used to signal error conditions. Execution stops and looks for matching catch block. Custom exceptions can be created and thrown.",
+  "usage": "'Throw' explicitly raises an exception to signal error conditions.",
+  "keywords": ["throw", "exception", "raise", "signal", "error"]
+},
+{
+  "id": "JV026",
+  "category": "Java",
+  "title": "What is the 'throws' keyword?",
+  "concept": "Exception Handling",
+  "explanation": "The 'throws' keyword declares exceptions a method might throw. Listed in method signature after parameters. Multiple exceptions separated by commas. Informs callers to handle these exceptions. Required for checked exceptions not caught within method.",
+  "usage": "'Throws' declares exceptions method might throw in its signature.",
+  "keywords": ["throws", "declare", "method signature", "checked exception", "propagate"]
+},
+{
+  "id": "JV027",
+  "category": "Java",
+  "title": "What is try-with-resources?",
+  "concept": "Exception Handling",
+  "explanation": "Try-with-resources automatically closes resources that implement AutoCloseable. Resources declared in try parentheses are automatically closed. Prevents resource leaks. Multiple resources can be declared separated by semicolons. Added in Java 7 to simplify resource management.",
+  "usage": "Try-with-resources automatically closes resources after use.",
+  "keywords": ["try-with-resources", "AutoCloseable", "automatic", "resource management", "Java 7"]
+},
+{
+  "id": "JV028",
+  "category": "Java",
+  "title": "What is the Collections Framework?",
+  "concept": "Collections",
+  "explanation": "Collections Framework provides interfaces and classes for storing and manipulating groups of objects. Key interfaces include List, Set, Map, and Queue. Implementations include ArrayList, HashSet, HashMap, etc. Collections provide algorithms for sorting, searching, and manipulation. Framework promotes code reuse and interoperability.",
+  "usage": "Collections Framework provides data structures for storing and manipulating object groups.",
+  "keywords": ["Collections", "List", "Set", "Map", "ArrayList", "HashMap"]
+},
+{
+  "id": "JV029",
+  "category": "Java",
+  "title": "What is an ArrayList?",
+  "concept": "Collections",
+  "explanation": "ArrayList is a resizable array implementation of List interface. Allows duplicate elements and maintains insertion order. Provides fast random access by index. Slower for insertions and deletions in middle. Grows dynamically as elements are added. Not synchronized by default.",
+  "usage": "ArrayList provides dynamic array with fast random access and ordered elements.",
+  "keywords": ["ArrayList", "List", "dynamic array", "ordered", "index", "resizable"]
+},
+{
+  "id": "JV030",
+  "category": "Java",
+  "title": "What is a LinkedList?",
+  "concept": "Collections",
+  "explanation": "LinkedList implements both List and Deque interfaces using doubly-linked list. Efficient for insertions and deletions at any position. Slower random access compared to ArrayList. Can be used as stack, queue, or deque. Maintains insertion order like ArrayList.",
+  "usage": "LinkedList provides efficient insertions/deletions using doubly-linked structure.",
+  "keywords": ["LinkedList", "doubly-linked", "List", "Deque", "insertion", "deletion"]
+},
+{
+  "id": "JV031",
+  "category": "Java",
+  "title": "What is a HashSet?",
+  "concept": "Collections",
+  "explanation": "HashSet implements Set interface using hash table. Stores unique elements with no duplicates. Does not maintain order. Provides constant-time performance for basic operations. Uses hashCode() and equals() for element comparison. Allows one null element.",
+  "usage": "HashSet stores unique unordered elements with fast operations.",
+  "keywords": ["HashSet", "Set", "unique", "no duplicates", "hash table", "unordered"]
+},
+{
+  "id": "JV032",
+  "category": "Java",
+  "title": "What is a TreeSet?",
+  "concept": "Collections",
+  "explanation": "TreeSet implements NavigableSet using red-black tree. Stores elements in sorted order. Elements must be comparable or comparator must be provided. Provides log(n) time for basic operations. Does not allow null elements. Maintains sorted order automatically.",
+  "usage": "TreeSet stores unique elements in sorted order using tree structure.",
+  "keywords": ["TreeSet", "sorted", "NavigableSet", "red-black tree", "ordered", "comparable"]
+},
+{
+  "id": "JV033",
+  "category": "Java",
+  "title": "What is a HashMap?",
+  "concept": "Collections",
+  "explanation": "HashMap implements Map interface using hash table. Stores key-value pairs with unique keys. Does not maintain order. Provides constant-time performance for get and put. Allows one null key and multiple null values. Not synchronized by default.",
+  "usage": "HashMap stores key-value pairs with fast access using hash table.",
+  "keywords": ["HashMap", "Map", "key-value", "hash table", "unordered", "null allowed"]
+},
+{
+  "id": "JV034",
+  "category": "Java",
+  "title": "What is a TreeMap?",
+  "concept": "Collections",
+  "explanation": "TreeMap implements NavigableMap using red-black tree. Stores key-value pairs sorted by keys. Keys must be comparable or comparator provided. Provides log(n) time for basic operations. Does not allow null keys. Maintains sorted order of keys.",
+  "usage": "TreeMap stores key-value pairs sorted by keys using tree structure.",
+  "keywords": ["TreeMap", "sorted", "NavigableMap", "red-black tree", "ordered", "keys"]
+},
+{
+  "id": "JV035",
+  "category": "Java",
+  "title": "What is a LinkedHashMap?",
+  "concept": "Collections",
+  "explanation": "LinkedHashMap extends HashMap maintaining insertion order. Uses doubly-linked list to maintain order. Slightly slower than HashMap due to ordering overhead. Useful when iteration order matters. Can be configured for access-order instead of insertion-order.",
+  "usage": "LinkedHashMap maintains insertion order while providing HashMap functionality.",
+  "keywords": ["LinkedHashMap", "insertion order", "HashMap", "ordered", "doubly-linked"]
+},
+{
+  "id": "JV036",
+  "category": "Java",
+  "title": "What is an Iterator?",
+  "concept": "Collections",
+  "explanation": "Iterator provides way to traverse collections sequentially. Methods include hasNext(), next(), and remove(). Obtained from collection's iterator() method. Enables safe removal during iteration. Enhanced for-loop uses iterator internally. Different from Enumeration which is older.",
+  "usage": "Iterator enables sequential traversal and modification of collections.",
+  "keywords": ["Iterator", "traverse", "hasNext", "next", "remove", "iteration"]
+},
+{
+  "id": "JV037",
+  "category": "Java",
+  "title": "What is the Comparable interface?",
+  "concept": "Interfaces",
+  "explanation": "Comparable interface defines natural ordering for class. Implements compareTo() method returning negative, zero, or positive. Used by sorting algorithms and sorted collections. Objects must be mutually comparable. Provides single way to compare objects.",
+  "usage": "Comparable defines natural ordering by implementing compareTo() method.",
+  "keywords": ["Comparable", "compareTo", "natural ordering", "sorting", "interface"]
+},
+{
+  "id": "JV038",
+  "category": "Java",
+  "title": "What is the Comparator interface?",
+  "concept": "Interfaces",
+  "explanation": "Comparator defines custom ordering separate from natural ordering. Implements compare() method comparing two objects. Allows multiple comparison strategies. Can be used as lambda expression. Useful when you can't modify class to implement Comparable.",
+  "usage": "Comparator provides custom ordering logic separate from object's natural order.",
+  "keywords": ["Comparator", "compare", "custom ordering", "lambda", "sorting"]
+},
+{
+  "id": "JV039",
+  "category": "Java",
+  "title": "What is multithreading?",
+  "concept": "Multithreading",
+  "explanation": "Multithreading enables concurrent execution of multiple threads. Threads share process resources but execute independently. Improves application responsiveness and performance. Java provides Thread class and Runnable interface. Requires synchronization to avoid race conditions.",
+  "usage": "Multithreading enables parallel execution of code through multiple threads.",
+  "keywords": ["multithreading", "thread", "concurrent", "parallel", "Runnable", "Thread"]
+},
+{
+  "id": "JV040",
+  "category": "Java",
+  "title": "What is the Thread class?",
+  "concept": "Threads",
+  "explanation": "Thread class represents thread of execution. Can be extended or instantiated with Runnable. Provides methods like start(), run(), sleep(), join(). Start() begins thread execution calling run() method. Thread states include NEW, RUNNABLE, BLOCKED, WAITING, TERMINATED.",
+  "usage": "Thread class creates and manages individual threads of execution.",
+  "keywords": ["Thread", "start", "run", "thread class", "execution", "lifecycle"]
+},
+{
+  "id": "JV041",
+  "category": "Java",
+  "title": "What is the Runnable interface?",
+  "concept": "Threads",
+  "explanation": "Runnable is functional interface for defining thread tasks. Contains single run() method with thread logic. Preferred over extending Thread class. Allows implementing other interfaces. Can be used with lambda expressions. Passed to Thread constructor or ExecutorService.",
+  "usage": "Runnable defines task to be executed by thread through run() method.",
+  "keywords": ["Runnable", "functional interface", "run", "lambda", "thread task"]
+},
+{
+  "id": "JV042",
+  "category": "Java",
+  "title": "What is synchronization?",
+  "concept": "Thread Synchronization",
+  "explanation": "Synchronization prevents multiple threads from accessing shared resources simultaneously. Uses 'synchronized' keyword on methods or blocks. Acquires lock on object preventing other threads from accessing. Prevents race conditions and ensures thread safety. Can cause performance overhead.",
+  "usage": "Synchronization ensures thread-safe access to shared resources.",
+  "keywords": ["synchronized", "lock", "thread safety", "race condition", "mutual exclusion"]
+},
+{
+  "id": "JV043",
+  "category": "Java",
+  "title": "What is a deadlock?",
+  "concept": "Concurrency",
+  "explanation": "Deadlock occurs when two or more threads are blocked forever waiting for each other. Each thread holds lock needed by another thread. Prevention requires careful lock ordering. Can be detected but difficult to recover from. Best avoided through proper design.",
+  "usage": "Deadlock is situation where threads permanently block each other.",
+  "keywords": ["deadlock", "blocked", "lock", "circular wait", "concurrency"]
+},
+{
+  "id": "JV044",
+  "category": "Java",
+  "title": "What is the volatile keyword?",
+  "concept": "Concurrency",
+  "explanation": "Volatile ensures visibility of variable changes across threads. Prevents thread caching of variable values. Reads and writes go directly to main memory. Does not provide atomicity for compound operations. Lighter alternative to synchronization for visibility.",
+  "usage": "Volatile ensures variable visibility across threads without full synchronization.",
+  "keywords": ["volatile", "visibility", "thread safety", "memory", "cache"]
+},
+{
+  "id": "JV045",
+  "category": "Java",
+  "title": "What is the ExecutorService?",
+  "concept": "Concurrency",
+  "explanation": "ExecutorService manages thread pool for executing tasks. Provides methods like submit(), execute(), shutdown(). Handles thread creation, pooling, and lifecycle. Supports Future for getting task results. More efficient than creating threads manually.",
+  "usage": "ExecutorService manages thread pools for efficient task execution.",
+  "keywords": ["ExecutorService", "thread pool", "submit", "Future", "concurrency"]
+},
+{
+  "id": "JV046",
+  "category": "Java",
+  "title": "What is a lambda expression?",
+  "concept": "Functional Programming",
+  "explanation": "Lambda expressions provide concise way to represent anonymous functions. Syntax is (parameters) -> expression or block. Used with functional interfaces having single abstract method. Enable functional programming style in Java. Added in Java 8 along with Stream API.",
+  "usage": "Lambda expressions create anonymous functions for functional interfaces.",
+  "keywords": ["lambda", "functional", "arrow", "anonymous function", "Java 8"]
+},
+{
+  "id": "JV047",
+  "category": "Java",
+  "title": "What is a functional interface?",
+  "concept": "Functional Programming",
+  "explanation": "Functional interface has exactly one abstract method. Can have default and static methods. @FunctionalInterface annotation ensures single abstract method. Examples include Runnable, Callable, Comparator. Can be implemented using lambda expressions.",
+  "usage": "Functional interface has single abstract method enabling lambda usage.",
+  "keywords": ["functional interface", "SAM", "lambda", "@FunctionalInterface", "single method"]
+},
+{
+  "id": "JV048",
+  "category": "Java",
+  "title": "What is the Stream API?",
+  "concept": "Stream API",
+  "explanation": "Stream API processes sequences of elements in functional style. Supports operations like filter, map, reduce. Streams are lazy and can be parallel. Terminal operations trigger processing. Intermediate operations return new streams. Added in Java 8 for functional programming.",
+  "usage": "Stream API enables functional-style operations on element sequences.",
+  "keywords": ["Stream", "filter", "map", "reduce", "functional", "Java 8"]
+},
+{
+  "id": "JV049",
+  "category": "Java",
+  "title": "What are Stream operations?",
+  "concept": "Stream API",
+  "explanation": "Stream operations are intermediate or terminal. Intermediate operations are lazy returning new streams (filter, map, sorted). Terminal operations trigger processing returning results (collect, forEach, reduce). Operations can be chained. Parallel streams process elements concurrently.",
+  "usage": "Stream operations transform and process data in functional pipeline.",
+  "keywords": ["Stream operations", "intermediate", "terminal", "filter", "map", "collect"]
+},
+{
+  "id": "JV050",
+  "category": "Java",
+  "title": "What is Optional?",
+  "concept": "Optional",
+  "explanation": "Optional is container that may or may not contain value. Helps avoid NullPointerException. Provides methods like isPresent(), ifPresent(), orElse(). Encourages null-safe code. Cannot be serialized. Added in Java 8 for better null handling.",
+  "usage": "Optional provides null-safe container for potentially absent values.",
+  "keywords": ["Optional", "null-safe", "isPresent", "orElse", "Java 8"]
+},
+{
+  "id": "JV051",
+  "category": "Java",
+  "title": "What is method reference?",
+  "concept": "Functional Programming",
+  "explanation": "Method references are shorthand for lambda expressions calling existing methods. Four types: static, instance, constructor, and arbitrary object. Syntax uses double colon (::). More readable than equivalent lambdas. Works with functional interfaces.",
+  "usage": "Method references provide concise syntax for calling existing methods.",
+  "keywords": ["method reference", "::", "lambda", "functional", "shorthand"]
+},
+{
+  "id": "JV052",
+  "category": "Java",
+  "title": "What is default method?",
+  "concept": "Interfaces",
+  "explanation": "Default methods in interfaces have implementation. Declared with 'default' keyword. Provide backward compatibility when adding methods to interfaces. Classes can override default methods. Multiple inheritance of default methods can cause conflicts.",
+  "usage": "Default methods provide implementation in interfaces for backward compatibility.",
+  "keywords": ["default method", "interface", "implementation", "Java 8", "backward compatibility"]
+},
+{
+  "id": "JV053",
+  "category": "Java",
+  "title": "What is a static method in interface?",
+  "concept": "Interfaces",
+  "explanation": "Static methods in interfaces provide utility methods. Cannot be overridden by implementing classes. Called using interface name. Help organize related utility methods. Added in Java 8 along with default methods.",
+  "usage": "Static methods in interfaces provide utility functionality.",
+  "keywords": ["static method", "interface", "utility", "Java 8", "cannot override"]
+},
+{
+  "id": "JV054",
+  "category": "Java",
+  "title": "What is autoboxing and unboxing?",
+  "concept": "Wrapper Classes",
+  "explanation": "Autoboxing automatically converts primitive to wrapper object. Unboxing converts wrapper to primitive. Happens automatically during assignments and method calls. Can impact performance in loops. Null wrapper can cause NullPointerException during unboxing.",
+  "usage": "Autoboxing and unboxing enable automatic conversion between primitives and wrappers.",
+  "keywords": ["autoboxing", "unboxing", "wrapper", "primitive", "automatic conversion"]
+},
+{
+  "id": "JV055",
+  "category": "Java",
+  "title": "What are wrapper classes?",
+  "concept": "Wrapper Classes",
+      "explanation": "Wrapper classes provide object representation for primitives. Include Integer, Double, Boolean, etc. Enable using primitives in collections. Provide utility methods like parsing. Immutable and cached for some values. Support autoboxing and unboxing.",
+      "usage": "Wrapper classes wrap primitives in objects with additional functionality.",
+      "keywords": ["wrapper class", "Integer", "Double", "primitive", "object", "immutable"]
     },
     {
-        "id": "JA002",
-        "category": "Java Fundamentals",
-        "title": "Java Object-Oriented Programming",
-        "description": "Java is a class-based, object-oriented programming language. It adheres to the four main principles of OOP: Encapsulation, Inheritance, Polymorphism, and Abstraction. Everything in Java is associated with classes and objects.",
-        "keywords": [
-            "OOP",
-            "Classes",
-            "Objects",
-            "Encapsulation",
-            "Inheritance",
-            "Polymorphism",
-            "Abstraction"
-        ]
+      "id": "JV056",
+      "category": "Java",
+      "title": "What is garbage collection?",
+      "concept": "Memory Management",
+      "explanation": "Garbage collection automatically reclaims memory from unreferenced objects. JVM determines when to run garbage collector. Removes burden of manual memory management. Different GC algorithms available. Can be tuned with JVM parameters. Affects application performance.",
+      "usage": "Garbage collection automatically frees memory from unused objects.",
+      "keywords": ["garbage collection", "GC", "memory", "automatic", "unreferenced objects"]
     },
     {
-        "id": "JA003",
-        "category": "Java Fundamentals",
-        "title": "Java Primitive Data Types",
-        "description": "Java define 8 primitive data types: byte, short, int, long, float, double, boolean, and char. These are not objects and are stored directly in the stack memory for efficiency. Wrapper classes exist to treat them as objects.",
-        "keywords": [
-            "Primitives",
-            "Data Types",
-            "int",
-            "boolean",
-            "char",
-            "double",
-            "Stack",
-            "Memory"
-        ]
+      "id": "JV057",
+      "category": "Java",
+      "title": "What is String immutability?",
+      "concept": "Strings",
+      "explanation": "Strings in Java are immutable and cannot be changed after creation. String modifications create new String objects. Immutability enables string pooling and thread safety. String constant pool stores unique string literals. Use StringBuilder for frequent modifications.",
+      "usage": "String immutability means String objects cannot be modified after creation.",
+      "keywords": ["String", "immutable", "string pool", "thread-safe", "constant pool"]
     },
     {
-        "id": "JA004",
-        "category": "Java Fundamentals",
-        "title": "Java Garbage Collection",
-        "description": "Java provides automatic garbage collection, which identifies and discards objects that are no longer needed by the program to free up memory resources. The JVM's Garbage Collector runs in the background.",
-        "keywords": [
-            "Garbage Collection",
-            "Memory Management",
-            "JVM",
-            "Heap",
-            "Automatic",
-            "Cleanup"
-        ]
+      "id": "JV058",
+      "category": "Java",
+      "title": "What is StringBuilder?",
+      "concept": "Strings",
+      "explanation": "StringBuilder creates mutable sequence of characters. More efficient than String concatenation in loops. Not thread-safe unlike StringBuffer. Provides methods like append(), insert(), delete(). Should be used for frequent string modifications.",
+      "usage": "StringBuilder provides mutable, efficient string manipulation.",
+      "keywords": ["StringBuilder", "mutable", "efficient", "append", "not thread-safe"]
     },
     {
-        "id": "JA005",
-        "category": "Java Advanced",
-        "title": "Java Collections Framework",
-        "description": "The Collections Framework provides a set of interfaces and classes to store and manipulate groups of data. Key interfaces include List, Set, Queue, and Map. Implementations include ArrayList, HashSet, LinkedList, and HashMap.",
-        "keywords": [
-            "Collections",
-            "List",
-            "Set",
-            "Map",
-            "ArrayList",
-            "HashMap",
-            "Data Structures"
-        ]
+      "id": "JV059",
+      "category": "Java",
+      "title": "What is StringBuffer?",
+      "concept": "Strings",
+      "explanation": "StringBuffer is thread-safe mutable string class. Synchronized methods ensure thread safety. Slower than StringBuilder due to synchronization. Used when thread safety is required. Provides same methods as StringBuilder.",
+      "usage": "StringBuffer provides thread-safe mutable string manipulation.",
+      "keywords": ["StringBuffer", "thread-safe", "synchronized", "mutable", "append"]
     },
     {
-        "id": "JA006",
-        "category": "Java Advanced",
-        "title": "Java Multithreading",
-        "description": "Java supports multithreading, allowing concurrent execution of two or more parts of a program. Threads can be created by extending the Thread class or implementing the Runnable interface. Synchronization is used to prevent race conditions.",
-        "keywords": [
-            "Multithreading",
-            "Concurrency",
-            "Thread",
-            "Runnable",
-            "Synchronization",
-            "Parallelism"
-        ]
+      "id": "JV060",
+      "category": "Java",
+      "title": "What is the String pool?",
+      "concept": "Strings",
+      "explanation": "String pool stores unique string literals in heap memory. String literals with same value share same object. Created using string literals or intern() method. Saves memory by reusing strings. Part of constant pool in heap.",
+      "usage": "String pool stores unique string literals for memory efficiency.",
+      "keywords": ["string pool", "literals", "intern", "memory", "constant pool"]
     },
     {
-        "id": "JA007",
-        "category": "Java Advanced",
-        "title": "Java Streams API",
-        "description": "Introduced in Java 8, the Streams API is used to process sequences of elements. It supports functional-style operations on streams of elements, such as map-reduce transformations on collections.",
-        "keywords": [
-            "Streams",
-            "Java 8",
-            "Functional Programming",
-            "Map",
-            "Filter",
-            "Reduce",
-            "Lambda"
-        ]
+      "id": "JV061",
+      "category": "Java",
+      "title": "What is serialization?",
+      "concept": "Serialization",
+      "explanation": "Serialization converts object to byte stream for storage or transmission. Implements Serializable interface. Uses ObjectOutputStream for serialization. Deserialization recreates object from byte stream. SerialVersionUID ensures version compatibility.",
+      "usage": "Serialization converts objects to byte streams for persistence or transfer.",
+      "keywords": ["serialization", "Serializable", "ObjectOutputStream", "byte stream", "persistence"]
     },
     {
-        "id": "JA008",
-        "category": "Java Fundamentals",
-        "title": "Java Exception Handling",
-        "description": "Java uses a robust exception handling mechanism based on try, catch, finally, throw, and throws keywords. It distinguishes between checked exceptions (compile-time) and unchecked exceptions (runtime).",
-        "keywords": [
-            "Exception Handling",
-            "Try-Catch",
-            "Checked Exception",
-            "Runtime Exception",
-            "Error Handling"
-        ]
+      "id": "JV062",
+      "category": "Java",
+      "title": "What is transient keyword?",
+      "concept": "Serialization",
+      "explanation": "Transient keyword excludes fields from serialization. Transient fields are not saved during serialization. Useful for sensitive data or derived values. Deserialized transient fields have default values. Cannot be applied to methods or classes.",
+      "usage": "Transient excludes fields from serialization process.",
+      "keywords": ["transient", "serialization", "exclude", "sensitive data", "not serialized"]
     },
     {
-        "id": "JA009",
-        "category": "Java Web Development",
-        "title": "Spring Framework",
-        "description": "Spring is a powerful, lightweight framework for enterprise Java development. It provides comprehensive infrastructure support including Dependency Injection (DI) and Aspect-Oriented Programming (AOP).",
-        "keywords": [
-            "Spring",
-            "Framework",
-            "Dependency Injection",
-            "Inversion of Control",
-            "Web Development",
-            "Enterprise"
-        ]
+      "id": "JV063",
+      "category": "Java",
+      "title": "What is reflection?",
+      "concept": "Reflection",
+      "explanation": "Reflection examines and modifies runtime behavior of classes. Can access private members and invoke methods dynamically. Uses Class object and reflection API. Common in frameworks and testing tools. Can impact performance and security.",
+      "usage": "Reflection enables runtime inspection and modification of classes and objects.",
+      "keywords": ["reflection", "Class", "runtime", "dynamic", "introspection"]
     },
     {
-        "id": "JA010",
-        "category": "Java Fundamentals",
-        "title": "Java Access Modifiers",
-        "description": "Access modifiers determine the scope of classes, variables, methods, and constructors. The four levels are: public (visible to all), protected (package + subclasses), default (package only), and private (class only).",
-        "keywords": [
-            "Access Modifiers",
-            "Public",
-            "Private",
-            "Protected",
-            "Default",
-            "Scope",
-            "Encapsulation"
-        ]
+      "id": "JV064",
+      "category": "Java",
+      "title": "What is annotation?",
+      "concept": "Annotations",
+      "explanation": "Annotations provide metadata about code. Declared with @ symbol. Can be applied to classes, methods, fields, parameters. Built-in annotations include @Override, @Deprecated, @SuppressWarnings. Custom annotations can be created. Processed at compile-time or runtime.",
+      "usage": "Annotations add metadata to code elements for processing.",
+      "keywords": ["annotation", "@", "metadata", "@Override", "@Deprecated"]
     },
     {
-        "id": "JA011",
-        "category": "Java Advanced",
-        "title": "Java Generics",
-        "description": "Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces, and methods. They provide stronger type checks at compile time and eliminate the need for casting.",
-        "keywords": [
-            "Generics",
-            "Type Safety",
-            "Parameters",
-            "Compile-time",
-            "Templates",
-            "Reuse"
-        ]
+      "id": "JV065",
+      "category": "Java",
+      "title": "What is @Override annotation?",
+      "concept": "Annotations",
+      "explanation": "@Override indicates method overrides superclass method. Compile-time check ensures method actually overrides. Prevents errors from typos in method names. Optional but recommended for clarity. Makes code more maintainable.",
+      "usage": "@Override ensures method correctly overrides superclass method.",
+      "keywords": ["@Override", "annotation", "compile-time", "override", "validation"]
     },
     {
-        "id": "JA012",
-        "category": "Java Fundamentals",
-        "title": "Java Interfaces",
-        "description": "An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, and static methods. Use abstract classes when you need to share code, interface to define a contract.",
-        "keywords": [
-            "Interface",
-            "Contract",
-            "Abstraction",
-            "Implementation",
-            "Multiple Inheritance"
-        ]
+      "id": "JV066",
+      "category": "Java",
+      "title": "What is @Deprecated annotation?",
+      "concept": "Annotations",
+      "explanation": "@Deprecated marks elements as obsolete. Compiler generates warnings when deprecated elements are used. Indicates better alternatives exist. Helps maintain backward compatibility. Can include message explaining alternative.",
+      "usage": "@Deprecated marks code elements as obsolete.",
+      "keywords": ["@Deprecated", "annotation", "obsolete", "warning", "backward compatibility"]
     },
     {
-        "id": "JA013",
-        "category": "Java Advanced",
-        "title": "Java Reflection API",
-        "description": "Reflection is a feature that allows a program to examine or modify the runtime behavior of applications running in the JVM. It allows inspection of classes, interfaces, fields and methods at runtime.",
-        "keywords": [
-            "Reflection",
-            "Runtime",
-            "Inspection",
-            "Dynamic",
-            "Meta-programming",
-            "Class Class"
-        ]
+      "id": "JV067",
+      "category": "Java",
+      "title": "What is enum?",
+      "concept": "Enums",
+      "explanation": "Enum is special class representing fixed set of constants. Enum constants are objects of enum type. Can have constructors, methods, and fields. Type-safe alternative to integer constants. Can implement interfaces and override methods.",
+      "usage": "Enum defines fixed set of named constants in type-safe manner.",
+      "keywords": ["enum", "constants", "type-safe", "enumeration", "fixed set"]
     },
     {
-        "id": "JA014",
-        "category": "Java Tools",
-        "title": "Maven",
-        "description": "Maven is a build automation tool used primarily for Java projects. It addresses two aspects of building software: how software is built, and its dependencies. It uses an XML file (pom.xml) for configuration.",
-        "keywords": [
-            "Maven",
-            "Build Tool",
-            "Dependency Management",
-            "POM",
-            "Automation",
-            "Project Management"
-        ]
+      "id": "JV068",
+      "category": "Java",
+      "title": "What is instanceof operator?",
+      "concept": "Operators",
+      "explanation": "Instanceof tests if object is instance of specified class or interface. Returns boolean value. Checks class hierarchy including inheritance. Useful for type checking before casting. Null instanceof anything returns false.",
+      "usage": "Instanceof checks if object is instance of particular class or interface.",
+      "keywords": ["instanceof", "type checking", "class", "interface", "casting"]
     },
     {
-        "id": "JA015",
-        "category": "Java Web-Development",
-        "title": "Hibernate",
-        "description": "Hibernate is an Object-Relational Mapping (ORM) framework for Java. It simplifies the development of Java application to interact with the database. It maps Java classes to database tables and Java data types to SQL data types.",
-        "keywords": [
-            "Hibernate",
-            "ORM",
-            "Database",
-            "Persistence",
-            "Mapping",
-            "SQL",
-            "JPA"
-        ]
+      "id": "JV069",
+      "category": "Java",
+      "title": "What is type casting?",
+      "concept": "Type Casting",
+      "explanation": "Type casting converts one type to another. Implicit casting (widening) happens automatically. Explicit casting (narrowing) requires cast operator. May lose precision or throw ClassCastException. Use instanceof before casting to avoid exceptions.",
+      "usage": "Type casting converts values from one type to another.",
+      "keywords": ["casting", "implicit", "explicit", "widening", "narrowing", "conversion"]
     },
     {
-        "id": "JA016",
-        "category": "Java Fundamentals",
-        "title": "Java Lambda Expressions",
-        "description": "Introduced in Java 8, Lambda expressions provide a clear and concise way to represent one method interface using an expression. They are useful in collection library and define inline implementation of a functional interface.",
-        "keywords": [
-            "Lambda",
-            "Java 8",
-            "Functional Interface",
-            "Concise",
-            "Anonymous Functions"
-        ]
+      "id": "JV070",
+      "category": "Java",
+      "title": "What is varargs?",
+      "concept": "Varargs",
+      "explanation": "Varargs allows methods to accept variable number of arguments. Declared with three dots (...) after type. Treated as array inside method. Must be last parameter. Can accept zero or more arguments.",
+      "usage": "Varargs enables methods to accept variable number of arguments.",
+      "keywords": ["varargs", "variable arguments", "...", "array", "flexible parameters"]
     },
     {
-        "id": "JA017",
-        "category": "Java Fundamentals",
-        "title": "Java String Pool",
-        "description": "The String Pool is a special storage area in the Java heap. When a string is created and if the string already exists in the pool, the reference of the existing string will be returned, instead of creating a new object, saving memory.",
-        "keywords": [
-            "String Pool",
-            "Memory Optimization",
-            "Heap",
-            "Immutability",
-            "Strings"
-        ]
+      "id": "JV071",
+      "category": "Java",
+      "title": "What is generics?",
+      "concept": "Generics",
+      "explanation": "Generics enable type parameters in classes, interfaces, and methods. Provide compile-time type safety. Eliminate need for casting. Use angle brackets with type parameters. Common in collections framework. Support wildcards for flexibility.",
+      "usage": "Generics provide type safety through parameterized types.",
+      "keywords": ["generics", "type parameter", "type safety", "parameterized", "<>"]
     },
     {
-        "id": "JA018",
-        "category": "Java Advanced",
-        "title": "Java Annotations",
-        "description": "Annotations provide metadata about the program that is not part of the program itself. They have no direct effect on the operation of the code they annotate. They are used for compile-time checks (e.g., @Override) or runtime processing.",
-        "keywords": [
-            "Annotations",
-            "Metadata",
-            "@Override",
-            "@Deprecated",
-            "Configuration",
-            "Processing"
-        ]
+      "id": "JV072",
+      "category": "Java",
+      "title": "What are generic wildcards?",
+      "concept": "Generics",
+      "explanation": "Wildcards represent unknown type in generics. Unbounded wildcard (?) accepts any type. Upper bounded (? extends T) limits to T and subtypes. Lower bounded (? super T) limits to T and supertypes. Useful for flexible method parameters.",
+      "usage": "Generic wildcards provide flexibility in parameterized types.",
+      "keywords": ["wildcard", "?", "extends", "super", "bounded", "generics"]
     },
     {
-        "id": "JA019",
-        "category": "Java Tools",
-        "title": "Gradle",
-        "description": "Gradle is an open-source build automation system that builds upon the concepts of Apache Ant and Apache Maven and introduces a Groovy-based domain-specific language (DSL) instead of the XML form used by Apache Maven.",
-        "keywords": [
-            "Gradle",
-            "Build Tool",
-            "Automation",
-            "Groovy",
-            "DSL",
-            "Android"
-        ]
+      "id": "JV073",
+      "category": "Java",
+      "title": "What is type erasure?",
+      "concept": "Generics",
+      "explanation": "Type erasure removes generic type information at runtime. Generics exist only at compile-time. Replaced with Object or bound type. Enables backward compatibility. Cannot create generic arrays. Limits some runtime operations.",
+      "usage": "Type erasure removes generic information at runtime for backward compatibility.",
+      "keywords": ["type erasure", "runtime", "generics", "backward compatibility", "compile-time"]
     },
     {
-        "id": "JA020",
-        "category": "Java Fundamentals",
-        "title": "JDK vs JRE vs JVM",
-        "description": "JDK (Java Development Kit) contains tools for developers (javac). JRE (Java Runtime Environment) contains libraries and JVM to run programs. JVM (Java Virtual Machine) executes the bytecode. JDK > JRE > JVM.",
-        "keywords": [
-            "JDK",
-            "JRE",
-            "JVM",
-            "Development",
-            "Runtime",
-            "Execution",
-            "Differences"
-        ]
+      "id": "JV074",
+      "category": "Java",
+      "title": "What is JDBC?",
+      "concept": "Database Connectivity",
+      "explanation": "JDBC (Java Database Connectivity) is API for database interaction. Provides classes and interfaces for SQL operations. Uses DriverManager to connect to databases. Supports prepared statements and transactions. Works with different databases through drivers.",
+      "usage": "JDBC enables Java applications to interact with databases.",
+      "keywords": ["JDBC", "database", "SQL", "DriverManager", "Connection", "Statement"]
     },
     {
-        "id": "JA021",
-        "category": "Java Advanced",
-        "title": "Java Serialization",
-        "description": "Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process. It is used to persist the object state or to travel the object over a network. Classes must implement Serializable interface.",
-        "keywords": [
-            "Serialization",
-            "Deserialization",
-            "Byte Stream",
-            "Persistence",
-            "Serializable",
-            "Network"
-        ]
+      "id": "JV075",
+      "category": "Java",
+      "title": "What is PreparedStatement?",
+      "concept": "Database",
+      "explanation": "PreparedStatement is precompiled SQL statement. More efficient than Statement for repeated queries. Prevents SQL injection through parameterization. Uses placeholder (?) for parameters. Can be cached by database.",
+      "usage": "PreparedStatement provides precompiled, parameterized SQL queries.",
+      "keywords": ["PreparedStatement", "SQL", "parameterized", "SQL injection", "precompiled"]
     },
     {
-        "id": "JA022",
-        "category": "Java Advanced",
-        "title": "Singleton Pattern in Java",
-        "description": "Singleton is a design pattern that prevents the instantiation of a class to more than one object. In Java, this is often implemented with a private constructor and a static method that returns the single instance.",
-        "keywords": [
-            "Singleton",
-            "Design Pattern",
-            "Static",
-            "Instance",
-            "Architecture"
-        ]
+      "id": "JV076",
+      "category": "Java",
+      "title": "What is file handling in Java?",
+      "concept": "File I/O",
+      "explanation": "Java provides classes for file operations in java.io and java.nio packages. File class represents file paths. FileInputStream/FileOutputStream for binary data. BufferedReader/BufferedWriter for text. Try-with-resources recommended for automatic closing.",
+      "usage": "File handling enables reading from and writing to files.",
+      "keywords": ["file handling", "File", "InputStream", "OutputStream", "Reader", "Writer"]
     },
     {
-        "id": "JA023",
-        "category": "Java Web Development",
-        "title": "Java Servlets",
-        "description": "Servlets are Java programs that run on a Web server, acting as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.",
-        "keywords": [
-            "Servlets",
-            "Web Server",
-            "HTTP",
-            "Backend",
-            "Request-Response",
-            "Container"
-        ]
+      "id": "JV077",
+      "category": "Java",
+      "title": "What is NIO?",
+      "concept": "NIO",
+      "explanation": "NIO (New I/O) provides non-blocking I/O operations. Uses channels and buffers instead of streams. Supports file locking and memory-mapped files. More scalable for many connections. Path and Files classes simplify file operations.",
+      "usage": "NIO provides efficient non-blocking I/O operations.",
+      "keywords": ["NIO", "non-blocking", "channel", "buffer", "Path", "Files"]
     },
     {
-        "id": "JA024",
-        "category": "Java Fundamentals",
-        "title": "Java Enums",
-        "description": "An Enum is a special data type which enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. Enums can also have fields, methods, and constructors.",
-        "keywords": [
-            "Enum",
-            "Constants",
-            "Types",
-            "Fixed Set",
-            "Safety"
-        ]
+      "id": "JV078",
+      "category": "Java",
+      "title": "What is BufferedReader?",
+      "concept": "File I/O",
+      "explanation": "BufferedReader reads text from character input stream efficiently. Buffers characters for efficient reading. Provides readLine() method. Used with FileReader or InputStreamReader. Should be closed after use.",
+      "usage": "BufferedReader efficiently reads text using buffering.",
+      "keywords": ["BufferedReader", "text", "readLine", "buffered", "efficient reading"]
     },
     {
-        "id": "JA025",
-        "category": "Java Advanced",
-        "title": "Java Volatile Keyword",
-        "description": "The volatile keyword is used to indicate that a variable's value will be modified by different threads. It ensures that the value of the volatile variable will always be read from the main memory and not from the thread's local cache.",
-        "keywords": [
-            "Volatile",
-            "Multithreading",
-            "Memory Visibility",
-            "Synchronization",
-            "Threads"
-        ]
+      "id": "JV079",
+      "category": "Java",
+      "title": "What is Scanner class?",
+      "concept": "Input",
+      "explanation": "Scanner parses primitive types and strings from input. Can read from files, streams, or strings. Provides methods like nextInt(), nextLine(). Uses delimiters to tokenize input. Convenient for console input and file parsing.",
+      "usage": "Scanner parses and reads various types from input sources.",
+      "keywords": ["Scanner", "input", "nextInt", "nextLine", "parsing", "console"]
     },
     {
-        "id": "JA026",
-        "category": "Java Tools",
-        "title": "JUnit",
-        "description": "JUnit is a unit testing framework for the Java programming language. It is important in the test-driven development aspect of programming. It allows developers to write and run repeatable tests.",
-        "keywords": [
-            "JUnit",
-            "Testing",
-            "Unit Test",
-            "TDD",
-            "Framework",
-            "Quality Assurance"
-        ]
+      "id": "JV080",
+      "category": "Java",
+      "title": "What is the equals() method?",
+      "concept": "Object Methods",
+      "explanation": "Equals() compares objects for equality. Default implementation compares references. Should be overridden to compare content. Must be symmetric, reflexive, transitive. Should override hashCode() when overriding equals(). Used by collections for equality checks.",
+      "usage": "Equals() compares object content for equality.",
+      "keywords": ["equals", "equality", "override", "content comparison", "Object"]
     },
     {
-        "id": "JA027",
-        "category": "Java Fundamentals",
-        "title": "Java Static Keyword",
-        "description": "The static keyword is used for memory management mainly. It can apply to variables, methods, blocks, and nested classes. The static keyword belongs to the class than an instance of the class.",
-        "keywords": [
-            "Static",
-            "Class Level",
-            "Memory",
-            "Variables",
-            "Methods"
-        ]
+      "id": "JV081",
+      "category": "Java",
+      "title": "What is the hashCode() method?",
+      "concept": "Object Methods",
+      "explanation": "HashCode() returns integer hash code for object. Used by hash-based collections. Must be consistent with equals(). Equal objects must have same hash code. Should be overridden when equals() is overridden. Affects HashMap and HashSet performance.",
+      "usage": "HashCode() provides integer hash for use in hash-based collections.",
+      "keywords": ["hashCode", "hash", "HashMap", "HashSet", "equals", "consistent"]
     },
     {
-        "id": "JA028",
-        "category": "Java Fundamentals",
-        "title": "Java Final Keyword",
-        "description": "The final keyword is a non-access modifier used to restrict the user. A final variable cannot be changed (constant), a final method cannot be overridden, and a final class cannot be inherited.",
-        "keywords": [
-            "Final",
-            "Constant",
-            "Immutability",
-            "Restriction",
-            "Modifiers"
-        ]
+      "id": "JV082",
+      "category": "Java",
+      "title": "What is the toString() method?",
+      "concept": "Object Methods",
+      "explanation": "ToString() returns string representation of object. Default implementation shows class name and hash code. Should be overridden for meaningful output. Used by String concatenation and print statements. Helps in debugging and logging.",
+      "usage": "ToString() provides string representation of object.",
+      "keywords": ["toString", "String", "representation", "override", "debugging"]
     },
     {
-        "id": "JA029",
-        "category": "Java Fundamentals",
-        "title": "Java This Keyword",
-        "description": "There is a 'this' keyword in Java that is a reference variable that refers to the current object. It can be used to refer to current class instance variable, invoke current class method, or invoke current class constructor.",
-        "keywords": [
-            "This",
-            "Reference",
-            "Current Object",
-            "Instance",
-            "Context"
-        ]
+      "id": "JV083",
+      "category": "Java",
+      "title": "What is the clone() method?",
+      "concept": "Object Methods",
+      "explanation": "Clone() creates copy of object. Object must implement Cloneable interface. Default clone is shallow copy. Deep copy requires custom implementation. Can throw CloneNotSupportedException. Copy constructor often preferred alternative.",
+      "usage": "Clone() creates copy of object implementing Cloneable.",
+      "keywords": ["clone", "Cloneable", "copy", "shallow copy", "deep copy"]
     },
     {
-        "id": "JA030",
-        "category": "Java Fundamentals",
-        "title": "Java Super Keyword",
-        "description": "The super keyword is a reference variable which is used to refer to immediate parent class object. It is used to invoke parent class methods, constructors, and access parent class variables.",
-        "keywords": [
-            "Super",
-            "Inheritance",
-            "Parent Class",
-            "Reference",
-            "Overriding"
-        ]
+      "id": "JV084",
+      "category": "Java",
+      "title": "What is shallow copy vs deep copy?",
+      "concept": "Copying",
+      "explanation": "Shallow copy copies object references. Deep copy creates copies of referenced objects. Shallow copy shares nested objects. Deep copy creates independent copies. Clone() provides shallow copy by default. Deep copy requires custom implementation.",
+      "usage": "Shallow copy copies references; deep copy duplicates entire object graph.",
+      "keywords": ["shallow copy", "deep copy", "clone", "reference", "independent"]
     },
     {
-        "id": "JA031",
-        "category": "Java Advanced",
-        "title": "Java Optional Class",
-        "description": "Introduced in Java 8, Optional is a container object used to contain not-null objects. Optional object is used to represent null with absent value. It provides various utility methods to facilitate code to handle values as 'available' or 'not available' instead of checking null values.",
-        "keywords": [
-            "Optional",
-            "Null Safety",
-            "Java 8",
-            "Container",
-            "Best Practices"
-        ]
+      "id": "JV085",
+      "category": "Java",
+      "title": "What is composition?",
+      "concept": "Design Patterns",
+      "explanation": "Composition represents HAS-A relationship. Objects contain other objects as members. More flexible than inheritance. Enables changing behavior at runtime. Promotes loose coupling. Preferred over inheritance in many cases.",
+      "usage": "Composition builds objects from other objects establishing HAS-A relationship.",
+      "keywords": ["composition", "HAS-A", "delegation", "flexibility", "coupling"]
     },
     {
-        "id": "JA032",
-        "category": "Java Web Development",
-        "title": "JSP (JavaServer Pages)",
-        "description": "JSP is a technology used to develop software to support dynamic content based on HTML, XML, or other document types. It helps developers to insert Java code in HTML pages by making use of special JSP tags.",
-        "keywords": [
-            "JSP",
-            "Dynamic Content",
-            "HTML",
-            "Backend",
-            "Views",
-            "Legacy"
-        ]
+      "id": "JV086",
+      "category": "Java",
+      "title": "What is aggregation?",
+      "concept": "Design Patterns",
+      "explanation": "Aggregation is weak form of composition. Objects can exist independently. Represents HAS-A relationship with lifecycle independence. Contained object can belong to multiple containers. Example: Teacher has Students but Students exist independently.",
+      "usage": "Aggregation represents weak ownership where objects exist independently.",
+      "keywords": ["aggregation", "weak composition", "HAS-A", "independent", "lifecycle"]
     },
     {
-        "id": "JA033",
-        "category": "Java Fundamentals",
-        "title": "Java Arrays",
-        "description": "An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.",
-        "keywords": [
-            "Arrays",
-            "Data Structures",
-            "Fixed Size",
-            "Indexing",
-            "Storage"
-        ]
+      "id": "JV087",
+      "category": "Java",
+      "title": "What is singleton pattern?",
+      "concept": "Design Patterns",
+      "explanation": "Singleton ensures class has only one instance. Provides global access point to instance. Private constructor prevents external instantiation. Can be lazy or eager initialization. Thread safety must be considered. Common in logging and configuration.",
+      "usage": "Singleton pattern restricts class to single instance.",
+      "keywords": ["singleton", "single instance", "design pattern", "global access", "private constructor"]
     },
     {
-        "id": "JA034",
-        "category": "Java Advanced",
-        "title": "Java Functional Interfaces",
-        "description": "A functional interface is an interface that contains only one abstract method. They can have any number of default, static methods but can contain only one abstract method. They are the basis for Lambda expressions.",
-        "keywords": [
-            "Functional Interface",
-            "Lambda",
-            "Java 8",
-            "Single Abstract Method",
-            "SAM"
-        ]
+      "id": "JV088",
+      "category": "Java",
+      "title": "What is factory pattern?",
+      "concept": "Design Patterns",
+      "explanation": "Factory pattern creates objects without specifying exact class. Defines interface for creating objects. Subclasses decide which class to instantiate. Promotes loose coupling. Centralizes object creation logic. Common creational pattern.",
+      "usage": "Factory pattern provides interface for creating objects in superclass.",
+      "keywords": ["factory", "design pattern", "object creation", "interface", "loose coupling"]
     },
     {
-        "id": "JA035",
-        "category": "Java Advanced",
-        "title": "Java JAR Files",
-        "description": "JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.",
-        "keywords": [
-            "JAR",
-            "Archive",
-            "Distribution",
-            "Packaging",
-            "Deployment",
-            "Libraries"
-        ]
+      "id": "JV089",
+      "category": "Java",
+      "title": "What is the break statement?",
+      "concept": "Control Flow",
+      "explanation": "Break exits from loop or switch statement. Transfers control to statement after loop. Can use labels to break outer loops. Only affects innermost loop by default. Cannot break from if statement.",
+      "usage": "Break exits from loops or switch statements immediately.",
+      "keywords": ["break", "loop", "switch", "exit", "control flow"]
     },
     {
-        "id": "JA036",
-        "category": "Java Web Development",
-        "title": "Spring Boot",
-        "description": "Spring Boot is an extension of the Spring Framework that simplifies the setup and development of new Spring applications. It takes an opinionated view of the Spring platform which keeps boilerplate code and configuration to a minimum.",
-        "keywords": [
-            "Spring Boot",
-            "Microservices",
-            "Rapid Development",
-            "Auto-configuration",
-            "Standalone"
-        ]
+      "id": "JV090",
+      "category": "Java",
+      "title": "What is the continue statement?",
+      "concept": "Control Flow",
+      "explanation": "Continue skips rest of current iteration. Proceeds to next iteration of loop. Can use labels for outer loops. Only affects innermost loop by default. Common for skipping certain values.",
+      "usage": "Continue skips current iteration and proceeds to next.",
+      "keywords": ["continue", "skip", "iteration", "loop", "control flow"]
     },
     {
-        "id": "JA037",
-        "category": "Java Tools",
-        "title": "IntelliJ IDEA",
-        "description": "IntelliJ IDEA is an integrated development environment (IDE) written in Java for developing computer software. It is developed by JetBrains and is considered one of the best IDEs for Java development with smart code completion and analysis.",
-        "keywords": [
-            "IDE",
-            "IntelliJ",
-            "Development",
-            "Tools",
-            "JetBrains",
-            "Productivity"
-        ]
+      "id": "JV091",
+      "category": "Java",
+      "title": "What is enhanced for loop?",
+      "concept": "Loops",
+      "explanation": "Enhanced for loop (for-each) iterates over arrays and collections. Simpler syntax than traditional for loop. Cannot modify array/collection during iteration. No access to index. More readable for simple iteration.",
+      "usage": "Enhanced for loop provides simple iteration over collections and arrays.",
+      "keywords": ["enhanced for", "for-each", "iteration", "array", "collection"]
     },
     {
-        "id": "JA038",
-        "category": "Java Advanced",
-        "title": "Java Networking (Socket Programming)",
-        "description": "Java Networking is a concept of connecting two or more computing devices together so that we can share resources. Java provides java.net package to perform networking details. Socket programming provides a mechanism for communication between two computers using TCP.",
-        "keywords": [
-            "Networking",
-            "Sockets",
-            "TCP/IP",
-            "Client-Server",
-            "Communication"
-        ]
+      "id": "JV092",
+      "category": "Java",
+      "title": "What is ternary operator?",
+      "concept": "Operators",
+      "explanation": "Ternary operator is shorthand for if-else. Syntax: condition ? value_if_true : value_if_false. Returns one of two values based on condition. More concise than if-else for simple cases. Can be nested but reduces readability.",
+      "usage": "Ternary operator provides conditional expression in single line.",
+      "keywords": ["ternary", "?:", "conditional", "operator", "if-else shorthand"]
     },
     {
-        "id": "JA039",
-        "category": "Java Fundamentals",
-        "title": "Java Packages",
-        "description": "A java package is a group of similar types of classes, interfaces and sub-packages. Packages are used to categorize the classes and interfaces to be easily maintained and also provide access protection and namespace management.",
-        "keywords": [
-            "Packages",
-            "Organization",
-            "Namespaces",
-            "Modularity",
-            "Structure"
-        ]
+      "id": "JV093",
+      "category": "Java",
+      "title": "What is switch expression in Java 14+?",
+      "concept": "Switch",
+      "explanation": "Switch expression (Java 14+) returns value. Uses arrow syntax (->) or colon. Multiple case labels supported. No fall-through with arrow syntax. More concise than switch statement. Can use in assignments.",
+      "usage": "Switch expression returns values using enhanced switch syntax.",
+      "keywords": ["switch expression", "Java 14", "arrow", "->", "returns value"]
     },
     {
-        "id": "JA040",
-        "category": "Java Advanced",
-        "title": "Java NIO (New I/O)",
-        "description": "Java NIO is a comprehensive I/O framework introduced in Java 1.4. It offers a different way of working with I/O than the standard I/O API's. NIO supports buffers, channels, and non-blocking I/O operations.",
-        "keywords": [
-            "NIO",
-            "I/O",
-            "Non-blocking",
-            "Buffers",
-            "Channels",
-            "Performance"
-        ]
+      "id": "JV094",
+      "category": "Java",
+      "title": "What is record class in Java 14+?",
+      "concept": "Records",
+      "explanation": "Records are concise classes for immutable data. Automatically generates constructor, getters, equals, hashCode, toString. Declared with 'record' keyword. Cannot extend other classes. Can implement interfaces. Ideal for DTOs and value objects.",
+      "usage": "Records provide concise syntax for immutable data carriers.",
+      "keywords": ["record", "immutable", "Java 14", "data class", "DTO"]
     },
     {
-        "id": "JA041",
-        "category": "Java Fundamentals",
-        "title": "Java Constructors",
-        "description": "A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.",
-        "keywords": [
-            "Constructors",
-            "Initialization",
-            "Objects",
-            "Classes",
-            "Instantiation"
-        ]
+      "id": "JV095",
+      "category": "Java",
+      "title": "What is sealed class in Java 15+?",
+      "concept": "Sealed Classes",
+      "explanation": "Sealed classes restrict which classes can extend them. Uses 'sealed' and 'permits' keywords. Subclasses must be final, sealed, or non-sealed. Provides controlled inheritance hierarchy. Enables exhaustive pattern matching. Added in Java 15.",
+      "usage": "Sealed classes control which classes can extend them.",
+      "keywords": ["sealed", "permits", "restricted inheritance", "Java 15", "hierarchy"]
     },
     {
-        "id": "JA042",
-        "category": "Java Fundamentals",
-        "title": "Java Polymorphism (Runtime vs Compile-time)",
-        "description": "Polymorphism allows objects to act differently based on their specific class. Compile-time polymorphism is achieved via method overloading, while runtime polymorphism is achieved via method overriding.",
-        "keywords": [
-            "Polymorphism",
-            "Overloading",
-            "Overriding",
-            "Dynamic Binding",
-            "Static Binding"
-        ]
+      "id": "JV096",
+      "category": "Java",
+      "title": "What is pattern matching in Java 14+?",
+      "concept": "Pattern Matching",
+      "explanation": "Pattern matching simplifies instanceof checks and casting. Introduces type patterns in instanceof. Automatically casts variable when pattern matches. Reduces boilerplate code. Extended with switch patterns in later versions.",
+      "usage": "Pattern matching combines type checking and casting in single operation.",
+      "keywords": ["pattern matching", "instanceof", "type pattern", "Java 14", "casting"]
     },
     {
-        "id": "JA043",
-        "category": "Java Advanced",
-        "title": "Java ClassLoader",
-        "description": "The Java ClassLoader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine. Usually, classes are only loaded on demand. The Java run time system does not need to know about files and file systems because of class loaders.",
-        "keywords": [
-            "ClassLoader",
-            "JVM",
-            "Dynamic Loading",
-            "Runtime",
-            "Reflection"
-        ]
+      "id": "JV097",
+      "category": "Java",
+      "title": "What is text blocks in Java 15+?",
+      "concept": "Text Blocks",
+      "explanation": "Text blocks provide multi-line string literals. Enclosed in triple quotes (\"\"\"). Preserves formatting and line breaks. Simplifies writing JSON, SQL, HTML. Automatically removes incidental whitespace. Added in Java 15.",
+      "usage": "Text blocks enable multi-line string literals with preserved formatting.",
+      "keywords": ["text blocks", "multi-line", "triple quotes", "Java 15", "formatting"]
     },
     {
-        "id": "JA044",
-        "category": "Java Fundamentals",
-        "title": "Java Abstract Classes",
-        "description": "An abstract class is a class that is declared with the abstract keyword. It may or may not have abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.",
-        "keywords": [
-            "Abstract Class",
-            "Inheritance",
-            "Template",
-            "Partial Implementation",
-            "Design"
-        ]
+      "id": "JV098",
+      "category": "Java",
+      "title": "What is var keyword in Java 10+?",
+      "concept": "Local Variable Type Inference",
+      "explanation": "Var enables local variable type inference. Compiler infers type from initialization. Only for local variables with initializers. Cannot be used for fields or method parameters. Improves code readability in some cases. Added in Java 10.",
+      "usage": "Var allows compiler to infer local variable types.",
+      "keywords": ["var", "type inference", "Java 10", "local variable", "compiler"]
     },
     {
-        "id": "JA045",
-        "category": "Java Web Development",
-        "title": "Jakarta EE (formerly Java EE)",
-        "description": "Jakarta EE is a set of specifications, extending Java SE with specifications for enterprise features such as distributed computing and web services. It manages the standard for enterprise-grade applications.",
-        "keywords": [
-            "Jakarta EE",
-            "Java EE",
-            "Enterprise",
-            "Specifications",
-            "Web Services"
-        ]
+      "id": "JV099",
+      "category": "Java",
+      "title": "What is module system in Java 9+?",
+      "concept": "Modules",
+      "explanation": "Module system organizes code into modules. Defined in module-info.java file. Modules declare dependencies and exports. Improves encapsulation and security. Enables creating smaller runtime images. Added in Java 9.",
+      "usage": "Module system provides better encapsulation and dependency management.",
+      "keywords": ["module", "module-info", "Java 9", "modularization", "exports"]
     },
     {
-        "id": "JA046",
-        "category": "Java Tools",
-        "title": "Log4j",
-        "description": "Log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. It is used to log messages to various output targets.",
-        "keywords": [
-            "Log4j",
-            "Logging",
-            "Debugging",
-            "Monitoring",
-            "Framework",
-            "Apache"
-        ]
+      "id": "JV100",
+      "category": "Java",
+      "title": "What is CompletableFuture?",
+      "concept": "Asynchronous Programming",
+      "explanation": "CompletableFuture enables asynchronous programming. Represents result of asynchronous computation. Provides methods for chaining and combining. Supports callbacks and exception handling. Can be completed manually or through async execution. Added in Java 8.",
+      "usage": "CompletableFuture provides composable asynchronous programming.",
+      "keywords": ["CompletableFuture", "async", "Future", "asynchronous", "Java 8"]
     },
     {
-        "id": "JA047",
-        "category": "Java Fundamentals",
-        "title": "Java Wrapper Classes",
-        "description": "Wrapper classes provide a way to use primitive data types (int, boolean, etc.) as objects. This is necessary when working with Collection frameworks, which only work with objects.",
-        "keywords": [
-            "Wrapper Classes",
-            "Boxing",
-            "Unboxing",
-            "Integer",
-            "Boolean",
-            "Primitives"
-        ]
+      "id": "JV101",
+      "category": "Java",
+      "title": "What is ClassLoader?",
+      "concept": "Class Loading",
+      "explanation": "ClassLoader loads classes into JVM. Three built-in classloaders: Bootstrap, Extension, Application. Follows delegation model. Can create custom classloaders. Enables dynamic class loading. Important for plugins and frameworks.",
+      "usage": "ClassLoader loads Java classes into JVM at runtime.",
+      "keywords": ["ClassLoader", "class loading", "delegation", "dynamic loading", "JVM"]
     },
     {
-        "id": "JA048",
-        "category": "Java Advanced",
-        "title": "Java Record Classes",
-        "description": "Introduced in Java 14/16, Records are a special kind of class in Java that acts as a transparent carrier for immutable data. Records reduce boilerplate code by automatically generating constructor, getters, equals, hashCode, and toString.",
-        "keywords": [
-            "Records",
-            "Immutable Data",
-            "Boilerplate",
-            "Java 16",
-            "Data Carrier"
-        ]
+      "id": "JV102",
+      "category": "Java",
+      "title": "What is JIT compiler?",
+      "concept": "JVM Internals",
+      "explanation": "JIT (Just-In-Time) compiler compiles bytecode to native machine code at runtime. Improves performance over interpretation. Compiles hot code paths. Uses profiling to optimize. Part of JVM performance optimization. Balances compilation time and execution speed.",
+      "usage": "JIT compiler converts bytecode to machine code for better performance.",
+      "keywords": ["JIT", "compiler", "native code", "optimization", "runtime", "performance"]
     },
     {
-        "id": "JA049",
-        "category": "Java Advanced",
-        "title": "Java Module System (Jigsaw)",
-        "description": "Introduced in Java 9, the module system allows grouping related packages and resources into modules. It improves encapsulation and allows the JVM to be more modular and lightweight.",
-        "keywords": [
-            "Modules",
-            "Jigsaw",
-            "Encapsulation",
-            "Java 9",
-            "Requires",
-            "Exports"
-        ]
+      "id": "JV103",
+      "category": "Java",
+      "title": "What is heap and stack memory?",
+      "concept": "Memory Management",
+      "explanation": "Heap stores objects and instance variables. Stack stores local variables and method calls. Heap is shared across threads, stack is per-thread. Objects in heap, references in stack. Garbage collection works on heap. Stack follows LIFO structure.",
+      "usage": "Heap stores objects while stack stores local variables and method calls.",
+      "keywords": ["heap", "stack", "memory", "objects", "local variables", "threads"]
     },
     {
-        "id": "JA050",
-        "category": "Java Web Development",
-        "title": "Apache Tomcat",
-        "description": "Apache Tomcat is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. It acts as a web server and servlet container for Java web applications.",
-        "keywords": [
-            "Tomcat",
-            "Web Server",
-            "Servlet Container",
-            "Deployment",
-            "Apache"
-        ]
+      "id": "JV104",
+      "category": "Java",
+      "title": "What is OutOfMemoryError?",
+      "concept": "Errors",
+      "explanation": "OutOfMemoryError occurs when JVM cannot allocate object due to insufficient memory. Can happen in heap or other memory areas. Not recoverable through try-catch. Indicates need for memory tuning or leak fix. Can specify which memory area through error message.",
+      "usage": "OutOfMemoryError indicates JVM has insufficient memory for allocation.",
+      "keywords": ["OutOfMemoryError", "memory", "heap", "error", "JVM", "allocation"]
+    },
+    {
+      "id": "JV105",
+      "category": "Java",
+      "title": "What is StackOverflowError?",
+      "concept": "Errors",
+      "explanation": "StackOverflowError occurs when stack memory is exhausted. Usually caused by infinite recursion. Stack has limited size. Not recoverable. Indicates programming error. Increase stack size as temporary fix.",
+      "usage": "StackOverflowError indicates stack memory exhaustion from deep recursion.",
+      "keywords": ["StackOverflowError", "recursion", "stack", "error", "memory"]
+    },
+    {
+      "id": "JV106",
+      "category": "Java",
+      "title": "What is assertion?",
+      "concept": "Assertions",
+      "explanation": "Assertions test assumptions during development. Uses 'assert' keyword. Throws AssertionError if condition false. Disabled by default in production. Enabled with -ea flag. Should not have side effects. Used for invariants and postconditions.",
+      "usage": "Assertions validate assumptions during development and testing.",
+      "keywords": ["assert", "assertion", "AssertionError", "testing", "validation"]
+    },
+    {
+      "id": "JV107",
+      "category": "Java",
+      "title": "What is native method?",
+      "concept": "Native Methods",
+      "explanation": "Native methods are implemented in other languages like C/C++. Declared with 'native' keyword. No method body in Java. Accessed through JNI (Java Native Interface). Used for platform-specific operations. Can impact portability.",
+      "usage": "Native methods call platform-specific code written in other languages.",
+      "keywords": ["native", "JNI", "C", "C++", "platform-specific", "foreign function"]
+    },
+    {
+      "id": "JV108",
+      "category": "Java",
+      "title": "What is strictfp keyword?",
+      "concept": "Keywords",
+      "explanation": "Strictfp ensures floating-point calculations follow IEEE 754 standard. Makes results platform-independent. Can apply to classes or methods. Affects performance slightly. Rarely needed in modern Java. Ensures consistent floating-point behavior.",
+      "usage": "Strictfp enforces platform-independent floating-point calculations.",
+      "keywords": ["strictfp", "floating-point", "IEEE 754", "platform-independent", "precision"]
+    },
+    {
+      "id": "JV109",
+      "category": "Java",
+      "title": "What is covariant return type?",
+      "concept": "Method Overriding",
+      "explanation": "Covariant return type allows overriding method to return subtype of original return type. Introduced in Java 5. Provides type safety and flexibility. Override can be more specific than parent. Common in factory methods and builders.",
+      "usage": "Covariant return type permits subtype returns in overridden methods.",
+      "keywords": ["covariant", "return type", "override", "subtype", "Java 5"]
+    },
+    {
+      "id": "JV110",
+      "category": "Java",
+      "title": "What is marker interface?",
+      "concept": "Interfaces",
+      "explanation": "Marker interface has no methods. Indicates capability or property to JVM or framework. Examples include Serializable, Cloneable, Remote. Modern Java prefers annotations. Provides metadata about class. Affects runtime behavior.",
+      "usage": "Marker interface signals special behavior without defining methods.",
+      "keywords": ["marker interface", "Serializable", "Cloneable", "no methods", "metadata"]
+    },
+    {
+      "id": "JV111",
+      "category": "Java",
+      "title": "What is functional interface examples?",
+      "concept": "Functional Interfaces",
+      "explanation": "Common functional interfaces include Predicate, Function, Consumer, Supplier. Predicate tests condition returning boolean. Function transforms input to output. Consumer accepts input without return. Supplier provides output without input. Part of java.util.function package.",
+      "usage": "Built-in functional interfaces support common lambda use cases.",
+      "keywords": ["Predicate", "Function", "Consumer", "Supplier", "functional interface", "lambda"]
+    },
+    {
+      "id": "JV112",
+      "category": "Java",
+      "title": "What is BiFunction and BiConsumer?",
+      "concept": "Functional Interfaces",
+      "explanation": "BiFunction takes two arguments and returns result. BiConsumer takes two arguments with no return. Useful for operations on pairs. Common in map operations. Part of java.util.function package. Enable functional programming with multiple parameters.",
+      "usage": "BiFunction and BiConsumer handle two-argument functional operations.",
+      "keywords": ["BiFunction", "BiConsumer", "two arguments", "functional interface", "pairs"]
+    },
+    {
+      "id": "JV113",
+      "category": "Java",
+      "title": "What is UnaryOperator and BinaryOperator?",
+      "concept": "Functional Interfaces",
+      "explanation": "UnaryOperator is Function where input and output types are same. BinaryOperator is BiFunction where all three types are same. Common in mathematical operations. Specializations of Function and BiFunction. Part of java.util.function package.",
+      "usage": "UnaryOperator and BinaryOperator handle same-type transformations.",
+      "keywords": ["UnaryOperator", "BinaryOperator", "same type", "functional interface", "operator"]
+    },
+    {
+      "id": "JV114",
+      "category": "Java",
+      "title": "What is try-catch-finally execution order?",
+      "concept": "Exception Handling",
+      "explanation": "Try block executes first. If exception occurs, matching catch executes. Finally block always executes after try/catch. Finally runs even if return statement in try/catch. Finally can suppress exceptions from try/catch. Used for cleanup code.",
+      "usage": "Finally block ensures cleanup code executes regardless of exceptions.",
+      "keywords": ["try", "catch", "finally", "execution order", "cleanup", "guarantee"]
+    },
+    {
+      "id": "JV115",
+      "category": "Java",
+      "title": "What is multi-catch block?",
+      "concept": "Exception Handling",
+      "explanation": "Multi-catch handles multiple exception types in one catch block. Uses pipe (|) to separate exception types. Reduces code duplication. Exceptions must not have inheritance relationship. Introduced in Java 7. Improves code readability.",
+      "usage": "Multi-catch handles multiple exception types in single catch block.",
+      "keywords": ["multi-catch", "|", "multiple exceptions", "Java 7", "exception handling"]
+    },
+    {
+      "id": "JV116",
+      "category": "Java",
+      "title": "What is exception chaining?",
+      "concept": "Exception Handling",
+      "explanation": "Exception chaining preserves original exception while throwing new one. Uses constructor with Throwable cause parameter. getCause() retrieves original exception. Maintains exception stack trace. Useful for wrapping low-level exceptions. Improves debugging.",
+      "usage": "Exception chaining preserves original exception when throwing new one.",
+      "keywords": ["exception chaining", "cause", "getCause", "stack trace", "wrapping"]
+    },
+    {
+      "id": "JV117",
+      "category": "Java",
+      "title": "What is custom exception?",
+      "concept": "Exceptions",
+      "explanation": "Custom exceptions extend Exception or RuntimeException. Provides domain-specific error handling. Can add custom fields and methods. Should have descriptive names. Can be checked or unchecked. Improves code clarity and error handling.",
+      "usage": "Custom exceptions provide application-specific error types.",
+      "keywords": ["custom exception", "extend Exception", "domain-specific", "error handling"]
+    },
+    {
+      "id": "JV118",
+      "category": "Java",
+      "title": "What is difference between throw and throws?",
+      "concept": "Exception Handling",
+      "explanation": "Throw is statement that throws exception. Throws is keyword in method signature declaring exceptions. Throw is used inside method body. Throws is used in method declaration. Throw takes exception object. Throws takes exception class names.",
+      "usage": "Throw raises exception while throws declares possible exceptions.",
+      "keywords": ["throw", "throws", "difference", "exception", "declaration", "raise"]
+    },
+    {
+      "id": "JV119",
+      "category": "Java",
+      "title": "What is exception propagation?",
+      "concept": "Exception Handling",
+      "explanation": "Exception propagation passes uncaught exceptions up call stack. Each method can catch or propagate. Continues until caught or reaches main method. Checked exceptions must be declared. Unchecked exceptions propagate automatically. Ends program if never caught.",
+      "usage": "Exception propagation passes uncaught exceptions up the call stack.",
+      "keywords": ["propagation", "call stack", "uncaught", "exception", "automatic"]
+    },
+    {
+      "id": "JV120",
+      "category": "Java",
+      "title": "What is difference between ArrayList and LinkedList?",
+      "concept": "Collections",
+      "explanation": "ArrayList uses dynamic array, LinkedList uses doubly-linked list. ArrayList has fast random access, LinkedList has slow access. LinkedList efficient for insertions/deletions, ArrayList requires shifting. ArrayList uses less memory per element. Choose based on usage pattern.",
+      "usage": "ArrayList and LinkedList differ in internal structure and performance characteristics.",
+      "keywords": ["ArrayList", "LinkedList", "performance", "array", "linked list", "difference"]
+    },
+    {
+      "id": "JV121",
+      "category": "Java",
+      "title": "What is difference between HashMap and TreeMap?",
+      "concept": "Collections",
+      "explanation": "HashMap uses hash table, unordered. TreeMap uses red-black tree, sorted. HashMap has O(1) operations, TreeMap has O(log n). TreeMap maintains key order, HashMap doesn't. HashMap allows null key, TreeMap doesn't. Choose based on ordering needs.",
+      "usage": "HashMap provides fast unordered access while TreeMap maintains sorted order.",
+      "keywords": ["HashMap", "TreeMap", "difference", "sorted", "performance", "ordering"]
+    },
+    {
+      "id": "JV122",
+      "category": "Java",
+      "title": "What is difference between HashSet and TreeSet?",
+      "concept": "Collections",
+      "explanation": "HashSet uses hash table, unordered. TreeSet uses tree structure, sorted. HashSet has O(1) operations, TreeSet has O(log n). TreeSet maintains sorted order, HashSet doesn't. HashSet allows null, TreeSet doesn't. Choose based on ordering needs.",
+      "usage": "HashSet provides fast unordered set while TreeSet maintains sorted order.",
+      "keywords": ["HashSet", "TreeSet", "difference", "sorted", "performance", "Set"]
+    },
+    {
+      "id": "JV123",
+      "category": "Java",
+      "title": "What is fail-fast iterator?",
+      "concept": "Collections",
+      "explanation": "Fail-fast iterators throw ConcurrentModificationException if collection modified during iteration. Detects structural modifications. Most collection iterators are fail-fast. Not guaranteed to detect all modifications. Use concurrent collections for thread-safe iteration.",
+      "usage": "Fail-fast iterators detect and fail on concurrent collection modifications.",
+      "keywords": ["fail-fast", "iterator", "ConcurrentModificationException", "modification", "detection"]
+    },
+    {
+      "id": "JV124",
+      "category": "Java",
+      "title": "What is fail-safe iterator?",
+      "concept": "Collections",
+      "explanation": "Fail-safe iterators work on copy of collection. Don't throw ConcurrentModificationException. Used by concurrent collections. May not reflect current state. Slightly less efficient due to copying. Thread-safe for iteration.",
+      "usage": "Fail-safe iterators allow safe concurrent modifications.",
+      "keywords": ["fail-safe", "iterator", "concurrent", "copy", "thread-safe"]
+    },
+    {
+      "id": "JV125",
+      "category": "Java",
+      "title": "What is ConcurrentHashMap?",
+      "concept": "Concurrent Collections",
+      "explanation": "ConcurrentHashMap is thread-safe HashMap. Uses lock striping for concurrency. Allows concurrent reads and writes. Better performance than synchronized HashMap. Doesn't allow null keys or values. Provides atomic operations.",
+      "usage": "ConcurrentHashMap provides thread-safe map with high concurrency.",
+      "keywords": ["ConcurrentHashMap", "thread-safe", "concurrent", "lock striping", "atomic"]
+    },
+    {
+      "id": "JV126",
+      "category": "Java",
+      "title": "What is CopyOnWriteArrayList?",
+      "concept": "Concurrent Collections",
+      "explanation": "CopyOnWriteArrayList creates copy on every modification. Thread-safe for iteration without locking. Expensive for writes, cheap for reads. Suitable when reads vastly outnumber writes. Iterator sees snapshot of list. No ConcurrentModificationException.",
+      "usage": "CopyOnWriteArrayList provides thread-safe list optimized for reads.",
+      "keywords": ["CopyOnWriteArrayList", "thread-safe", "copy-on-write", "reads", "concurrent"]
+    },
+    {
+      "id": "JV127",
+      "category": "Java",
+      "title": "What is BlockingQueue?",
+      "concept": "Concurrent Collections",
+      "explanation": "BlockingQueue supports operations that wait for space or elements. Blocks on put when full, take when empty. Thread-safe for producer-consumer scenarios. Implementations include ArrayBlockingQueue, LinkedBlockingQueue. Useful for work queues.",
+      "usage": "BlockingQueue provides thread-safe queue with blocking operations.",
+      "keywords": ["BlockingQueue", "blocking", "thread-safe", "producer-consumer", "queue"]
+    },
+    {
+      "id": "JV128",
+      "category": "Java",
+      "title": "What is AtomicInteger?",
+      "concept": "Concurrency",
+      "explanation": "AtomicInteger provides thread-safe integer operations. Uses compare-and-swap for atomicity. Avoids synchronization overhead. Provides methods like incrementAndGet, compareAndSet. Part of java.util.concurrent.atomic. Useful for counters and sequences.",
+      "usage": "AtomicInteger enables thread-safe atomic integer operations.",
+      "keywords": ["AtomicInteger", "atomic", "thread-safe", "CAS", "concurrent", "counter"]
+    },
+    {
+      "id": "JV129",
+      "category": "Java",
+      "title": "What is CountDownLatch?",
+      "concept": "Concurrency",
+      "explanation": "CountDownLatch allows threads to wait for set of operations to complete. Initialized with count. CountDown() decrements count. Await() blocks until count reaches zero. One-time use only. Common for coordinating thread startup.",
+      "usage": "CountDownLatch synchronizes threads waiting for operations to complete.",
+      "keywords": ["CountDownLatch", "synchronization", "await", "countdown", "thread coordination"]
+    },
+    {
+      "id": "JV130",
+      "category": "Java",
+      "title": "What is CyclicBarrier?",
+      "concept": "Concurrency",
+      "explanation": "CyclicBarrier allows threads to wait for each other at barrier point. Can be reused after reset. All threads must reach barrier before proceeding. Supports barrier action. Useful for parallel decomposition. Different from CountDownLatch which is one-time.",
+      "usage": "CyclicBarrier synchronizes threads at common barrier point.",
+      "keywords": ["CyclicBarrier", "barrier", "synchronization", "reusable", "parallel"]
+    },
+    {
+      "id": "JV131",
+      "category": "Java",
+      "title": "What is Semaphore?",
+      "concept": "Concurrency",
+      "explanation": "Semaphore controls access to shared resource through permits. Acquire() gets permit, release() returns it. Blocks when no permits available. Useful for limiting concurrent access. Can be fair or unfair. Common for resource pools.",
+      "usage": "Semaphore controls concurrent access through permits.",
+      "keywords": ["Semaphore", "permits", "concurrent", "access control", "blocking"]
+    },
+    {
+      "id": "JV132",
+      "category": "Java",
+      "title": "What is ReentrantLock?",
+      "concept": "Concurrency",
+      "explanation": "ReentrantLock provides explicit locking with more features than synchronized. Supports try-lock with timeout. Can be interrupted. Provides fairness option. Requires manual unlock in finally block. Reentrant means same thread can acquire multiple times.",
+      "usage": "ReentrantLock provides flexible explicit locking mechanism.",
+      "keywords": ["ReentrantLock", "explicit lock", "fairness", "tryLock", "reentrant"]
+    },
+    {
+      "id": "JV133",
+      "category": "Java",
+      "title": "What is ReadWriteLock?",
+      "concept": "Concurrency",
+      "explanation": "ReadWriteLock separates read and write locks. Multiple readers allowed simultaneously. Writers get exclusive access. Improves performance for read-heavy scenarios. ReentrantReadWriteLock is common implementation. Read lock and write lock obtained separately.",
+      "usage": "ReadWriteLock allows multiple readers or single writer.",
+      "keywords": ["ReadWriteLock", "read lock", "write lock", "concurrent reads", "exclusive write"]
+    },
+    {
+      "id": "JV134",
+      "category": "Java",
+      "title": "What is ForkJoinPool?",
+      "concept": "Concurrency",
+      "explanation": "ForkJoinPool is specialized ExecutorService for divide-and-conquer tasks. Uses work-stealing algorithm. Efficient for recursive tasks. Tasks fork into subtasks and join results. Used by parallel streams. Designed for CPU-intensive operations.",
+      "usage": "ForkJoinPool provides efficient parallel task execution using work-stealing.",
+      "keywords": ["ForkJoinPool", "fork-join", "work-stealing", "parallel", "divide-conquer"]
+    },
+    {
+      "id": "JV135",
+      "category": "Java",
+      "title": "What is parallel stream?",
+      "concept": "Stream API",
+      "explanation": "Parallel streams process elements concurrently using ForkJoinPool. Called with parallelStream() or parallel(). May improve performance for large datasets. Order may not be preserved. Stateful operations can cause issues. Not always faster than sequential.",
+      "usage": "Parallel streams enable concurrent processing of stream elements.",
+      "keywords": ["parallel stream", "concurrent", "parallelStream", "ForkJoinPool", "performance"]
+    },
+    {
+      "id": "JV136",
+      "category": "Java",
+      "title": "What is collectors in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Collectors accumulate stream elements into collections or other results. Common collectors include toList, toSet, toMap, groupingBy, joining. Part of Collectors utility class. Enable powerful terminal operations. Can be composed and customized.",
+      "usage": "Collectors provide various ways to accumulate stream results.",
+      "keywords": ["Collectors", "collect", "toList", "groupingBy", "accumulation", "Stream"]
+    },
+    {
+      "id": "JV137",
+      "category": "Java",
+      "title": "What is flatMap in Stream API?",
+      "concept": "Stream API",
+      "explanation": "FlatMap transforms each element into stream and flattens results. Maps one-to-many relationships. Flattens nested structures. Different from map which is one-to-one. Useful for processing collections of collections. Returns single stream.",
+      "usage": "FlatMap transforms and flattens elements into single stream.",
+      "keywords": ["flatMap", "flatten", "Stream", "one-to-many", "nested"]
+    },
+    {
+      "id": "JV138",
+      "category": "Java",
+      "title": "What is reduce in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Reduce performs reduction operation on stream elements. Combines elements using associative function. Can provide identity value. Returns Optional or single value. Common for sum, product, min, max. Terminal operation.",
+      "usage": "Reduce combines stream elements into single result.",
+      "keywords": ["reduce", "reduction", "Stream", "terminal", "accumulate", "combine"]
+    },
+    {
+      "id": "JV139",
+      "category": "Java",
+      "title": "What is peek in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Peek performs action on each element without consuming stream. Intermediate operation mainly for debugging. Doesn't modify elements. Useful for logging or side effects. Not guaranteed to execute if stream short-circuits. Should not modify elements.",
+      "usage": "Peek enables debugging and side effects in stream pipeline.",
+      "keywords": ["peek", "Stream", "debugging", "intermediate", "side effects"]
+    },
+    {
+      "id": "JV140",
+      "category": "Java",
+      "title": "What is distinct in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Distinct removes duplicate elements from stream. Uses equals() for comparison. Stateful intermediate operation. Order-preserving for ordered streams. Can be expensive for large streams. Common for unique value extraction.",
+      "usage": "Distinct filters duplicate elements from stream.",
+      "keywords": ["distinct", "Stream", "duplicates", "unique", "filter"]
+    },
+    {
+      "id": "JV141",
+      "category": "Java",
+      "title": "What is sorted in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Sorted sorts stream elements. Can use natural ordering or comparator. Stateful intermediate operation. Stores all elements for sorting. Can be expensive for large streams. Elements must be comparable.",
+      "usage": "Sorted arranges stream elements in order.",
+      "keywords": ["sorted", "Stream", "ordering", "Comparator", "intermediate"]
+    },
+    {
+      "id": "JV142",
+      "category": "Java",
+      "title": "What is limit and skip in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Limit restricts stream to maximum number of elements. Skip discards first n elements. Both are intermediate operations. Useful for pagination. Can short-circuit stream processing. Commonly used together.",
+      "usage": "Limit and skip control stream size and starting position.",
+      "keywords": ["limit", "skip", "Stream", "pagination", "truncate", "intermediate"]
+    },
+    {
+      "id": "JV143",
+      "category": "Java",
+      "title": "What is anyMatch, allMatch, noneMatch?",
+      "concept": "Stream API",
+      "explanation": "AnyMatch checks if any element matches predicate. AllMatch checks if all elements match. NoneMatch checks if no elements match. All are short-circuiting terminal operations. Return boolean. Useful for validation and testing.",
+      "usage": "Matching operations test stream elements against predicates.",
+      "keywords": ["anyMatch", "allMatch", "noneMatch", "Stream", "predicate", "terminal"]
+    },
+    {
+      "id": "JV144",
+      "category": "Java",
+      "title": "What is findFirst and findAny?",
+      "concept": "Stream API",
+      "explanation": "FindFirst returns first element as Optional. FindAny returns any element, useful for parallel streams. Both are short-circuiting terminal operations. FindFirst maintains order. FindAny better for parallel performance.",
+      "usage": "FindFirst and findAny retrieve elements from stream.",
+      "keywords": ["findFirst", "findAny", "Stream", "Optional", "terminal", "search"]
+    },
+    {
+      "id": "JV145",
+      "category": "Java",
+      "title": "What is count in Stream API?",
+      "concept": "Stream API",
+      "explanation": "Count returns number of elements in stream as long. Terminal operation. Doesn't require collecting elements. Efficient for counting. Commonly used after filtering. Simple aggregation operation.",
+      "usage": "Count returns total number of elements in stream.",
+      "keywords": ["count", "Stream", "terminal", "size", "aggregation"]
+    },
+    {
+      "id": "JV146",
+      "category": "Java",
+      "title": "What is forEach in Stream API?",
+      "concept": "Stream API",
+      "explanation": "ForEach performs action on each element. Terminal operation with side effects. Doesn't return value. Order not guaranteed for parallel streams. Use forEachOrdered for ordered processing. Common for printing or updating external state.",
+      "usage": "ForEach executes action on each stream element.",
+      "keywords": ["forEach", "Stream", "terminal", "iteration", "side effects"]
+    },
+    {
+      "id": "JV147",
+      "category": "Java",
+      "title": "What is IntStream, LongStream, DoubleStream?",
+      "concept": "Stream API",
+      "explanation": "Primitive specialized streams for int, long, double. Avoid boxing overhead. Provide specialized methods like sum, average, range. More efficient than Stream of wrapper types. Created using methods like IntStream.of() or range().",
+      "usage": "Primitive streams provide efficient operations on primitive types.",
+      "keywords": ["IntStream", "LongStream", "DoubleStream", "primitive", "specialized", "performance"]
+    },
+    {
+      "id": "JV148",
+      "category": "Java",
+      "title": "What is mapToInt, mapToLong, mapToDouble?",
+      "concept": "Stream API",
+      "explanation": "These methods convert Stream to primitive specialized streams. Avoid boxing and enable primitive operations. MapToInt produces IntStream, etc. Useful before operations like sum or average. More efficient than mapping to wrapper types.",
+      "usage": "Primitive mapping methods convert to primitive specialized streams.",
+      "keywords": ["mapToInt", "mapToLong", "mapToDouble", "primitive", "Stream", "conversion"]
+    },
+    {
+      "id": "JV149",
+      "category": "Java",
+      "title": "What is groupingBy collector?",
+      "concept": "Stream API",
+      "explanation": "GroupingBy groups elements by classifier function. Returns Map with groups. Can cascade with downstream collectors. Similar to SQL GROUP BY. Supports multi-level grouping. Common for categorization.",
+      "usage": "GroupingBy groups stream elements into map by classification.",
+      "keywords": ["groupingBy", "Collectors", "grouping", "Map", "classification", "Stream"]
+    },
+    {
+      "id": "JV150",
+      "category": "Java",
+      "title": "What is partitioningBy collector?",
+      "concept": "Stream API",
+      "explanation": "PartitioningBy splits elements into two groups based on predicate. Returns Map with true/false keys. Special case of groupingBy with boolean classifier. Always produces map with two entries. Useful for binary classification.",
+      "usage": "PartitioningBy splits elements into two groups by predicate.",
+      "keywords": ["partitioningBy", "Collectors", "partition", "binary", "predicate", "Stream"]
+    },
+    {
+      "id": "JV151",
+      "category": "Java",
+      "title": "What is joining collector?",
+      "concept": "Stream API",
+      "explanation": "Joining concatenates stream elements into single string. Can specify delimiter, prefix, suffix. Works on Stream of CharSequence. Common for creating CSV, formatted output. Alternative to StringBuilder in streams.",
+      "usage": "Joining concatenates stream elements into delimited string.",
+      "keywords": ["joining", "Collectors", "concatenate", "delimiter", "String", "Stream"]
+    },
+    {
+      "id": "JV152",
+      "category": "Java",
+      "title": "What is summaryStatistics?",
+      "concept": "Stream API",
+      "explanation": "SummaryStatistics collectors provide count, sum, min, max, average. Available for Int, Long, Double streams. Single pass through data. Efficient for getting multiple statistics. Returns specialized summary object.",
+      "usage": "SummaryStatistics provides comprehensive statistics in single operation.",
+      "keywords": ["summaryStatistics", "statistics", "IntStream", "aggregate", "min", "max"]
+    },
+    {
+      "id": "JV153",
+      "category": "Java",
+      "title": "What is toMap collector?",
+      "concept": "Stream API",
+      "explanation": "ToMap collects elements into Map. Requires key and value mappers. Can handle duplicate keys with merge function. Can specify Map implementation. Throws exception on duplicate keys without merge function.",
+      "usage": "ToMap collects stream elements into Map.",
+      "keywords": ["toMap", "Collectors", "Map", "key", "value", "Stream"]
+    },
+    {
+      "id": "JV154",
+      "category": "Java",
+      "title": "What is difference between Collection and Collections?",
+      "concept": "Collections",
+      "explanation": "Collection is interface representing group of objects. Collections is utility class with static methods. Collection is parent of List, Set, Queue. Collections provides methods like sort, reverse, shuffle. Collection defines contract, Collections provides implementations.",
+      "usage": "Collection is interface while Collections is utility class.",
+      "keywords": ["Collection", "Collections", "interface", "utility", "difference"]
+    },
+    {
+      "id": "JV155",
+      "category": "Java",
+      "title": "What is Arrays utility class?",
+      "concept": "Utilities",
+      "explanation": "Arrays class provides static methods for array manipulation. Includes sort, binarySearch, fill, equals. Can convert array to list. Provides parallel sorting. Supports all primitive and object arrays.",
+      "usage": "Arrays class provides utility methods for array operations.",
+      "keywords": ["Arrays", "utility", "sort", "binarySearch", "array", "static methods"]
+    },
+    {
+      "id": "JV156",
+      "category": "Java",
+      "title": "What is System class?",
+      "concept": "System Programming",
+      "explanation": "System class provides system-level operations. Cannot be instantiated. Provides standard input, output, error streams. Contains currentTimeMillis, nanoTime for timing. Provides arraycopy for efficient copying. Includes gc() for garbage collection suggestion.",
+      "usage": "System class provides access to system resources and operations.",
+      "keywords": ["System", "standard streams", "currentTimeMillis", "arraycopy", "utility"]
+    },
+    {
+      "id": "JV157",
+      "category": "Java",
+      "title": "What is Math class?",
+      "concept": "Mathematics",
+      "explanation": "Math class provides mathematical operations and constants. All methods are static. Includes trigonometry, logarithms, exponents. Provides constants like PI and E. Contains min, max, abs, round. Cannot be instantiated.",
+      "usage": "Math class provides static mathematical functions and constants.",
+      "keywords": ["Math", "mathematical", "static", "PI", "trigonometry", "utility"]
+    },
+    {
+      "id": "JV158",
+      "category": "Java",
+      "title": "What is Object class methods?",
+      "concept": "Object Class",
+      "explanation": "Object is root class of all Java classes. Provides methods like equals, hashCode, toString, clone, finalize. Every class inherits from Object. Methods can be overridden for custom behavior. Defines fundamental object operations.",
+      "usage": "Object class provides fundamental methods inherited by all classes.",
+      "keywords": ["Object", "root class", "equals", "hashCode", "toString", "inheritance"]
+    },
+    {
+      "id": "JV159",
+      "category": "Java",
+      "title": "What is LocalDateTime?",
+      "concept": "Date and Time",
+      "explanation": "LocalDateTime represents date-time without timezone. Part of java.time package. Immutable and thread-safe. Provides methods for manipulation and formatting. Replaces old Date and Calendar. More intuitive API.",
+      "usage": "LocalDateTime represents date and time without timezone information.",
+      "keywords": ["LocalDateTime", "date-time", "java.time", "immutable", "timezone-free"]
+    },
+    {
+      "id": "JV160",
+      "category": "Java",
+      "title": "What is DateTimeFormatter?",
+      "concept": "Date and Time",
+      "explanation": "DateTimeFormatter formats and parses date-time objects. Thread-safe and immutable. Supports predefined and custom patterns. Part of java.time package. Replaces SimpleDateFormat. More powerful and safer.",
+      "usage": "DateTimeFormatter formats and parses dates and times.",
+      "keywords": ["DateTimeFormatter", "formatting", "parsing", "date-time", "pattern", "thread-safe"]
+    },
+    {
+      "id": "JV161",
+      "category": "Java",
+      "title": "What is Duration and Period?",
+      "concept": "Date and Time",
+      "explanation": "Duration represents time-based amount in seconds and nanoseconds. Period represents date-based amount in years, months, days. Both are immutable. Duration for time, Period for dates. Part of java.time package.",
+      "usage": "Duration and Period represent time-based and date-based amounts.",
+      "keywords": ["Duration", "Period", "time amount", "date amount", "java.time"]
+    },
+    {
+      "id": "JV162",
+      "category": "Java",
+      "title": "What is Instant?",
+      "concept": "Date and Time",
+      "explanation": "Instant represents point on timeline in UTC. Stores seconds and nanoseconds from epoch. Machine-friendly timestamp. Immutable and thread-safe. Useful for recording events. Part of java.time package.",
+      "usage": "Instant represents machine timestamp on UTC timeline.",
+      "keywords": ["Instant", "timestamp", "UTC", "epoch", "java.time", "machine-friendly"]
+    },
+    {
+      "id": "JV163",
+      "category": "Java",
+      "title": "What is ZonedDateTime?",
+      "concept": "Date and Time",
+      "explanation": "ZonedDateTime represents date-time with timezone. Includes timezone rules and offsets. Handles daylight saving time. Immutable and thread-safe. Part of java.time package. More complete than LocalDateTime.",
+      "usage": "ZonedDateTime represents date-time with timezone information.",
+      "keywords": ["ZonedDateTime", "timezone", "ZoneId", "date-time", "java.time", "DST"]
+    },
+    {
+      "id": "JV164",
+      "category": "Java",
+      "title": "What is Classpath?",
+      "concept": "Java Fundamentals",
+      "explanation": "Classpath tells JVM where to find class files. Can include directories and JAR files. Set via CLASSPATH environment variable or -cp flag. Multiple paths separated by colon (Unix) or semicolon (Windows). Essential for running Java programs.",
+      "usage": "Classpath specifies locations for JVM to find classes.",
+      "keywords": ["classpath", "JVM", "class files", "JAR", "path"]
+    },
+    {
+      "id": "JV165",
+      "category": "Java",
+      "title": "What is JAR file?",
+      "concept": "Packaging",
+      "explanation": "JAR (Java Archive) packages multiple files into single compressed file. Contains class files, metadata, resources. Uses ZIP format. Can be executable with manifest file. Simplifies distribution and deployment. Can be signed for security.",
+      "usage": "JAR files package Java applications and libraries for distribution.",
+      "keywords": ["JAR", "archive", "packaging", "manifest", "distribution", "ZIP"]
+    },
+    {
+      "id": "JV166",
+      "category": "Java",
+      "title": "What is Manifest file?",
+      "concept": "Packaging",
+      "explanation": "Manifest file contains metadata about JAR. Located in META-INF/MANIFEST.MF. Specifies main class for executable JARs. Can include classpath and version information. Plain text with key-value pairs. Created automatically or manually.",
+      "usage": "Manifest file provides metadata and configuration for JAR files.",
+      "keywords": ["manifest", "META-INF", "main class", "JAR", "metadata"]
+    },
+    {
+      "id": "JV167",
+      "category": "Java",
+      "title": "What is main method signature?",
+      "concept": "Java Fundamentals",
+      "explanation": "Main method signature is 'public static void main(String[] args)'. Public allows JVM to call it. Static enables calling without object. Void means no return value. String array holds command-line arguments. Entry point for Java applications.",
+      "usage": "Main method is entry point with specific signature requirements.",
+      "keywords": ["main", "public", "static", "void", "String args", "entry point"]
+    },
+    {
+      "id": "JV168",
+      "category": "Java",
+      "title": "What is command-line arguments?",
+      "concept": "Java Fundamentals",
+      "explanation": "Command-line arguments pass data to program at startup. Stored in String array parameter of main. Accessed by index starting from 0. All arguments are strings. Must be parsed for other types. Useful for configuration and input.",
+      "usage": "Command-line arguments provide input to programs at launch.",
+      "keywords": ["command-line", "arguments", "main", "String array", "args", "input"]
+    },
+    {
+      "id": "JV169",
+      "category": "Java",
+      "title": "What is StringBuilder capacity?",
+      "concept": "Strings",
+      "explanation": "StringBuilder has initial capacity that can grow. Default capacity is 16 characters. Automatically expands when needed. Can specify initial capacity in constructor. Capacity() method returns current capacity. EnsureCapacity() preallocates space.",
+      "usage": "StringBuilder capacity determines internal buffer size for efficiency.",
+      "keywords": ["StringBuilder", "capacity", "buffer", "growth", "performance"]
+    },
+    {
+      "id": "JV170",
+      "category": "Java",
+      "title": "What is String intern?",
+      "concept": "Strings",
+      "explanation": "Intern() adds string to string pool or returns existing reference. Ensures only one copy of string literal exists. Can save memory for duplicate strings. Returns canonical representation. Useful for string comparison optimization.",
+      "usage": "Intern() adds strings to pool for memory efficiency and fast comparison.",
+      "keywords": ["intern", "string pool", "memory", "canonical", "optimization"]
+    },
+    {
+      "id": "JV171",
+      "category": "Java",
+      "title": "What is boxing conversion?",
+      "concept": "Type Conversion",
+      "explanation": "Boxing converts primitive to corresponding wrapper object. Automatic in Java 5+. Creates wrapper object from primitive value. Can impact performance in tight loops. Part of autoboxing feature. Makes primitives work with generics.",
+      "usage": "Boxing converts primitives to wrapper objects automatically.",
+      "keywords": ["boxing", "autoboxing", "primitive", "wrapper", "conversion"]
+    },
+    {
+      "id": "JV172",
+      "category": "Java",
+      "title": "What is unboxing conversion?",
+      "concept": "Type Conversion",
+      "explanation": "Unboxing converts wrapper object to primitive value. Automatic in Java 5+. Extracts primitive from wrapper. Can throw NullPointerException if wrapper is null. Part of autounboxing feature. Reverse of boxing.",
+      "usage": "Unboxing converts wrapper objects to primitives automatically.",
+      "keywords": ["unboxing", "autounboxing", "wrapper", "primitive", "conversion"]
+    },
+    {
+      "id": "JV173",
+      "category": "Java",
+      "title": "What is widening and narrowing conversion?",
+      "concept": "Type Conversion",
+      "explanation": "Widening converts smaller type to larger without data loss. Narrowing converts larger to smaller with potential data loss. Widening is implicit. Narrowing requires explicit cast. Widening: byte to int. Narrowing: double to int.",
+      "usage": "Widening and narrowing convert between different-sized primitive types.",
+      "keywords": ["widening", "narrowing", "type conversion", "casting", "primitive"]
+    },
+    {
+      "id": "JV174",
+      "category": "Java",
+      "title": "What is type promotion?",
+      "concept": "Type Conversion",
+      "explanation": "Type promotion converts smaller types to int or larger in expressions. Byte, short, char promoted to int. Ensures consistent operation. Prevents overflow in intermediate calculations. Automatic conversion. Result may need casting back.",
+      "usage": "Type promotion converts smaller types to int in arithmetic operations.",
+      "keywords": ["type promotion", "automatic", "int", "expression", "conversion"]
+    },
+    {
+      "id": "JV175",
+      "category": "Java",
+      "title": "What is BigDecimal?",
+      "concept": "Numbers",
+      "explanation": "BigDecimal provides arbitrary-precision decimal numbers. Immutable and thread-safe. No precision loss for decimal calculations. Essential for financial calculations. Slower than primitive types. Supports rounding modes.",
+      "usage": "BigDecimal provides precise decimal arithmetic without rounding errors.",
+      "keywords": ["BigDecimal", "precision", "decimal", "financial", "immutable", "rounding"]
+    },
+    {
+      "id": "JV176",
+      "category": "Java",
+      "title": "What is BigInteger?",
+      "concept": "Numbers",
+      "explanation": "BigInteger provides arbitrary-precision integers. Immutable and thread-safe. No size limit unlike primitive types. Slower than long. Useful for cryptography and large calculations. Supports all standard arithmetic operations.",
+      "usage": "BigInteger handles arbitrarily large integer values.",
+      "keywords": ["BigInteger", "arbitrary precision", "large numbers", "immutable", "unlimited"]
+    },
+    {
+      "id": "JV177",
+      "category": "Java",
+      "title": "What is NumberFormat?",
+      "concept": "Formatting",
+      "explanation": "NumberFormat formats numbers according to locale. Handles currency, percentage, decimals. Abstract class with factory methods. Supports parsing formatted strings. Locale-sensitive formatting. Part of internationalization support.",
+      "usage": "NumberFormat provides locale-sensitive number formatting and parsing.",
+      "keywords": ["NumberFormat", "formatting", "locale", "currency", "internationalization"]
+    },
+    {
+      "id": "JV178",
+      "category": "Java",
+      "title": "What is DecimalFormat?",
+      "concept": "Formatting",
+      "explanation": "DecimalFormat formats decimal numbers with patterns. Extends NumberFormat. Provides precise control over formatting. Supports custom patterns like #,##0.00. Can format and parse numbers. Thread-unsafe, create per thread.",
+      "usage": "DecimalFormat formats numbers using custom patterns.",
+      "keywords": ["DecimalFormat", "pattern", "formatting", "decimal", "custom"]
+    },
+    {
+      "id": "JV179",
+      "category": "Java",
+      "title": "What is SimpleDateFormat?",
+      "concept": "Date and Time",
+      "explanation": "SimpleDateFormat formats and parses dates with patterns. Legacy class, not thread-safe. Replaced by DateTimeFormatter. Supports custom patterns like yyyy-MM-dd. Can cause subtle bugs. Use DateTimeFormatter instead.",
+      "usage": "SimpleDateFormat is legacy class for date formatting, use DateTimeFormatter instead.",
+      "keywords": ["SimpleDateFormat", "legacy", "date formatting", "pattern", "thread-unsafe"]
+    },
+    {
+      "id": "JV180",
+      "category": "Java",
+      "title": "What is Locale?",
+      "concept": "Internationalization",
+      "explanation": "Locale represents geographic or cultural region. Affects formatting of dates, numbers, currencies. Consists of language and country codes. Used by many formatting classes. Enables internationalization (i18n). Can specify variant.",
+      "usage": "Locale provides regional settings for formatting and display.",
+      "keywords": ["Locale", "internationalization", "i18n", "region", "language", "formatting"]
+    },
+    {
+      "id": "JV181",
+      "category": "Java",
+      "title": "What is ResourceBundle?",
+      "concept": "Internationalization",
+      "explanation": "ResourceBundle manages locale-specific resources. Stores translated strings and resources. Property files for different locales. Enables internationalization of applications. Falls back to default locale. Used for multi-language support.",
+      "usage": "ResourceBundle provides locale-specific resources for internationalization.",
+      "keywords": ["ResourceBundle", "i18n", "localization", "properties", "translation"]
+    },
+    {
+      "id": "JV182",
+      "category": "Java",
+      "title": "What is Properties class?",
+      "concept": "Configuration",
+      "explanation": "Properties manages key-value pairs for configuration. Extends Hashtable. Can load from and store to files. Supports default values. Thread-safe operations. Commonly used for application configuration.",
+      "usage": "Properties class handles configuration in key-value format.",
+      "keywords": ["Properties", "configuration", "key-value", "properties file", "Hashtable"]
+    },
+    {
+      "id": "JV183",
+      "category": "Java",
+      "title": "What is Runtime class?",
+      "concept": "System Programming",
+      "explanation": "Runtime provides interface to JVM runtime environment. Singleton accessible via getRuntime(). Can execute external processes. Provides memory information. Can trigger garbage collection. Allows shutdown hooks.",
+      "usage": "Runtime class interfaces with JVM runtime environment.",
+      "keywords": ["Runtime", "JVM", "exec", "memory", "garbage collection", "shutdown hook"]
+    },
+    {
+      "id": "JV184",
+      "category": "Java",
+      "title": "What is ProcessBuilder?",
+      "concept": "System Programming",
+      "explanation": "ProcessBuilder creates and manages OS processes. More flexible than Runtime.exec(). Can set environment variables and working directory. Redirects standard I/O streams. Starts external programs. Provides better process control.",
+      "usage": "ProcessBuilder creates and configures external processes.",
+      "keywords": ["ProcessBuilder", "process", "external program", "exec", "environment"]
+    },
+    {
+      "id": "JV185",
+      "category": "Java",
+      "title": "What is shutdown hook?",
+      "concept": "System Programming",
+      "explanation": "Shutdown hook is thread executed during JVM shutdown. Registered with Runtime.addShutdownHook(). Used for cleanup operations. Runs on normal termination or Ctrl+C. Doesn't run on kill -9. Should complete quickly.",
+      "usage": "Shutdown hooks perform cleanup during JVM termination.",
+      "keywords": ["shutdown hook", "cleanup", "JVM", "termination", "thread"]
+    },
+    {
+      "id": "JV186",
+      "category": "Java",
+      "title": "What is Console class?",
+      "concept": "Input/Output",
+      "explanation": "Console provides methods for console I/O. Accessed via System.console(). Supports password input without echo. More convenient than System.in for console apps. May return null in some environments. Provides formatted output.",
+      "usage": "Console class simplifies console input and output operations.",
+      "keywords": ["Console", "input", "output", "password", "System.console", "formatting"]
+    },
+    {
+      "id": "JV187",
+      "category": "Java",
+      "title": "What is printf method?",
+      "concept": "Formatting",
+      "explanation": "Printf provides formatted output like C. Uses format specifiers (%s, %d, %f). Available in PrintStream and PrintWriter. Supports flags, width, precision. Convenient for aligned output. Part of formatted I/O.",
+      "usage": "Printf formats and prints output using format specifiers.",
+      "keywords": ["printf", "formatting", "format specifiers", "output", "C-style"]
+    },
+    {
+      "id": "JV188",
+      "category": "Java",
+      "title": "What is format method?",
+      "concept": "Formatting",
+      "explanation": "Format method creates formatted strings. Uses same syntax as printf. Returns formatted string instead of printing. Available in String and Formatter classes. Supports all printf format specifiers. More flexible than concatenation.",
+      "usage": "Format creates formatted strings without printing.",
+      "keywords": ["format", "String.format", "formatting", "template", "specifiers"]
+    },
+    {
+      "id": "JV189",
+      "category": "Java",
+      "title": "What is default method conflict?",
+      "concept": "Interfaces",
+      "explanation": "Default method conflict occurs when class implements multiple interfaces with same default method. Must override the conflicting method. Can call specific interface method using Interface.super.method(). Compilation error without resolution. Requires explicit choice.",
+      "usage": "Default method conflicts must be resolved by implementing class.",
+      "keywords": ["default method", "conflict", "multiple inheritance", "resolution", "interface"]
+    },
+    {
+      "id": "JV190",
+      "category": "Java",
+      "title": "What is diamond problem?",
+      "concept": "Inheritance",
+      "explanation": "Diamond problem occurs in multiple inheritance when same method exists in multiple parent paths. Java avoids it by allowing only single class inheritance. Interfaces can cause similar issues with default methods. Resolved through conflict resolution rules.",
+      "usage": "Diamond problem is multiple inheritance issue Java avoids through design.",
+      "keywords": ["diamond problem", "multiple inheritance", "conflict", "ambiguity"]
+    },
+    {
+      "id": "JV191",
+      "category": "Java",
+      "title": "What is Phantom reference?",
+      "concept": "References",
+      "explanation": "PhantomReference is weakest reference type. Object already finalized when reference is enqueued. Used for cleanup after finalization. Cannot retrieve referent. Used with ReferenceQueue. Allows post-finalization cleanup.",
+      "usage": "PhantomReference enables cleanup after object finalization.",
+      "keywords": ["PhantomReference", "weak reference", "finalization", "cleanup", "ReferenceQueue"]
+    },
+    {
+      "id": "JV192",
+      "category": "Java",
+      "title": "What is Weak reference?",
+      "concept": "References",
+      "explanation": "WeakReference doesn't prevent garbage collection. Object collected when only weak references exist. Useful for caches. Can retrieve referent until collected. Used in WeakHashMap. Enables memory-sensitive caching.",
+      "usage": "WeakReference allows garbage collection while maintaining optional access.",
+      "keywords": ["WeakReference", "garbage collection", "cache", "memory", "weak"]
+    },
+    {
+      "id": "JV193",
+      "category": "Java",
+      "title": "What is Soft reference?",
+      "concept": "References",
+      "explanation": "SoftReference cleared only when memory is needed. Stronger than weak reference. Useful for memory-sensitive caches. Object stays longer than with weak reference. GC considers memory availability. Good for caching.",
+      "usage": "SoftReference maintains object until memory pressure occurs.",
+      "keywords": ["SoftReference", "cache", "memory-sensitive", "garbage collection"]
+    },
+    {
+      "id": "JV194",
+      "category": "Java",
+      "title": "What is reference queue?",
+      "concept": "References",
+      "explanation": "ReferenceQueue holds references after referent is collected. Used with weak, soft, phantom references. Enables notification of object collection. Polling or blocking retrieval. Useful for cleanup operations. Supports resource management.",
+      "usage": "ReferenceQueue provides notification when referenced objects are collected.",
+      "keywords": ["ReferenceQueue", "notification", "garbage collection", "references", "cleanup"]
+    },
+    {
+      "id": "JV195",
+      "category": "Java",
+      "title": "What is WeakHashMap?",
+      "concept": "Collections",
+      "explanation": "WeakHashMap uses weak references for keys. Entries removed when key is no longer referenced. Useful for caches. Doesn't prevent garbage collection of keys. Not thread-safe. Good for canonical mappings.",
+      "usage": "WeakHashMap automatically removes entries with unreferenced keys.",
+      "keywords": ["WeakHashMap", "weak reference", "cache", "garbage collection", "automatic removal"]
+    },
+    {
+      "id": "JV196",
+      "category": "Java",
+      "title": "What is IdentityHashMap?",
+      "concept": "Collections",
+      "explanation": "IdentityHashMap uses == instead of equals for key comparison. Compares object identity not equality. Useful for object tracking. Violates Map general contract. Faster than HashMap for reference comparison. Special purpose map.",
+      "usage": "IdentityHashMap compares keys by identity rather than equality.",
+      "keywords": ["IdentityHashMap", "identity", "==", "reference", "comparison"]
+    },
+    {
+      "id": "JV197",
+      "category": "Java",
+      "title": "What is EnumSet?",
+      "concept": "Collections",
+      "explanation": "EnumSet is specialized Set for enums. Very efficient implementation. Uses bit vector internally. All elements must be from same enum. Cannot contain null. Provides static factory methods. Better performance than HashSet for enums.",
+      "usage": "EnumSet provides efficient Set implementation for enum types.",
+      "keywords": ["EnumSet", "enum", "bit vector", "efficient", "Set"]
+    },
+    {
+      "id": "JV198",
+      "category": "Java",
+      "title": "What is EnumMap?",
+      "concept": "Collections",
+      "explanation": "EnumMap is specialized Map for enum keys. Very efficient implementation. Uses array internally. All keys must be from same enum. Cannot have null keys. Maintains natural enum order. Better performance than HashMap for enums.",
+      "usage": "EnumMap provides efficient Map implementation with enum keys.",
+      "keywords": ["EnumMap", "enum", "array", "efficient", "Map", "ordered"]
+    },
+    {
+      "id": "JV199",
+      "category": "Java",
+      "title": "What is PriorityQueue?",
+      "concept": "Collections",
+      "explanation": "PriorityQueue orders elements by priority. Elements ordered by natural ordering or Comparator. Head is smallest element. Not thread-safe. Doesn't allow null. Uses heap data structure. Useful for scheduling.",
+      "usage": "PriorityQueue maintains elements in priority order.",
+      "keywords": ["PriorityQueue", "priority", "heap", "ordering", "Queue", "Comparator"]
+    },
+    {
+      "id": "JV200",
+      "category": "Java",
+      "title": "What is ArrayDeque?",
+      "concept": "Collections",
+      "explanation": "ArrayDeque is resizable array implementation of Deque. More efficient than LinkedList for stack/queue operations. Doesn't allow null elements. Not thread-safe. Faster than Stack class. Preferred over Stack and LinkedList for deque operations.",
+      "usage": "ArrayDeque provides efficient double-ended queue using array.",
+      "keywords": ["ArrayDeque", "Deque", "array", "efficient", "stack", "queue"]
     }
-]
+  

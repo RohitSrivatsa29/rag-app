@@ -47,7 +47,7 @@ class RAGSearch:
         query = self.expand_query(query)
         
         query_lower = query.lower()
-        pronouns = ["he", "she", "it", "they", "him", "her", "this"]
+        pronouns = ["he", "she", "it", "they", "him", "her", "his", "this", "that"]
         has_pronoun = any(f" {p} " in f" {query_lower} " for p in pronouns) or \
                       any(query_lower.startswith(f"{p} ") for p in pronouns)
         
@@ -55,8 +55,10 @@ class RAGSearch:
         
         # 1. Context Handling
         if has_pronoun and self.last_entity:
-            print(f"DEBUG: Pronoun detected. Using context: {self.last_entity['name']}")
-            forced_id = self.last_entity['id']
+            # If we have a context, we should PRIORITIZE it.
+            # We can either force the ID if we are sure, or just append the name to the query.
+            # Appending the name is safer for "his education" -> "education Sundar Pichai" which works well with vector search.
+            query = f"{query} {self.last_entity['name']}"
             
         # 2. Fuzzy Name Matching
         names_only = [n[0] for n in self.known_names]
@@ -77,9 +79,8 @@ class RAGSearch:
             
         # 3. Vector Search
         search_query = query
-        if has_pronoun and self.last_entity and not fuzzy_match_id:
-             search_query = f"{query} {self.last_entity['name']}"
-             
+        # Context is already appended to query if needed above
+              
         results = self.embedding_manager.search(search_query, k=top_k)
         
         # Combine results
@@ -117,12 +118,13 @@ class RAGSearch:
             top_doc = documents[0]
             md = top_doc['metadata']
             files_name = md.get('name') or md.get('title')
+            
+            # ALWAYS update context if we found a valid entity
             if files_name:
                 self.last_entity = {
                     'id': top_doc['id'],
                     'name': files_name
                 }
-                print(f"DEBUG: Updated context to {files_name}")
         
         return documents
     
@@ -136,8 +138,8 @@ class RAGSearch:
         query_lower = query.lower()
 
         # 1. Comprehensive Intent ("Everything", "Full Info")
-        comprehensive_keywords = ["everything", "full info", "tell me about", "details", "all about", "who is"]
-        # Basic check: if starts with "tell me about" or contains "everything"
+        # STRICT "Everything" keywords
+        comprehensive_keywords = ["everything", "full info", "all about", "complete details", "full profile"]
         is_comprehensive = any(k in query_lower for k in comprehensive_keywords)
         
         # If specific questions like "who is X and what did he do", that implies comprehensive too.
@@ -173,6 +175,13 @@ class RAGSearch:
              return metadata['explanation']
         if 'description' in metadata:
              return metadata['description']
+
+        # 3. Summary/Identity Intent ("Who is", "Tell me about")
+        summary_keywords = ["who is", "tell me about", "what is", "summ", "bio", "intro"]
+        if any(k in query_lower for k in summary_keywords):
+            summary = metadata.get('summary') or metadata.get('content')
+            if summary:
+                return summary
              
         # 3. Specific Intent for Personalities
         name = metadata.get('name', 'This entity')
